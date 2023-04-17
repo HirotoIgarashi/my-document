@@ -8,4 +8,4 @@
 
 ## 開発環境 (Development Environment)
 
-開発環境として OS は Linux でデストリビューションは Linux Mint を前提とします。
+開発環境として OS は Linux でディストリビューションは Linux Mint を前提とします。
