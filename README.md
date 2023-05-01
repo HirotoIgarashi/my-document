@@ -2,11 +2,9 @@
 
 開発環境やらプログラミングに関することを記述する。
 
-## ドキュメントの作成 (Document Creation)
+## ドキュメント作成 (Document Creation)
 
 ドキュメントは [MarkDown] で作成することを前提とします。
-
-[MarkDown]: https://www.markdown.jp/what-is-markdown/
 
 ## 開発環境 (Development Environment)
 
@@ -14,5 +12,3 @@
 
 [GNU/Linux]: https://www.linuxfoundation.org/
 [Linux Mint]: https://linuxmint.com/
-
-###
