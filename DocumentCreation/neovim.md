@@ -7,6 +7,8 @@
 
 ## Neovimのインストール
 
+### Linux mintの場合
+
 Linux mintでインストールする例を記述します。
 
 aptのリポジトリを追加するために以下のコマンドを実行します。
@@ -22,6 +24,10 @@ sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt-get update
 sudo apt-get install neovim
 ~~~
+
+### MX Linuxの場合
+
+appImageでインストールします。
 
 ## ちょと脱線してターミナルの設定について
 
