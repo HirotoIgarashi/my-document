@@ -65,10 +65,10 @@ MiscDefaultGeometry=142x38+10+60
 [Nerd Fonts]のホームページからJetBrainsMono.zipをダウンロードして解凍します。
 
 ~~~
-unzip JetBrainsMono.zip
+unzip JetBrainsMono.zip -d ~/.local/share/fonts/
+fc-cache -fv
 ~~~
 
-~/.local/share/fonts/
 
 [Nerd Fonts]: https://www.nerdfonts.com/
 
