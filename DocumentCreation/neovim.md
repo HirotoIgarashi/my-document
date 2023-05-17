@@ -66,15 +66,23 @@ MiscDefaultGeometry=142x38+10+60
 
 ~~~
 unzip JetBrainsMono.zip -d ~/.local/share/fonts/
-fc-cache -fv
+fc-cache -fv ~/.local/share/fonts/
 ~~~
-
 
 [Nerd Fonts]: https://www.nerdfonts.com/
 
 - Neovim v0.8+ (Not including nightly)
 - Tree-sitter CLI (Note: This is only necessary if you want to use auto_install feature with Treesitter)
+
+Tree-sitter CLIをインストールするコマンドです。
+
+~~~
+npm install tree-sitter-cli
+~~~
+
 - A clipboard tool is necessary for the integration with the system clipboard (see :help clipboard-tool for supported solutions)
+システムクリップボードとの統合にはクリップボードツールが必要です
+
 - Terminal with true color support (for the default theme, otherwise it is dependent on the theme you are using)
 
 - オブションの要件
@@ -84,3 +92,28 @@ fc-cache -fv
     + bottom - process viewer toggle terminal (<leader>tt)
     + Python - python repl toggle terminal (<leader>tp)
     + Node - Node is needed for a lot of the LSPs, and for the node repl toggle terminal (<leader>tn)
+
+### インストール
+
+現在のnvimファルダーのバックアップを取ります。
+
+~~~
+mv ~/.config/nvim ~/.config/nvim.bak
+~~~
+
+neovimのフォルダーのバックアップを取ります。
+
+~~~
+mv ~/.local/share/nvim ~/.local/share/nvim.bak
+mv ~/.local/state/nvim ~/.local/state/nvim.bak
+mv ~/.cache/nvim ~/.cache/nvim.bak
+~~~
+
+githubからAstroNvimのリポジトリをコピーします。
+
+~~~
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+nvim
+~~~
+
+### セットアップ
