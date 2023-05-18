@@ -11,7 +11,7 @@
 
 Linux mintでインストールする例を記述します。
 
-aptのリポジトリを追加するために以下のコマンドを実行します。
+aptのリポジトリを追加するための準備として以下のコマンドを実行します。
 
 ~~~
 sudo apt-get install software-properties-common
@@ -117,3 +117,42 @@ nvim
 ~~~
 
 ### セットアップ
+
+#### LSPのイントール
+
+~~~
+:LspInstall pyright
+~~~
+
+#### 言語パーサー(language parser)のイントール
+
+~~~
+:TSInstall python
+~~~
+
+#### デバッガのイントール
+
+~~~
+:DapInstall python
+~~~
+
+#### プラグインの管理
+
+プラグインの更新があるかをチェックするときは```:Lazy check```
+
+プラグインを更新するときは```:Lazy update```
+
+有効になっていないもしくは使っていないプラグインを削除するときは```:Lazy clean```
+
+プラグインの更新と削除するときは```:Lazy sync```
+
+#### AstroNvimの更新
+
+#### AstroNvimパッケージの更新
+
+#### AstroNvimパッケージのリロード
+
+### 特徴
+
+### コンフィグレーション
+
