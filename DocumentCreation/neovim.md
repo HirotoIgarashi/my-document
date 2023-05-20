@@ -1,6 +1,6 @@
 # Neovim入門
 
-[Neovim]について簡単に説明します。
+[Neovim]について説明します。
 [Neovim]の公式ホームページによるとNeovimは「超拡張可能な Vim ベースのテキストエディター」です。
 
 [Neovim]: https://neovim.io/
@@ -120,8 +120,13 @@ nvim
 
 #### LSPのイントール
 
+Language Server Protocol(LSP)とは2016年6月に、
+Microsoftがlanguage server protocolという仕様を公開したのが始まりです。
+
+https://github.com/williamboman/mason-lspconfig.nvim#available-lsp-servers
+
 ~~~
-:LspInstall pyright
+:LspInstall html css pyright
 ~~~
 
 #### 言語パーサー(language parser)のイントール
