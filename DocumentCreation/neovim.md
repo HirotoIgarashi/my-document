@@ -126,12 +126,20 @@ Microsoftが2016年6月に仕様を公開しました。
 ```:help lspconfig-all ```でLSPの一覧を見ることができます。
 
 ~~~
-:LspInstall html css pyright quick-lint-js
+:LspInstall html css pyright quick_lint_js
 ~~~
 
 #### 言語パーサー(language parser)のイントール
 
+~~~
+:TSInstall python
+~~~
+
 #### デバッガlanguage parser)のイントール
+
+~~~
+:DapInstall python
+~~~
 
 ### 特徴
 
