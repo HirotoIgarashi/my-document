@@ -1,6 +1,6 @@
 # Neovim入門
 
-[Neovim]について説明します。
+[Neovim]について簡単に説明します。
 [Neovim]の公式ホームページによるとNeovimは「超拡張可能な Vim ベースのテキストエディター」です。
 
 [Neovim]: https://neovim.io/
@@ -11,7 +11,7 @@
 
 Linux mintでインストールする例を記述します。
 
-aptのリポジトリを追加するための準備として以下のコマンドを実行します。
+aptのリポジトリを追加するために以下のコマンドを実行します。
 
 ~~~
 sudo apt-get install software-properties-common
@@ -120,42 +120,18 @@ nvim
 
 #### LSPのイントール
 
-Language Server Protocol(LSP)とは2016年6月に、
-Microsoftがlanguage server protocolという仕様を公開したのが始まりです。
+LSPとはlanguage Server Protocolのことです。
+Microsoftが2016年6月に仕様を公開しました。
 
-https://github.com/williamboman/mason-lspconfig.nvim#available-lsp-servers
+```:help lspconfig-all ```でLSPの一覧を見ることができます。
 
 ~~~
-:LspInstall html css pyright
+:LspInstall html css pyright quick-lint-js
 ~~~
 
 #### 言語パーサー(language parser)のイントール
 
-~~~
-:TSInstall python
-~~~
-
-#### デバッガのイントール
-
-~~~
-:DapInstall python
-~~~
-
-#### プラグインの管理
-
-プラグインの更新があるかをチェックするときは```:Lazy check```
-
-プラグインを更新するときは```:Lazy update```
-
-有効になっていないもしくは使っていないプラグインを削除するときは```:Lazy clean```
-
-プラグインの更新と削除するときは```:Lazy sync```
-
-#### AstroNvimの更新
-
-#### AstroNvimパッケージの更新
-
-#### AstroNvimパッケージのリロード
+#### デバッガlanguage parser)のイントール
 
 ### 特徴
 
