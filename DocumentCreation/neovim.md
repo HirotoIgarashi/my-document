@@ -161,11 +161,53 @@ Microsoftが2016年6月に仕様を公開しました。
 
 #### プラグインの管理
 
+プラグインの更新をチェックするときは ```:Lazy check```を実行します。
+
+保留しているプラグインを更新するときは ```:Lazy update```を実行します。
+
+有効化していないまたは使っていないプラグインを削除するときは
+```:Lazy clean```を実行します。 
+
+プラグインの更新と削除をおこなうときは ```:Lazy sync```を実行します。
+
 #### AstroNvimの更新
+
+AstroNvimのリポジトリから最新のアップデートを入手するには
+```:AstroUpdate``` を実行するか<leader>pA 
 
 #### AstroNvimパッケージの更新
 
+Neovim プラグインと Masonのパッケージの両方を更新するときは
+```:AstroUpdatePackages```を実行するか<leader>pa 
+
+#### Reload AstroNvim (EXPERIMENTAL)
+Run :AstroReload to reload the AstroNvim configuration and any new user configuration changes without restarting. This is currently an experimental feature and may lead to instability until the next restart.
+
 ### 特徴
 
+- Statusline, Winbar, and Tabline with Heirline
+- Plugin management with lazy.nvim
+- Package management with mason.nvim
+- File explorer with Neo-tree
+- Autocompletion with Cmp
+- Git integration with Gitsigns
+- Terminal with Toggleterm
+- Fuzzy finding with Telescope
+- Syntax highlighting with Treesitter
+- Formatting and linting with Null-ls
+- Language Server Protocol with Native LSP
+
 ### コンフィグレーション
+
+カスタムユーザー構成の作成を開始するには、user/フォルダーを作成する必要が
+あります。ユーザー設定ファイルを簡単に作成するためのテンプレートリポジトリを
+作成しました: Astronvim/user_example
+
+提供されたテンプレートリポジトリを使用して、GitHubアカウントに新しい
+ユーザー構成リポジトリを作成したり、直接クローンを作成したりできます。
+テンプレートから新しいリポジトリを作成した後、次を実行できます。
+
+~~~
+git clone https://github.com/<username>/<config_repo ~/.config/nvim/lua/user
+~~~
 
