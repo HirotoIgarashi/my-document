@@ -1,7 +1,8 @@
 # Neovim入門
 
 [Neovim]について簡単に説明します。
-[Neovim]の公式ホームページによるとNeovimは「超拡張可能な Vim ベースのテキストエディター」です。
+[Neovim]の公式ホームページによるとNeovimは
+「超拡張可能な Vim ベースのテキストエディター」です。
 
 [Neovim]: https://neovim.io/
 
@@ -9,7 +10,7 @@
 
 ### Linux mintの場合
 
-Linux mintでインストールする例を記述します。
+Linux mintでインストールする例になります。
 
 aptのリポジトリを追加するために以下のコマンドを実行します。
 
@@ -31,11 +32,15 @@ appImageでインストールします。
 
 ## ターミナルの設定について
 
-Linux mintのxfce Editionを利用している場合はターミナルの名称はXfce Terminalになります。キーボードでCtrl + Alt + tで起動します。
+Linux mintのxfce Editionを利用している場合はターミナルの名称は
+Xfce Terminalになります。キーボードでCtrl + Alt + tで起動します。
 
 ### ターミナルの大きさを設定する
 
-ターミナルの大きさを指定するときは、~/.config/xfce4/terminal/terminalrcファイルを直接編集するかターミナルのメニューバーから「編集」「設定」で「ターミナルの設定」を開き「外観」から設定する方法があります。
+ターミナルの大きさを指定するときは、
+~/.config/xfce4/terminal/terminalrcファイルを直接編集するか
+ターミナルのメニューバーから「編集」「設定」で「ターミナルの設定」を開き
+「外観」から設定する方法があります。
 
 ####  ~/.config/xfce4/terminal/terminalrcファイルを編集する方法
 ~~~
@@ -82,6 +87,19 @@ npm install tree-sitter-cli
 
 - A clipboard tool is necessary for the integration with the system clipboard (see :help clipboard-tool for supported solutions)
 システムクリップボードとの統合にはクリップボードツールが必要です
+クリップボードツールがインストールされているかを確認します。
+
+~~~
+:echo has('clipboard')
+~~~
+
+結果が0だったらクリップボードツールがインストールされていないので
+
+~~~
+sudo apt install xclip
+~~~
+
+でxclipをインストールします。
 
 - Terminal with true color support (for the default theme, otherwise it is dependent on the theme you are using)
 
@@ -140,6 +158,12 @@ Microsoftが2016年6月に仕様を公開しました。
 ~~~
 :DapInstall python
 ~~~
+
+#### プラグインの管理
+
+#### AstroNvimの更新
+
+#### AstroNvimパッケージの更新
 
 ### 特徴
 
