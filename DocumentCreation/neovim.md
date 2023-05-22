@@ -60,6 +60,20 @@ MiscDefaultGeometry=142x38+10+60
 
 [AstroNvim]: https://astronvim.com/
 
+### AstroNvimの特徴
+
+- Statusline, Winbar, and Tabline with Heirline
+- Plugin management with lazy.nvim
+- Package management with mason.nvim
+- File explorer with Neo-tree
+- Autocompletion with Cmp
+- Git integration with Gitsigns
+- Terminal with Toggleterm
+- Fuzzy finding with Telescope
+- Syntax highlighting with Treesitter
+- Formatting and linting with Null-ls
+- Language Server Protocol with Native LSP
+
 ### AstroNvimの要件
 
 - Nerd Fonts (Optional with manual intervention: See Recipes/Customizing Icons)
@@ -183,19 +197,6 @@ Neovim プラグインと Masonのパッケージの両方を更新するとき�
 #### Reload AstroNvim (EXPERIMENTAL)
 Run :AstroReload to reload the AstroNvim configuration and any new user configuration changes without restarting. This is currently an experimental feature and may lead to instability until the next restart.
 
-### 特徴
-
-- Statusline, Winbar, and Tabline with Heirline
-- Plugin management with lazy.nvim
-- Package management with mason.nvim
-- File explorer with Neo-tree
-- Autocompletion with Cmp
-- Git integration with Gitsigns
-- Terminal with Toggleterm
-- Fuzzy finding with Telescope
-- Syntax highlighting with Treesitter
-- Formatting and linting with Null-ls
-- Language Server Protocol with Native LSP
 
 ### コンフィグレーション
 
