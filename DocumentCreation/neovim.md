@@ -202,7 +202,8 @@ Run :AstroReload to reload the AstroNvim configuration and any new user configur
 
 カスタムユーザー構成の作成を開始するには、user/フォルダーを作成する必要が
 あります。ユーザー設定ファイルを簡単に作成するためのテンプレートリポジトリを
-作成しました: Astronvim/user_example
+作成しました:
+[Astronvim/user_example](https://github.com/AstroNvim/user_example)
 
 提供されたテンプレートリポジトリを使用して、GitHubアカウントに新しい
 ユーザー構成リポジトリを作成したり、直接クローンを作成したりできます。
