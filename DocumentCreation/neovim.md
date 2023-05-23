@@ -1,8 +1,8 @@
 # Neovim入門
 
-このドキュメントは[Neovim]についての説明です。
-[Neovim]の公式ホームページによるとNeovimは
-「超拡張可能な Vim ベースのテキストエディター」です。
+このドキュメントは[Neovim]についての説明です。 [Neovim]の公式ホームページに
+よるとNeovimは「超拡張可能な Vim ベースのテキストエディター」です。
+また、このドキュメントでは[Neovim]を使いやすくした[Astronvim]の説明もします。
 
 [Neovim]: https://neovim.io/
 
