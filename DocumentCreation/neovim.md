@@ -115,7 +115,7 @@ npm install tree-sitter-cli
 システムクリップボードとの統合にはクリップボードツールが必要です
 クリップボードツールがインストールされているかを確認します。
 
-~~~bash
+~~~vim
 :echo has('clipboard')
 ~~~
 
@@ -130,13 +130,13 @@ sudo apt install xclip
 - Terminal with true color support
 (for the default theme, otherwise it is dependent on the theme you are using)
 - オプションの要件
-  + ripgrep - live grep telescope search (<leader>fw)
-  + lazygit - git ui toggle terminal (<leader>tl or <leader>gg)
-  + go DiskUsage() - disk usage toggle terminal (<leader>tu)
-  + bottom - process viewer toggle terminal (<leader>tt)
-  + Python - python repl toggle terminal (<leader>tp)
-  + Node - Node is needed for a lot of the LSPs,
-  and for the node repl toggle terminal (<leader>tn)
+  - ripgrep - live grep telescope search (\<leader>fw)
+  - lazygit - git ui toggle terminal (\<leader>tl or \<leader>gg)
+  - go DiskUsage() - disk usage toggle terminal (\<leader>tu)
+  - bottom - process viewer toggle terminal (\<leader>tt)
+  - Python - python repl toggle terminal (\<leader>tp)
+  - Node - Node is needed for a lot of the LSPs,
+  and for the node repl toggle terminal (\<leader>tn)
 
 ### インストール
 
@@ -170,19 +170,19 @@ Microsoftが2016年6月に仕様を公開しました。
 
 ~~~help lspconfig-all ~~~でLSPの一覧を見ることができます。
 
-~~~bash
+~~~vim
 :LspInstall html css pyright quick_lint_js
 ~~~
 
 #### 言語パーサー(language parser)のイントール
 
-~~~bash
+~~~vim
 :TSInstall python
 ~~~
 
 #### デバッガlanguage parser)のイントール
 
-~~~bash
+~~~vim
 :DapInstall python
 ~~~
 
@@ -200,12 +200,12 @@ Microsoftが2016年6月に仕様を公開しました。
 #### AstroNvimの更新
 
 AstroNvimのリポジトリから最新のアップデートを入手するには
-```:AstroUpdate```を実行するか<leader>pA 
+```:AstroUpdate```を実行するか\<leader>pA
 
 #### AstroNvimパッケージの更新
 
 Neovim プラグインと Masonのパッケージの両方を更新するときは
-```:AstroUpdatePackages```を実行するか<leader>pa
+```:AstroUpdatePackages```を実行するか\<leader>pa
 
 #### Reload AstroNvim (EXPERIMENTAL)
 
