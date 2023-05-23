@@ -201,15 +201,32 @@ Run :AstroReload to reload the AstroNvim configuration and any new user configur
 ### コンフィグレーション
 
 カスタムユーザー構成の作成を開始するには、user/フォルダーを作成する必要が
-あります。ユーザー設定ファイルを簡単に作成するためのテンプレートリポジトリを
-作成しました:
-[Astronvim/user_example](https://github.com/AstroNvim/user_example)
+あります。
 
-提供されたテンプレートリポジトリを使用して、GitHubアカウントに新しい
-ユーザー構成リポジトリを作成したり、直接クローンを作成したりできます。
+~~~
+cd ~/.config/nvim/lua
+mkdir user
+~~~
+
+ユーザー設定ファイルを簡単に作成するためのテンプレートリポジトリを
+作成しました:
+[Astronvim/user_example]
+
+[Astronvim/user_example]で提供されたテンプレートリポジトリを使用して、GitHubアカウントに新しい
+ユーザー構成リポジトリを作成します。
+
+- ブラウザで[Astronvim/user_example]を開きます
+- ログインされていなければログインします
+- もう一度[Astronvim/user_example]を開きます
+- Use this templateをクリックしてCreate a new repositoryを選択します
+- Repository nameにastronvim_confなどとします
+
+[Astronvim/user_example]:(https://github.com/AstroNvim/user_example)
+
+直接クローンを作成したりできます。
 テンプレートから新しいリポジトリを作成した後、次を実行できます。
 
 ~~~
-git clone https://github.com/<username>/<config_repo ~/.config/nvim/lua/user
+git clone https://github.com/<username>/<config_repo> ~/.config/nvim/lua/user
 ~~~
 
