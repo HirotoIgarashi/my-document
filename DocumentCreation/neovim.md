@@ -250,3 +250,19 @@ git clone https://github.com/<your_github_user_name>/<your_repository> ~/.config
 ~~~bash
 gh repo clone <your_github_user_name>/astronvim_conf ~/.config/nvim/lua/user
 ~~~
+
+## 基本的な使い方
+
+### 基本的なチュートリアル
+
+### デフォルトのマッピング
+
+## 構成
+
+### ユーザ構成の管理
+
+### 公開された自動コマンド
+
+### 設定メカニズム
+
+### 利用可能なユーザーオプション
