@@ -1,6 +1,6 @@
 # Neovim入門
 
-[Neovim]について簡単に説明します。
+このドキュメントは[Neovim]についての説明です。
 [Neovim]の公式ホームページによるとNeovimは
 「超拡張可能な Vim ベースのテキストエディター」です。
 
@@ -8,7 +8,9 @@
 
 ## Neovimのインストール
 
-### Linux mintの場合
+NeovimのインストールについてLinux mint、MX Linuxでの方法を説明します。
+
+(1). Linux mintの場合
 
 Linux mintでインストールする例になります。
 
@@ -26,7 +28,7 @@ sudo apt-get update
 sudo apt-get install neovim
 ~~~
 
-### MX Linuxの場合
+(2). MX Linuxの場合
 
 appImageでインストールします。
 
