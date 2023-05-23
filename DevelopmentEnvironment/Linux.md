@@ -12,23 +12,23 @@
 
 簡単な例
 
-```
-$ cat /etc/issue
+```bash
+cat /etc/issue
 Linux Mint 21.1 Vera \n \l
 ```
 
 詳細を表示する例
 
-```
-$ cat /etc/lsb-release
+```bash
+cat /etc/lsb-release
 DISTRIB_ID=LinuxMint
 DISTRIB_RELEASE=21.1
 DISTRIB_CODENAME=vera
 DISTRIB_DESCRIPTION="Linux Mint 21.1 Vera"
 ```
 
-```
-$ cat /etc/os-release
+```bash
+cat /etc/os-release
 NAME="Linux Mint"
 VERSION="21.1 (Vera)"
 ID=linuxmint
