@@ -10,7 +10,7 @@
 
 NeovimのインストールについてLinux mint、MX Linuxでの方法を説明します。
 
-(1). Linux mintの場合
+### Linux mintの場合
 
 Linux mintでインストールする例になります。
 
@@ -28,14 +28,14 @@ sudo apt-get update
 sudo apt-get install neovim
 ~~~
 
-(2). MX Linuxの場合
+### MX Linuxの場合
 
 appImageでインストールします。
 
 ## ターミナルの設定について
 
 Linux mintのxfce Editionを利用している場合はターミナルの名称は
-Xfce Terminalになります。キーボードでCtrl + Alt + tで起動します。
+Xfce Terminalになります。ターミナルを起動するにはキーボードでCtrl + Alt + t。
 
 ### ターミナルの大きさを設定する
 
@@ -163,7 +163,7 @@ git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 nvim
 ~~~
 
-### セットアップ
+### Astronvimのセットアップ
 
 #### LSPのイントール
 
@@ -242,12 +242,13 @@ mkdir user
 
 直接クローンを作成したりできます。
 テンプレートから新しいリポジトリを作成した後、次を実行できます。
+なお<your_github_user_name>はあなたのgithubのユーザ名です。
 
 ~~~bash
 git clone https://github.com/<your_github_user_name>/<your_repository> ~/.config/nvim/lua/user
 ~~~
 
-次のghコマンドを使う場合はgh auth login以降の手順を終わらせておく必要があります。
+次のghコマンドを使う場合は`gh auth login`以降の手順を終わらせておく必要があります。
 
 ~~~bash
 gh repo clone <your_github_user_name>/astronvim_conf ~/.config/nvim/lua/user
