@@ -117,7 +117,7 @@ npm install tree-sitter-cli
 システムクリップボードとの統合にはクリップボードツールが必要です
 クリップボードツールがインストールされているかを確認します。
 
-~~~vim
+~~~Vim script
 :echo has('clipboard')
 ~~~
 
@@ -170,7 +170,7 @@ nvim
 LSPとはlanguage Server Protocolのことです。
 Microsoftが2016年6月に仕様を公開しました。
 
-~~~help lspconfig-all ~~~でLSPの一覧を見ることができます。
+help lspconfig-all ~~~でLSPの一覧を見ることができます。
 
 ~~~Vim script
 :LspInstall html css pyright quick_lint_js
