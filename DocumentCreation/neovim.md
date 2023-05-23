@@ -62,17 +62,26 @@ MiscDefaultGeometry=142x38+10+60
 
 ### AstroNvimの特徴
 
-- Statusline, Winbar, and Tabline with Heirline
-- Plugin management with lazy.nvim
-- Package management with mason.nvim
-- File explorer with Neo-tree
-- Autocompletion with Cmp
-- Git integration with Gitsigns
-- Terminal with Toggleterm
-- Fuzzy finding with Telescope
-- Syntax highlighting with Treesitter
-- Formatting and linting with Null-ls
-- Language Server Protocol with Native LSP
+- [Heirline](https://github.com/rebelot/heirline.nvim)を使った
+ステータスライン、ウインドウズバー及びタブライン
+- [Lazy.nvim](https://github.com/folke/lazy.nvim)を使った
+プラグイン管理
+- [mason.nvim](https://github.com/williamboman/mason.nvim)を使った
+パッケージ管理
+- [Neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim)を使った
+ファイルエクスプローラー
+- [Cmp](https://github.com/hrsh7th/nvim-cmp)を使ったオートコンプリート
+- [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)を使ったGitの統合
+- [Toggleterm](https://github.com/akinsho/toggleterm.nvim)を備えた
+ターミナル
+- [Telescope](https://github.com/nvim-telescope/telescope.nvim)を使った
+あいまい検索
+- [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)を
+使った構文の強調表示
+- [Null-ls](https://github.com/jose-elias-alvarez/null-ls.nvim)を
+使ったフォーマットとリンティング
+- [Native LSP](https://github.com/neovim/nvim-lspconfig)を使った
+言語サーバープロトコル
 
 ### AstroNvimの要件
 
