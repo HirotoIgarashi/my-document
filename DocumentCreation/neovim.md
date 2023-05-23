@@ -230,7 +230,7 @@ mkdir user
 - Use this templateをクリックしてCreate a new repositoryを選択します
 - Repository nameにastronvim_confなどとします
 
-[Astronvim/user_example]: (https://github.com/AstroNvim/user_example)
+[Astronvim/user_example]: https://github.com/AstroNvim/user_example
 
 直接クローンを作成したりできます。
 テンプレートから新しいリポジトリを作成した後、次を実行できます。
