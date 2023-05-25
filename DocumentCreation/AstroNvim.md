@@ -33,6 +33,7 @@ sudo apt-get install neovim
 
 ### MX Linuxの場合
 
+TODO:
 appImageでインストールします。
 
 ## ターミナルの設定について
@@ -133,13 +134,16 @@ sudo apt install xclip
 - Terminal with true color support
 (for the default theme, otherwise it is dependent on the theme you are using)
 - オプションの要件
-  - ripgrep - live grep telescope search (\<leader>fw)
-  - lazygit - git ui toggle terminal (\<leader>tl or \<leader>gg)
-  - go DiskUsage() - disk usage toggle terminal (\<leader>tu)
-  - bottom - process viewer toggle terminal (\<leader>tt)
-  - Python - python repl toggle terminal (\<leader>tp)
-  - Node - Node is needed for a lot of the LSPs,
-  and for the node repl toggle terminal (\<leader>tn)
+  - [ripgrep](https://github.com/BurntSushi/ripgrep) - live grep telescope
+  search ( \<leader>fw)
+  - [lazygit](https://github.com/jesseduffield/lazygit) - git ui
+  トグルターミナル (\<leader>tlまたは\<leader>gg)
+  - [go DiskUsage()](https://github.com/dundee/gdu) - ディスク使用量切り替え
+  ターミナル ( \<leader>tu)
+  - [bottom](https://github.com/ClementTsang/bottom) - プロセスビューアの
+  切り替えターミナル ( \<leader>tt)
+  - [Python](https://www.python.org/) - Python repl トグルターミナル ( \<leader>tp)
+  - [Node](https://nodejs.org/ja) - Nodeは多くのLSPとnode replトグルターミナル ( \<leader>tn)に必要です。
 
 ### インストール
 
