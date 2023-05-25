@@ -248,7 +248,7 @@ mkdir user
 git clone https://github.com/<your_github_user_name>/<your_repository> ~/.config/nvim/lua/user
 ~~~
 
-次のghコマンドを使う場合は`gh auth login`以降の手順を終わらせておく必要があります。
+次のghコマンドを使う場合は`gh auth login`の手順を終わらせておく必要があります。
 
 ~~~bash
 gh repo clone <your_github_user_name>/astronvim_conf ~/.config/nvim/lua/user
@@ -256,11 +256,19 @@ gh repo clone <your_github_user_name>/astronvim_conf ~/.config/nvim/lua/user
 
 ## Astronvimの基本的な使い方
 
+TODO:
+
 ### 基本的なチュートリアル
+
+NOTE:
 
 ### デフォルトのマッピング
 
+FIX:
+
 ## 構成
+
+TODO:
 
 ### ユーザ構成の管理
 
