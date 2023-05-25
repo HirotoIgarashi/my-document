@@ -1,9 +1,12 @@
-# Neovim入門
+# AstroNvim入門
 
-このドキュメントは[Neovim]についての説明です。 [Neovim]の公式ホームページに
-よるとNeovimは「超拡張可能な Vim ベースのテキストエディター」です。
-また、このドキュメントでは[Neovim]を使いやすくした[Astronvim]の説明もします。
+このドキュメントは[AstroNvim]についての説明です。[AstroNvim]は、
+優れたプラグインのセットで拡張可能で使いやすい、美的で機能が豊富な
+[Neovim]の構成です。
+[Neovim]の公式ホームページによるとNeovimは「超拡張可能なVim ベースの
+テキストエディター」とのことです。
 
+[AstroNvim]: https://astronvim.com/
 [Neovim]: https://neovim.io/
 
 ## Neovimのインストール
@@ -12,7 +15,7 @@ NeovimのインストールについてLinux mint、MX Linuxでの方法を説�
 
 ### Linux mintの場合
 
-Linux mintでインストールする例になります。
+Linux mintでインストールする手順を説明します。
 
 aptのリポジトリを追加するために以下のコマンドを実行します。
 
@@ -60,8 +63,6 @@ MiscDefaultGeometry=142x38+10+60
 ## AstroNvimのインストール
 
 [AstroNvim]は、優れたプラグインのセットで拡張可能で使いやすい、美的で機能が豊富な neovim 構成です。
-
-[AstroNvim]: https://astronvim.com/
 
 ### AstroNvimの特徴
 
