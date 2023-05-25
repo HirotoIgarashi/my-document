@@ -136,14 +136,15 @@ sudo apt install xclip
 - オプションの要件
   - [ripgrep](https://github.com/BurntSushi/ripgrep) - live grep telescope
   search ( \<leader>fw)
+  インストールされていない場合は```sudo apt install ripgre```を実行します。
   - [lazygit](https://github.com/jesseduffield/lazygit) - git ui
-  トグルターミナル (\<leader>tlまたは\<leader>gg)
+  切り替えターミナル (\<leader>tlまたは\<leader>gg)
   - [go DiskUsage()](https://github.com/dundee/gdu) - ディスク使用量切り替え
   ターミナル ( \<leader>tu)
   - [bottom](https://github.com/ClementTsang/bottom) - プロセスビューアの
   切り替えターミナル ( \<leader>tt)
-  - [Python](https://www.python.org/) - Python repl トグルターミナル ( \<leader>tp)
-  - [Node](https://nodejs.org/ja) - Nodeは多くのLSPとnode replトグルターミナル ( \<leader>tn)に必要です。
+  - [Python](https://www.python.org/) - Python repl 切り替えターミナル ( \<leader>tp)
+  - [Node](https://nodejs.org/ja) - Nodeは多くのLSPとnode repl 切り替えターミナル ( \<leader>tn)に必要です。
 
 ### インストール
 
