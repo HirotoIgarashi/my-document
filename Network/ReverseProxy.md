@@ -10,7 +10,7 @@
 
 [HAProxy]: https://www.haproxy.org/
 
-## Dynamic DNSの利用
+## ダイナミックDNSの利用
 
 [MyDNS.jp]
 
