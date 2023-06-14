@@ -68,9 +68,10 @@ sudo update-alternatives --install /usr/bin/nvim nvim ~/nvim.appimage 60
 sudo update-alternatives --config nvim
 ~~~
 
-Linuxのエディター:/usr/bin/editorに/usr/bin/nvimを登録する。
-実行するとエディターの一覧が表示されます。デフォルトが/usr/bin/nvimで
-あればそのままEnterキーを押すことで登録が完了します。
+Linuxのエディターである/usr/bin/editorに/usr/bin/nvimを登録する。
+以下のコマンドを実行するとエディターの一覧が表示されます。
+デフォルトが/usr/bin/nvimであればそのままEnterキーを押すことで登録が
+完了します。
 
 ~~~bash
 sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
