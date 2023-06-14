@@ -51,7 +51,8 @@ Run :checkhealth for more info
 ## ターミナルの設定について
 
 Linux mintのxfce Editionを利用している場合はターミナルの名称は
-Xfce Terminalになります。ターミナルを起動するにはキーボードでCtrl + Alt + t。
+Xfce Terminalになります。ターミナルを簡単に起動するにはキーボードで
+Ctrl + Alt + tを押します。
 
 ### ターミナルの大きさを設定する
 
