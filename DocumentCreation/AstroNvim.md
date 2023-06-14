@@ -59,8 +59,9 @@ update-alternatives: エラー: nvim の alternatives がありません
 ~~~
 
 nvimコマンドはLinuxには登録されていないことがわかります。
+
 ダウンロードしたnvim.appimageを/usr/bin/nvimにシンボリックリンクをはり
-nvimコマンドと使用できるように以下のコマンドを実行します。
+nvimコマンドとして使用できるように以下のコマンドを実行します。
 
 ~~~bash
 sudo update-alternatives --install /usr/bin/nvim nvim ~/nvim.appimage 60
@@ -68,6 +69,8 @@ sudo update-alternatives --config nvim
 ~~~
 
 Linuxのエディター:/usr/bin/editorに/usr/bin/nvimを登録する。
+実行するとエディターの一覧が表示されます。デフォルトが/usr/bin/nvimで
+あればそのままEnterキーを押すことで登録が完了します。
 
 ~~~bash
 sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
