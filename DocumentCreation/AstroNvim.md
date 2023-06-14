@@ -48,6 +48,25 @@ LuaJIT 2.1.0-beta3
 Run :checkhealth for more info
 ~~~
 
+### Linuxのエディターとして設定する
+
+Linuxのエディターとして設定するにはupdate-alternativesシステムを使用します。
+現在のnvimの設定を確認します。
+
+~~~bash
+sudo update-alternatives --display nvim
+update-alternatives: エラー: nvim の alternatives がありません
+~~~
+
+nvimコマンドはLinuxには登録されていないことがわかります。
+
+~~~bash
+sudo update-alternatives --install /usr/bin/nvim nvim ~/nvim.appimage 60
+sudo update-alternatives --config nvim
+sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
+sudo update-alternatives --config editor
+~~~
+
 ## ターミナルの設定について
 
 Linux mintのxfce Editionを利用している場合はターミナルの名称は
@@ -237,7 +256,7 @@ feature and may lead to instability until the next restart.
 
 ### コンフィグレーション
 
-カスタムユーザー構成の作成を開始するには、user/フォルダーを作成する必要が
+カスタムユーザー構成の作成を開始するには、userフォルダーを作成する必要が
 あります。
 
 ~~~bash
@@ -272,6 +291,14 @@ git clone https://github.com/<your_github_user_name>/<your_repository> ~/.config
 
 ~~~bash
 gh repo clone <your_github_user_name>/astronvim_conf ~/.config/nvim/lua/user
+~~~
+
+## :checkhealthで動作環境をチェックする
+
+nvimを起動させ動作環境をチェックします。
+
+~~~vim
+:checkhealth
 ~~~
 
 ## Astronvimの基本的な使い方
