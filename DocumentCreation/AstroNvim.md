@@ -51,7 +51,7 @@ Run :checkhealth for more info
 ### Linuxのエディターとして設定する
 
 Linuxのエディターとして設定するにはupdate-alternativesシステムを使用します。
-現在のnvimの設定を確認します。
+現在のnvimコマンドの設定を確認します。
 
 ~~~bash
 sudo update-alternatives --display nvim
@@ -59,12 +59,30 @@ update-alternatives: エラー: nvim の alternatives がありません
 ~~~
 
 nvimコマンドはLinuxには登録されていないことがわかります。
+ダウンロードしたnvim.appimageを/usr/bin/nvimにシンボリックリンクをはり
+nvimコマンドと使用できるように以下のコマンドを実行します。
 
 ~~~bash
 sudo update-alternatives --install /usr/bin/nvim nvim ~/nvim.appimage 60
 sudo update-alternatives --config nvim
+~~~
+
+Linuxのエディター:/usr/bin/editorに/usr/bin/nvimを登録する。
+
+~~~bash
 sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
 sudo update-alternatives --config editor
+~~~
+
+変更後のnvimコマンドの設定を確認します。
+
+~~~bash
+sudo update-alternatives --display nvim
+nvim - 自動モード
+  最適なリンクのバージョンは '/home/hiroto/nvim.appimage' です
+  リンクは現在 /home/hiroto/nvim.appimage を指しています
+  リンク nvim は /usr/bin/nvim です
+/home/hiroto/nvim.appimage - 優先度 60
 ~~~
 
 ## ターミナルの設定について
