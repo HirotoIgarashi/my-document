@@ -11,30 +11,42 @@
 
 ## Neovimのインストール
 
-NeovimのインストールについてLinux mint、MX Linuxでの方法を説明します。
-
-### Linux mintの場合
-
-Linux mintでインストールする手順を説明します。
-
-aptのリポジトリを追加するために以下のコマンドを実行します。
+NeovimのインストールについてLinux mint、とMX Linuxで確認した方法を説明します。
+リリースページには、ほとんどのLinux システムで実行できるAppImageが提供されます。
+インストールは必要なく、nvim.appimageをダウンロードして実行するだけです。
+(Linux ディストリビューションが 4 年以上古い場合は動作しない可能性があります。)
 
 ~~~bash
-sudo apt-get install software-properties-common
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+./nvim.appimage
 ~~~
 
-実際にNeovimをインストールします。
+~/.bashrcに以下の行を追加します。
+
+~~~bashrc
+alias nvim='~/nvim.appimage'
+~~~
+
+編集した.bashrcを以下のコマンドで反映します。
 
 ~~~bash
-sudo add-apt-repository ppa:neovim-ppa/stable
-sudo apt-get update
-sudo apt-get install neovim
+. .bashrc
 ~~~
 
-### MX Linuxの場合
+バージョンを確認します。
 
-TODO:
-appImageでインストールします。
+~~~bash
+nvim --version
+NVIM v0.9.1
+Build type: Release
+LuaJIT 2.1.0-beta3
+
+      システム vimrc: "$VIM/sysinit.vim"
+       省略時の $VIM: "/__w/neovim/neovim/build/nvim.AppDir/usr/share/nvim"
+
+Run :checkhealth for more info
+~~~
 
 ## ターミナルの設定について
 
