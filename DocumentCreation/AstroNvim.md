@@ -231,7 +231,11 @@ nvim
 LSPとはlanguage Server Protocolのことです。
 Microsoftが2016年6月に仕様を公開しました。
 
-help lspconfig-all ~~~でLSPの一覧を見ることができます。
+~~~vim
+:help lspconfig-all
+~~~
+
+でLSPの一覧を見ることができます。
 
 ~~~Vim script
 :LspInstall html css pyright quick_lint_js
