@@ -237,19 +237,19 @@ Microsoftが2016年6月に仕様を公開しました。
 
 でLSPの一覧を見ることができます。
 
-~~~Vim script
+~~~vim
 :LspInstall html css pyright quick_lint_js
 ~~~
 
 #### 言語パーサー(language parser)のイントール
 
-~~~Vim script
+~~~vim
 :TSInstall python
 ~~~
 
 #### デバッガlanguage parser)のイントール
 
-~~~Vim script
+~~~vim
 :DapInstall python
 ~~~
 
