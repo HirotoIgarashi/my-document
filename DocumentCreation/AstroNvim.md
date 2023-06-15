@@ -327,6 +327,18 @@ nvimを起動させ動作環境をチェックします。
 :checkhealth
 ~~~
 
+pynvim関連でWARNINGがでた場合はpynvimをインストールすることで対応します。
+
+~~~bash
+python3 -m pip install --user --upgrade pynvim
+~~~
+
+Node.js関連でWARNINGがでた場合はnpmでneovimをインストールすることで対応します。
+
+~~~bash
+npm install -g neovim
+~~~
+
 ## Astronvimの基本的な使い方
 
 TODO:
