@@ -24,6 +24,17 @@
 
 ### 強調
 
+### 表(Table)
+
+入力例
+
+~~~markdown
+|  TH  |  TH  |
+| ---- | ---- |
+|  TD  |  TD  |
+|  TD  |  TD  |
+~~~
+
 ## MarkdownPreview
 
 ## markdown-toc
