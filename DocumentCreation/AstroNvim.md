@@ -1,6 +1,8 @@
 # AstroNvim入門
 
-このドキュメントは[AstroNvim]についての説明です。[AstroNvim]は、 優れたプラグインのセットで拡張可能で使いやすい、美的で機能が豊富な [Neovim]の構成です。
+このドキュメントは[AstroNvim]についての説明です。[AstroNvim]は、
+優れたプラグインのセットで拡張可能で使いやすい、美的で機能が豊富な
+[Neovim]の構成です。
 [Neovim]の公式ホームページによるとNeovimは「超拡張可能なVim ベースの
 テキストエディター」とのことです。
 
@@ -20,6 +22,8 @@ chmod u+x nvim.appimage
 ./nvim.appimage
 ~~~
 
+### 現在ログインしているユーザーだけに設定する場合
+
 ~/.bashrcに以下の行を追加します。
 
 ~~~bashrc
@@ -32,24 +36,9 @@ alias nvim='~/nvim.appimage'
 . .bashrc
 ~~~
 
-バージョンを確認します。
-
-~~~bash
-nvim --version
-NVIM v0.9.1
-Build type: Release
-LuaJIT 2.1.0-beta3
-
-      システム vimrc: "$VIM/sysinit.vim"
-       省略時の $VIM: "/__w/neovim/neovim/build/nvim.AppDir/usr/share/nvim"
-
-Run :checkhealth for more info
-~~~
-
 ### Linuxのエディターとして設定する
 
-Linuxのエディターとして設定するにはupdate-alternativesシステムを使用します。
-現在のnvimコマンドの設定を確認します。
+Linuxのエディターとして設定するにはupdate-alternativesシステムを使用します。 現在のnvimコマンドの設定を確認します。
 
 ~~~bash
 sudo update-alternatives --display nvim
@@ -58,8 +47,7 @@ update-alternatives: エラー: nvim の alternatives がありません
 
 nvimコマンドはLinuxには登録されていないことがわかります。
 
-ダウンロードしたnvim.appimageを/usr/bin/nvimにシンボリックリンクをはり
-nvimコマンドとして使用できるように以下のコマンドを実行します。
+ダウンロードしたnvim.appimageを/usr/bin/nvimにシンボリックリンクをはり nvimコマンドとして使用できるように以下のコマンドを実行します。
 
 ~~~bash
 sudo update-alternatives --install /usr/bin/nvim nvim ~/nvim.appimage 60
@@ -67,9 +55,8 @@ sudo update-alternatives --config nvim
 ~~~
 
 Linuxのエディターである/usr/bin/editorに/usr/bin/nvimを登録する。
-以下のコマンドを実行するとエディターの一覧が表示されます。
-デフォルトが/usr/bin/nvimであればそのままEnterキーを押すことで登録が
-完了します。
+以下のコマンドを実行するとエディターの一覧が表示されます。 デフォルトが
+/usr/bin/nvimであればそのままEnterキーを押すことで登録が 完了します。
 
 ~~~bash
 sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
@@ -85,6 +72,20 @@ nvim - 自動モード
   リンクは現在 /home/hiroto/nvim.appimage を指しています
   リンク nvim は /usr/bin/nvim です
 /home/hiroto/nvim.appimage - 優先度 60
+~~~
+
+### バージョンを確認する
+
+~~~bash
+nvim --version
+NVIM v0.9.1
+Build type: Release
+LuaJIT 2.1.0-beta3
+
+      システム vimrc: "$VIM/sysinit.vim"
+       省略時の $VIM: "/__w/neovim/neovim/build/nvim.AppDir/usr/share/nvim"
+
+Run :checkhealth for more info
 ~~~
 
 ## ターミナルの設定について
@@ -110,12 +111,14 @@ MiscDefaultGeometry=142x38+10+60
 
 #### 「ターミナルの設定」を開き「外観」から設定する方法
 
-ターミナルを起動します。メニューバーの「編集」をクリックして「設定」を選択して「ターミナルの設定」画面を開きます。
-「外観」タブを表示します。
+ターミナルを起動します。メニューバーの「編集」をクリックして「設定」を選択して
+「ターミナルの設定」画面を開きます。「外観」タブを表示します。
+デフォルトジオメトリの項目の数値を変更します。
 
 ## AstroNvimのインストール
 
-[AstroNvim]は、優れたプラグインのセットで拡張可能で使いやすい、美的で機能が豊富な neovim 構成です。
+[AstroNvim]は、優れたプラグインのセットで拡張可能で使いやすい、
+美的で機能が豊富な neovim 構成です。
 
 ### AstroNvimの特徴
 
@@ -144,8 +147,8 @@ MiscDefaultGeometry=142x38+10+60
 
 - Nerd Fonts (Optional with manual intervention: See Recipes/Customizing Icons)
 
-[Nerd Fonts]はアイコニックフォントのアグリゲーター、コレクション、パッチャーです。
-例としてJetBrainsMono Nerd Fontをインストールしてみます。
+[Nerd Fonts]はアイコニックフォントのアグリゲーター、コレクション、
+パッチャーです。 例としてJetBrainsMono Nerd Fontをインストールしてみます。
 
 [Nerd Fonts]のホームページからJetBrainsMono.zipをダウンロードして解凍します。
 
@@ -292,8 +295,8 @@ mkdir user
 作成しました:
 [Astronvim/user_example]
 
-[Astronvim/user_example]で提供されたテンプレートリポジトリを使用して、GitHubアカウントに新しい
-ユーザー構成リポジトリを作成します。
+[Astronvim/user_example]で提供されたテンプレートリポジトリを使用して、
+GitHubアカウントに新しいユーザー構成リポジトリを作成します。
 
 - ブラウザで[Astronvim/user_example]を開きます
 - ログインされていなければログインします
@@ -325,16 +328,10 @@ nvimを起動させ動作環境をチェックします。
 :checkhealth
 ~~~
 
-pynvim関連でWARNINGがでた場合はpynvimをインストールすることで対応します。
+Warningがでた場合はpynvimをインストールすることで対応します。
 
 ~~~bash
 python3 -m pip install --user --upgrade pynvim
-~~~
-
-Node.js関連でWARNINGがでた場合はnpmでneovimをインストールすることで対応します。
-
-~~~bash
-npm install -g neovim
 ~~~
 
 ## Astronvimの基本的な使い方
