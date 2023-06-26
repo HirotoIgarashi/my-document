@@ -2,9 +2,8 @@
 
 このドキュメントは[AstroNvim]についての説明です。[AstroNvim]は、
 優れたプラグインのセットで拡張可能で使いやすい、美的で機能が豊富な
-[Neovim]の構成です。
-[Neovim]の公式ホームページによるとNeovimは「超拡張可能なVim ベースの
-テキストエディター」とのことです。
+[Neovim]の構成です。[Neovim]の公式ホームページによるとNeovimは「超拡張可能な
+Vim ベースのテキストエディター」とのことです。
 
 [AstroNvim]: https://astronvim.com/
 [Neovim]: https://neovim.io/
@@ -161,7 +160,8 @@ fc-cache -fv ~/.local/share/fonts/
 
 - Neovim v0.8+ (Not including nightly)
 - Tree-sitter CLI
-(Note: This is only necessary if you want to use auto_install feature with Treesitter)
+(Note: This is only necessary if you want to use auto_install feature with
+Treesitter)
 
 Tree-sitter CLIをインストールするコマンドです。
 
@@ -196,11 +196,12 @@ sudo apt install xclip
   起動するときに必要です。(\<leader>tlまたは\<leader>gg)
   - [go DiskUsage()](https://github.com/dundee/gdu) - ディスク使用量ターミナルを
   起動するときに必要です。( \<leader>tu)
-  - [bottom](https://github.com/ClementTsang/bottom) - プロセスビューアのターミナルを
-  起動するときに必要です。( \<leader>tt)
-  - [Python](https://www.python.org/) - Python repl ターミナルを起動するときに必要です。 ( \<leader>tp)
-  - [Node](https://nodejs.org/ja) - Nodeは多くのLSPとnode repl ターミナルを起動するときに必要です。
-  ( \<leader>tn)に必要です。
+  - [bottom](https://github.com/ClementTsang/bottom) -
+  プロセスビューアのターミナルを起動するときに必要です。( \<leader>tt)
+  - [Python](https://www.python.org/) - Python repl
+  ターミナルを起動するときに必要です。 ( \<leader>tp)
+  - [Node](https://nodejs.org/ja) - Nodeは多くのLSPとnode repl
+  ターミナルを起動するときに必要です。( \<leader>tn)に必要です。
 
 ### インストール
 
@@ -311,7 +312,8 @@ GitHubアカウントに新しいユーザー構成リポジトリを作成し�
 なお<your_github_user_name>はあなたのgithubのユーザ名です。
 
 ~~~bash
-git clone https://github.com/<your_github_user_name>/<your_repository> ~/.config/nvim/lua/user
+git clone https://github.com/<your_github_user_name>/<your_repository>\
+~/.config/nvim/lua/user
 ~~~
 
 次のghコマンドを使う場合は`gh auth login`の手順を終わらせておく必要があります。
