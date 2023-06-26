@@ -1,9 +1,8 @@
 # AstroNvim入門
 
 このドキュメントは[AstroNvim]についての説明です。[AstroNvim]は、
-優れたプラグインのセットで拡張可能で使いやすい、美的で機能が豊富な
-[Neovim]の構成です。[Neovim]の公式ホームページによるとNeovimは「超拡張可能な
-Vim ベースのテキストエディター」とのことです。
+優れたプラグインのセットで拡張可能で使いやすい、美的で機能が豊富な [Neovim]の構成です。[Neovim]の公式ホームページによるとNeovimは
+「超拡張可能な Vim ベースのテキストエディター」とのことです。
 
 [AstroNvim]: https://astronvim.com/
 [Neovim]: https://neovim.io/
@@ -21,7 +20,7 @@ chmod u+x nvim.appimage
 ./nvim.appimage
 ~~~
 
-### 現在ログインしているユーザーだけに設定する場合
+### 現在ログインしているユーザーにだけ設定する場合
 
 ~/.bashrcに以下の行を追加します。
 
@@ -67,7 +66,7 @@ sudo update-alternatives --config editor
 ~~~bash
 sudo update-alternatives --display nvim
 nvim - 自動モード
-  最適なリンクのバージョンは '/home/hiroto/nvim.appimage' です
+  最適なリンクのバージョンは '/home/hiroto/nvim.appimage' です。
   リンクは現在 /home/hiroto/nvim.appimage を指しています
   リンク nvim は /usr/bin/nvim です
 /home/hiroto/nvim.appimage - 優先度 60
