@@ -338,23 +338,24 @@ python3 -m pip install --user --upgrade pynvim
 
 ## Astronvimの基本的な使い方
 
-### Opening file explorer
+### ファイルエクプローラーを表示/非表示する
 
-To toggle file explorer you need to press Space + e
+ファイルエクプローラーを表示したり非表示したりするには
+```Space + e```を押します。
 
-### Opening terminal
+### ターミナルを表示/非表示する
 
-To toggle terminal you need to press F7
+ターミナルを表示/非表示するには```F7```を押します。
 
 ### Opening LSP symbols
 
 To toggle symbols outline you need to press Space + lS
 
-### Close buffer
+### バッファーをクローズする
 
 To close the current buffer you need to press Space + c
 
-### Commenting
+### コメントにする
 
 To comment on a one or multiple lines you need to press Space + /
 
