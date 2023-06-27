@@ -34,7 +34,7 @@ alias nvim='~/nvim.appimage'
 . .bashrc
 ~~~
 
-### Linuxのエディターとして設定する
+### Linuxのエディターとして設定する場合
 
 Linuxのエディターとして設定するにはupdate-alternativesシステムを使用します。 現在のnvimコマンドの設定を確認します。
 
@@ -88,9 +88,9 @@ Run :checkhealth for more info
 
 ## ターミナルの設定について
 
-Linux mintのxfce Editionを利用している場合はターミナルの名称は
-Xfce Terminalになります。ターミナルを簡単に起動するにはキーボードで
-Ctrl + Alt + tを押します。
+Linux mintのxfce Editionを利用している場合はターミナルの名称は Xfce
+Terminalになります。ターミナルを簡単に起動するにはキーボードで
+```Ctrl + Alt + t```を押します。
 
 ### ターミナルの大きさを設定する
 
