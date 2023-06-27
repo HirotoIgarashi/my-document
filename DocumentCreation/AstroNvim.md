@@ -336,7 +336,7 @@ Warningがでた場合はpynvimをインストールすることで対応しま�
 python3 -m pip install --user --upgrade pynvim
 ~~~
 
-## Astronvimの基本的な使い方
+## Astronvimの基本的なチュートリアル
 
 ### ファイルエクプローラーを表示/非表示する
 
@@ -349,55 +349,55 @@ python3 -m pip install --user --upgrade pynvim
 
 ### Opening LSP symbols
 
-To toggle symbols outline you need to press Space + lS
+To toggle symbols outline you need to press ```Space + lS```
 
 ### バッファーをクローズする
 
-To close the current buffer you need to press Space + c
+現在のバッファーをクローズするには```Space + c```を押します。
 
 ### コメントにする
 
-To comment on a one or multiple lines you need to press Space + /
+1つもしくは複数の行をコメントにするには```Space + /```を押します。
 
-### Show line diagnostics
+### 行の診断結果を確認する
 
-To see line diagnostics you need to press g + l
+行の診断結果を確認するには```g + l```を押します。
 
 ### Hover document
 
-To hover over a document you need to press Shift + k
+To hover over a document you need to press ```Shift + k```
 
 ### Open rename prompt
 
-To open rename prompt you need to press Space + lr
+To open rename prompt you need to press ```Space + lr```
 
 ### Go to definition
 
-To go to the definition you need to press g + d
+To go to the definition you need to press ```g + d```
 
 ### Code actions
 
-To use code actions you need to press Space + la
+To use code actions you need to press ```Space + la```
 
-### Debugging
+### デバッギング
 
-To use the debugger you can press Space + D to see the available bindings and options
+デバッガーを使うときは```Space + D```を押します。 to see the available bindings and options
 
 ### Telescope search
 
-To find files you need to press Space + ff
+To find files you need to press ```Space + ff```
 
 ### Telescope grep
 
-To grep files you need to press Space + fw
+To grep files you need to press ```Space + fw```
 
 ### Telescope git status
 
-To get git status you need to press Space + gt
+To get git status you need to press ```Space + gt```
 
 ### Telescope old files
 
-To find old files you need to press Space + fo
+To find old files you need to press ```Space + fo```
 
 ### Which key
 
