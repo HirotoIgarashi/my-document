@@ -292,12 +292,11 @@ cd ~/.config/nvim/lua
 mkdir user
 ~~~
 
-ユーザー設定ファイルを簡単に作成するためのテンプレートリポジトリを
-作成しました:
+ユーザー設定ファイルを簡単に作成するためのテンプレートリポジトリを紹介します。
 [Astronvim/user_example]
 
 [Astronvim/user_example]で提供されたテンプレートリポジトリを使用して、
-GitHubアカウントに新しいユーザー構成リポジトリを作成します。
+自分のGitHubアカウントに新しいユーザー構成リポジトリを作成します。
 
 - ブラウザで[Astronvim/user_example]を開きます
 - ログインされていなければログインします
@@ -404,21 +403,21 @@ To find old files you need to press ```Space + fo```
 You can use which key plugin to get a menu of some helpful key bindings by
 pressing Space
 
-### Navigate buffers
+### バッファーをナビゲイトする
 
-To switch to the left buffer you need to press [b
+To switch to the left buffer you need to press ```[b```
 
-To switch to the right buffer you need to press ]b
+To switch to the right buffer you need to press ```]b```
 
-### Navigate windows
+### ウィンドウをナビゲイトする
 
-To switch to the left window you need to press Ctrl + h
+To switch to the left window you need to press ```Ctrl + h```
 
-To switch to the right window you need to press Ctrl + l
+To switch to the right window you need to press ```Ctrl + l```
 
-To switch to the top window you need to press Ctrl + k
+To switch to the top window you need to press ```Ctrl + k```
 
-To switch to the bottom window you need to press Ctrl + j
+To switch to the bottom window you need to press ```Ctrl + j```
 
 ### Resizing buffers
 
@@ -429,8 +428,6 @@ To resize buffer to the right you need to press Ctrl + right key
 To resize buffer to the top you need to press Ctrl + up key
 
 To resize buffer to the bottom you need to press Ctrl + down key
-
-### 基本的なチュートリアル
 
 ### デフォルトのマッピング
 
