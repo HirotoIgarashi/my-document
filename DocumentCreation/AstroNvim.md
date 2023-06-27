@@ -447,7 +447,6 @@ To resize buffer to the bottom you need to press Ctrl + down key
 | Right Window             | ```Ctrl + l```     |
 | 強制的に書き込む         | ```Ctrl + s```     |
 | 強制的に終了する         | ```Ctrl + q```     |
-| 強制的に終了する         | ```Ctrl + q```     |
 | 新しいファイルを作成する | ```Leader + n```   |
 | バッファーをクローズする | ```Leader + c```   |
 | 次のタブ (real vim tab)  | ```]t```           |
