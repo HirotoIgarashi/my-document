@@ -250,6 +250,8 @@ Microsoftが2016年6月に仕様を公開しました。
 
 でLSPの一覧を見ることができます。
 
+(注:lspconfigの設定をしないとこのコマンドは失敗します)
+
 ```vim
 :LspInstall html css pyright quick_lint_js
 ```
