@@ -166,7 +166,7 @@ fc-cache -fv ~/.local/share/fonts/
 Tree-sitter CLIをインストールするコマンドです。
 
 ```bash
-npm install tree-sitter-cli
+npm install -g tree-sitter-cli
 ```
 
 - A clipboard tool is necessary for the integration with the system clipboard
