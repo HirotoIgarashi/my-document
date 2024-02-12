@@ -12,8 +12,8 @@ Vim ベースのテキストエディター」とのことです。
 
 NeovimのインストールについてLinux mint、とMX Linuxで確認した方法を説明します。
 リリースページには、ほとんどのLinux システムで実行できるAppImageが提供されます。
-インストールは必要なく、nvim.appimageをダウンロードして実行するだけです。 (Linux
-ディストリビューションが 4 年以上古い場合は動作しない可能性があります。)
+インストールは必要なく、nvim.appimageをダウンロードして実行するだけです。
+(Linuxディストリビューションが 4 年以上古い場合は動作しない可能性があります。)
 
 ```bash
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
@@ -197,17 +197,20 @@ sudo apt install xclip
   - [lazygit](https://github.com/jesseduffield/lazygit) - git uiターミナルを
     起動するときに必要です。(\<leader>tlまたは\<leader>gg)
 
-    インストールされていない場合は[lazygitのgithubページ](https://github.com/jesseduffield/lazygit)を参考にしてインストールします。
+    インストールされていない場合は[lazygitのgithubページ]\
+    (<https://github.com/jesseduffield/lazygit>)を参考にしてインストールします。
 
   - [go DiskUsage()](https://github.com/dundee/gdu) - ディスク使用量ターミナルを
     起動するときに必要です。( \<leader>tu)
 
-    インストールされていない場合は[gduのgithubページ](https://github.com/dundee/gdu)を参考にしてインストールします。
+    インストールされていない場合は[gduのgithubページ]\
+    (<https://github.com/dundee/gdu>)を参考にしてインストールします。
 
   - [bottom](https://github.com/ClementTsang/bottom) -
     プロセスビューアのターミナルを起動するときに必要です。( \<leader>tt)
 
-    インストールされていない場合は[bottomのgithubページ](https://github.com/ClementTsang/bottom)を参考にしてインストールします。
+    インストールされていない場合は[bottomのgithubページ]\
+    (<https://github.com/ClementTsang/bottom>)を参考にしてインストールします。
 
   - [Python](https://www.python.org/) - Python repl
     ターミナルを起動するときに必要です。 ( \<leader>tp)
