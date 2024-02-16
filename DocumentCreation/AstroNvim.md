@@ -200,8 +200,8 @@ sudo apt install xclip
     インストールされていない場合は[lazygitのgithubページ]\
     (<https://github.com/jesseduffield/lazygit>)を参考にしてインストールします。
 
-  - [go DiskUsage()](https://github.com/dundee/gdu) - ディスク使用量ターミナルを
-    起動するときに必要です。( \<leader>tu)
+  - [go DiskUsage()](https://github.com/dundee/gdu) - ディスク使用量ターミナル
+    を起動するときに必要です。( \<leader>tu)
 
     インストールされていない場合は[gduのgithubページ]\
     (<https://github.com/dundee/gdu>)を参考にしてインストールします。
