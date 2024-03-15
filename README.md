@@ -2,7 +2,7 @@
 
 開発環境やプログラミングに関することを記述します。
 
-## ドキュメント作成 (Document Creation)
+## ドキュメント作成(Document Creation)
 
 ドキュメントは [MarkDown] で作成することを前提とします。
 
