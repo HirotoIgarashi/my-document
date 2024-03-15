@@ -1,6 +1,6 @@
 # マイドキュメント
 
-開発環境やらプログラミングに関することを記述する。
+開発環境やプログラミングに関することを記述します。
 
 ## ドキュメント作成 (Document Creation)
 
@@ -12,4 +12,4 @@
 前提とします。
 
 [GNU/Linux]: https://www.linuxfoundation.org/
-[Linux Mint]: https://linuxmint.com/
+[Linux Mint]: https://linuxmint.com/webview
