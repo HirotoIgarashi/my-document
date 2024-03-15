@@ -189,6 +189,7 @@ sudo apt install xclip
 - Terminal with true color support (for the default theme, otherwise it is
   dependent on the theme you are using)
 - オプションの要件
+
   - [ripgrep](https://github.com/BurntSushi/ripgrep) - live grep telescope
     search ( \<leader>fw)
 
