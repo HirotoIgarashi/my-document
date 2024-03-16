@@ -47,8 +47,8 @@ update-alternatives: エラー: nvim の alternatives がありません
 
 nvimコマンドはLinuxには登録されていないことがわかります。
 
-ダウンロードしたnvim.appimageを/usr/bin/nvimにシンボリックリンクをはり
-nvimコマンドとして使用できるように以下のコマンドを実行します。
+ダウンロードしたnvim.appimageを/usr/bin/nvimにシンボリックリンクをはりnvim
+コマンドとして使用できるように以下のコマンドを実行します。
 
 ```bash
 sudo update-alternatives --install /usr/bin/nvim nvim ~/nvim.appimage 60
@@ -91,16 +91,15 @@ Run :checkhealth for more info
 
 ## ターミナルの設定について
 
-Linux mintのxfce Editionを利用している場合はターミナルの名称は Xfce
-Terminalになります。ターミナルを簡単に起動するにはキーボードで
+Linux mintのxfce Editionを利用している場合はターミナルの名称は Xfce Terminal になります。ターミナルを簡単に起動するにはキーボードで
 `Ctrl + Alt + t`を押します。
 
 ### ターミナルの大きさを設定する
 
 ターミナルの大きさを指定するときは、
-~/.config/xfce4/terminal/terminalrcファイルを直接編集するか
-ターミナルのメニューバーから「編集」「設定」で「ターミナルの設定」を開き
-「外観」から設定する方法があります。
+~/.config/xfce4/terminal/terminalrcファイルを直接編集するかターミナルの
+メニューバーから「編集」「設定」で「ターミナルの設定」を開き「外観」から設定
+する方法があります。
 
 #### ~/.config/xfce4/terminal/terminalrcファイルを編集する方法
 
