@@ -4,7 +4,7 @@
 
 ## ドキュメント作成(Document Creation)
 
-ドキュメントは [MarkDown] で作成することを前提とします。
+ドキュメントはMarkDownで作成することを前提とします。
 
 ## 開発環境 (Development Environment)
 
