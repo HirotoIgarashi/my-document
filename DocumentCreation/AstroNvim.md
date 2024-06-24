@@ -1,5 +1,6 @@
 # AstroNvim入門
 
+gh repo clone HirotoIgarashi/my-document
 このドキュメントは[AstroNvim]についての説明です。[AstroNvim]は、
 優れたプラグインのセットで拡張可能で使いやすい、美的で機能が豊富な
 [Neovim]の構成です。[Neovim]の公式ホームページによるとNeovimは 「超拡張可能な
@@ -89,6 +90,8 @@ LuaJIT 2.1.0-beta3
 Run :checkhealth for more info
 ```
 
+gh repo clone HirotoIgarashi/my-document
+
 ## ターミナルの設定について
 
 Linux mintのxfce Editionを利用している場合はターミナルの名称は Xfce Terminal になります。ターミナルを簡単に起動するにはキーボードで
@@ -117,8 +120,8 @@ MiscDefaultGeometry=142x38+10+60
 
 ## AstroNvimのインストール
 
-[AstroNvim]は、優れたプラグインのセットで拡張可能で使いやすい、
-美的で機能が豊富な neovim 構成です。
+[AstroNvim]は、優れたプラグインのセットで拡張可能で使いやすい、美的で機能が
+豊富な neovim 構成です。
 
 ### AstroNvimの特徴
 
@@ -127,7 +130,7 @@ MiscDefaultGeometry=142x38+10+60
 - [Lazy.nvim](https://github.com/folke/lazy.nvim)を使った プラグイン管理
 - [mason.nvim](https://github.com/williamboman/mason.nvim)を使った
   パッケージ管理
-- [Neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim)を使った
+- [Neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvgh repo clone HirotoIgarashi/my-documentim)を使った
   ファイルエクスプローラー
 - [Cmp](https://github.com/hrsh7th/nvim-cmp)を使ったオートコンプリート
 - [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)を使ったGitの統合
