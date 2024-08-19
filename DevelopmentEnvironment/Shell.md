@@ -54,8 +54,6 @@ $ readlink "/proc/$$/exe"
   コマンドライン編集や履歴検索機能などの拡張を行っています。
   Linuxではtcshと人気を二分しているようです。
 
-- hsh
-
 - tcsh
 
   cshを基本に、コマンドライン編集、強力な補完とスペル補正、ビジュアルな
@@ -72,12 +70,39 @@ $ readlink "/proc/$$/exe"
   補完候補の制御のほか、複数行に渡るコマンドラインの編集も極めて容易に
   なっています。
 
-- Fishshell
+- [fish]
+
+[fish]: https://fishshell.com/
+
+fishとはFriendly interactive shellの略です。
 
 ## シェルプロンプト
 
-Linuxでターミナルを起動すると"$"という記号が表示されます。
+シェルはユーザにコマンドの入力を促すために"$"、"#"、">"などの記号を表示します。
+この記号をシェルプロンプトといいます。
+
+### いろいろなシェルプロンプト
+
+- [Powerline]
+
+- [Starship]
+
+[Starship]: https://starship.rs/ja-JP/
 
 ## ターミナル
 
+### いろいろなシェルプロンプト
+
+- [alacritty]
+
+[alacritty]: https://alacritty.org/
+
+- [kitty]
+
+[kitty]: https://sw.kovidgoyal.net/kitty/
+
+使用できるフォントが限られるという記事があったので導入は見送っている。
+
 ### ターミナルフォント
+
+NERD FONTSについて。
