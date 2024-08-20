@@ -87,7 +87,7 @@ fishとはFriendly interactive shellの略です。
 
 - [Starship]
 
-[Starship]: https://starshiphttps://wezfurlong.org/wezterm/install/linux.html.rs/ja-JP/
+[Starship]: https://starshiphttps
 
 ## ターミナル
 
