@@ -91,7 +91,11 @@ fishとはFriendly interactive shellの略です。
 
 ## ターミナル
 
-### いろいろなシェルプロンプト
+### いろいろなターミナル
+
+- [WezTerm]
+
+[WezTerm]: https://wezfurlong.org/wezterm/install/linux.html
 
 - [alacritty]
 
