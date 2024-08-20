@@ -87,7 +87,7 @@ fishとはFriendly interactive shellの略です。
 
 - [Starship]
 
-[Starship]: https://starshiphttps
+[Starship]: https://starship.rs/ja-JP/
 
 ## ターミナル
 
