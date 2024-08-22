@@ -91,6 +91,8 @@ fishとはFriendly interactive shellの略です。
 
 [Starship]: https://starship.rs/ja-JP/
 
+設定ファイルは~/.config/starship.tomlです。
+
 ## ターミナル
 
 ### いろいろなターミナル
@@ -98,6 +100,8 @@ fishとはFriendly interactive shellの略です。
 - [WezTerm]
 
 [WezTerm]: https://wezfurlong.org/wezterm/install/linux.html
+
+設定ファイルは~/.wezterm.luaです。
 
 - [alacritty]
 
