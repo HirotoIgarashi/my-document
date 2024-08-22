@@ -76,6 +76,8 @@ $ readlink "/proc/$$/exe"
 
 fishとはFriendly interactive shellの略です。
 
+設定ファイルは~/.config/fish/config.fishです。
+
 ## シェルプロンプト
 
 シェルはユーザにコマンドの入力を促すために"$"、"#"、">"などの記号を表示します。
