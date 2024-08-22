@@ -303,14 +303,6 @@ feature and may lead to instability until the next restart.
 
 ### コンフィグレーション
 
-カスタムユーザー構成の作成を開始するには、userフォルダーを作成する必要が
-あります。
-
-```bash
-cd ~/.config/nvim/lua
-mkdir user
-```
-
 ユーザー設定ファイルを簡単に作成するためのテンプレートリポジトリを紹介します。
 [Astronvim/user_example]
 
@@ -331,7 +323,7 @@ mkdir user
 
 ```bash
 git clone https://github.com/<your_github_user_name>/<your_repository>\
-~/.config/nvim/lua/user
+~/.config/nvim
 ```
 
 次のghコマンドを使う場合は`gh auth login`の手順を終わらせておく必要があります。

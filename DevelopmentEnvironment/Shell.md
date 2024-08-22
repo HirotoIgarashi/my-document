@@ -115,6 +115,4 @@ fishとはFriendly interactive shellの略です。
 
 ### ターミナルフォント
 
-
-
 NERD FONTSについて。
