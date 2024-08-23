@@ -73,7 +73,7 @@ $ readlink "/proc/$$/exe"
 
 [fish]: https://fishshell.com/
 
-fishとはFriendly interactive shellの略です。
+fishとは**F**riendly **i**nteractive **sh**ellの略です。
 
 設定ファイルは~/.config/fish/config.fishです。
 
@@ -101,6 +101,24 @@ fishとはFriendly interactive shellの略です。
 [WezTerm]: https://wezfurlong.org/wezterm/install/linux.html
 
 設定ファイルは~/.wezterm.luaです。
+
+```lua
+-- Pull in the wezterm API
+local wezterm = require("wezterm")
+
+-- This will hold the configuration.
+local config = wezterm.config_builder()
+
+-- This is where you actually apply your config choices
+
+-- For example, changing the color scheme:
+config.color_scheme = "AdventureTime"
+
+config.font = wezterm.font("Cica", { weight = "Bold", stretch = "Normal", style = "Normal" })
+config.font_size = 15
+
+-- and finally, return the configuration to wezterm
+```
 
 - [alacritty]
 
