@@ -71,11 +71,11 @@ $ readlink "/proc/$$/exe"
 
 - [fish]
 
-[fish]: https://fishshell.com/
+  [fish]: https://fishshell.com/
 
-fishとは**F**riendly **i**nteractive **sh**ellの略です。
+  fishとは**F**riendly **i**nteractive **sh**ellの略です。
 
-設定ファイルは~/.config/fish/config.fishです。
+  設定ファイルは~/.config/fish/config.fishです。
 
 ## シェルプロンプト
 
@@ -88,9 +88,9 @@ fishとは**F**riendly **i**nteractive **sh**ellの略です。
 
 - [Starship]
 
-[Starship]: https://starship.rs/ja-JP/
+  [Starship]: https://starship.rs/ja-JP/
 
-設定ファイルは~/.config/starship.tomlです。
+  設定ファイルは~/.config/starship.tomlです。
 
 ## ターミナル
 
@@ -98,9 +98,9 @@ fishとは**F**riendly **i**nteractive **sh**ellの略です。
 
 - [WezTerm]
 
-[WezTerm]: https://wezfurlong.org/wezterm/install/linux.html
+  [WezTerm]: https://wezfurlong.org/wezterm/install/linux.html
 
-設定ファイルは~/.wezterm.luaです。
+  設定ファイルは~/.wezterm.luaです。
 
 ```lua
 -- Pull in the wezterm API
@@ -122,14 +122,16 @@ config.font_size = 15
 
 - [alacritty]
 
-[alacritty]: https://alacritty.org/
+  [alacritty]: https://alacritty.org/
 
 - [kitty]
 
-[kitty]: https://sw.kovidgoyal.net/kitty/
+  [kitty]: https://sw.kovidgoyal.net/kitty/
 
 使用できるフォントが限られるという記事があったので導入は見送っている。
 
 ### ターミナルフォント
 
 NERD FONTSについて。
+
+Cicaフォント
