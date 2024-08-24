@@ -23,6 +23,11 @@ root のログインシェルを変更中
 使っているシェルを確認するときは`echo $SHELL`コマンドを使います。
 <!-- 使っているシェルを確認するときは`readlink "/proc/$$/exe"`コマンドを使います。 -->
 
+```bash
+echo $SHELL
+/usr/bin/fish
+```
+
 ```
 $ readlink "/proc/$$/exe"
 /usr/bin/bash
