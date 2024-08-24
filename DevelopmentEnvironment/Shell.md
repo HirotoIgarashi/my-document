@@ -92,7 +92,7 @@ $ readlink "/proc/$$/exe"
 
 - [Powerline]
 
-- [Starship]
+ [Starship]
 
   [Starship]: https://starship.rs/ja-JP/
 
