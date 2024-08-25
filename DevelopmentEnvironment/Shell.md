@@ -21,6 +21,7 @@ root のログインシェルを変更中
 ## 使っているシェルを確認する
 
 使っているシェルを確認するときは`echo $SHELL`コマンドを使います。
+
 <!-- 使っているシェルを確認するときは`readlink "/proc/$$/exe"`コマンドを使います。 -->
 
 ```bash
@@ -82,6 +83,7 @@ $ readlink "/proc/$$/exe"
   fishとは**F**riendly **i**nteractive **sh**ellの略です。
 
   設定ファイルは~/.config/fish/config.fishです。
+
   - パッケージマネージャーの[fisher]をインストールする
     [fisher]: https://github.com/jorgebucaran/fisher
     - インストール
@@ -96,11 +98,11 @@ $ readlink "/proc/$$/exe"
 
 - [Powerline]
 
- [Starship]
+[Starship]
 
-  [Starship]: https://starship.rs/ja-JP/
+[Starship]: https://starship.rs/ja-JP/
 
-  設定ファイルは~/.config/starship.tomlです。
+設定ファイルは~/.config/starship.tomlです。
 
 ## ターミナル
 
@@ -159,7 +161,5 @@ Cicaフォント
 $ checkhealth
 
 - fisher install jorgebucaran/nvm.fish
-  
--  Missing "neovim" npm (or yarn, pnpm) package.
-   Run in shell: npm install -g neovim
-
+- Missing "neovim" npm (or yarn, pnpm) package.
+  Run in shell: npm install -g neovim
