@@ -91,7 +91,7 @@ $ readlink "/proc/$$/exe"
       curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 
     - nvimのインストール
-      fisher install jorgebucaran/nvm.fish
+      fisher install FabioAntunes/fish-nvm edc/bass
       nvim install latest
 
 ## シェルプロンプト
@@ -113,7 +113,6 @@ $ readlink "/proc/$$/exe"
 
 ### 使っているターミナルを変更する
 
-メニューから設定 -> デフォルトアプリケーション -> ユーティリティ ->
 ターミナルエミュレータとたどり、使用したいターミナルエミュレータを選択します。
 今回はweztermを選択します。
 
