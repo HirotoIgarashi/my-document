@@ -86,8 +86,13 @@ $ readlink "/proc/$$/exe"
 
   - パッケージマネージャーの[fisher]をインストールする
     [fisher]: https://github.com/jorgebucaran/fisher
+
     - インストール
-      curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fishe
+      curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+
+    - nvimのインストール
+      fisher install jorgebucaran/nvm.fish
+      nvim install latest
 
 ## シェルプロンプト
 
