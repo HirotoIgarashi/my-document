@@ -82,6 +82,10 @@ $ readlink "/proc/$$/exe"
   fishとは**F**riendly **i**nteractive **sh**ellの略です。
 
   設定ファイルは~/.config/fish/config.fishです。
+  - パッケージマネージャーの[fisher]をインストールする
+    [fisher]: https://github.com/jorgebucaran/fisher
+    - インストール
+      curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fishe
 
 ## シェルプロンプト
 
@@ -147,3 +151,15 @@ config.font_size = 15
 NERD FONTSについて。
 
 Cicaフォント
+
+## neovim
+
+### 動作環境を確認する
+
+$ checkhealth
+
+- fisher install jorgebucaran/nvm.fish
+  
+-  Missing "neovim" npm (or yarn, pnpm) package.
+   Run in shell: npm install -g neovim
+
