@@ -103,7 +103,7 @@ $ readlink "/proc/$$/exe"
 
 - [Powerline]
 
-[Starship]
+- [Starship]
 
 [Starship]: https://starship.rs/ja-JP/
 
@@ -112,6 +112,8 @@ $ readlink "/proc/$$/exe"
 ## ターミナル
 
 ### 使っているターミナルを変更する
+
+chshコマンドを使います。
 
 ターミナルエミュレータとたどり、使用したいターミナルエミュレータを選択します。
 今回はweztermを選択します。
