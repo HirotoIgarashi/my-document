@@ -77,6 +77,10 @@ nvim - 自動モード
 
 アンインストールするときは update-alternatives --remove <名前> <パス>
 
+```bash
+sudo update-alternatives --remove nvim /home/hiroto/nvim.appimage
+```
+
 ### バージョンを確認する
 
 ```bash
