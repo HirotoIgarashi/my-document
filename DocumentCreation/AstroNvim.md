@@ -75,6 +75,8 @@ nvim - 自動モード
 /home/hiroto/nvim.appimage - 優先度 60
 ```
 
+アンインストールするときは update-alternatives --remove <名前> <パス>
+
 ### バージョンを確認する
 
 ```bash
