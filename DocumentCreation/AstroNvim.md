@@ -48,7 +48,7 @@ alias nvim='~/nvim.appimage'
 Linuxのエディターとして設定するにはupdate-alternativesシステムを使用します。
 現在のnvimコマンドの設定を確認します。
 
-::: > [!TIP]
+::: tip
 
 > シェルに別名で登録しても機能するので update-alternatives することもないかな
 
