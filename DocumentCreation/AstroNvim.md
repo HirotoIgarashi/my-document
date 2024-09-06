@@ -1,8 +1,7 @@
 # AstroNvim入門
 
-gh repo clone HirotoIgarashi/my-document
 このドキュメントは[AstroNvim]についての説明です。[AstroNvim]は、
-優れたプラグインのセットで拡張可能で使いやすい、美的で機能が豊富な
+優れたプラグインのセットで拡張可能で使いやすい、美しく、機能が豊富な
 [Neovim]の構成です。[Neovim]の公式ホームページによるとNeovimは 「超拡張可能な
 Vim ベースのテキストエディター」とのことです。
 
@@ -90,14 +89,14 @@ LuaJIT 2.1.0-beta3
 Run :checkhealth for more info
 ```
 
-gh repo clone HirotoIgarashi/my-document
-
 ## ターミナルの設定について
 
 Linux mintのxfce Editionを利用している場合はターミナルの名称は Xfce Terminal になります。ターミナルを簡単に起動するにはキーボードで
 `Ctrl + Alt + t`を押します。
 
 ### ターミナルの大きさを設定する
+
+#### xfce4-terminalの場合
 
 ターミナルの大きさを指定するときは、
 ~/.config/xfce4/terminal/terminalrcファイルを直接編集するかターミナルの
@@ -117,6 +116,8 @@ MiscDefaultGeometry=142x38+10+60
 ターミナルを起動します。メニューバーの「編集」をクリックして「設定」を選択して
 「ターミナルの設定」画面を開きます。「外観」タブを表示します。
 デフォルトジオメトリの項目の数値を変更します。
+
+#### weztermの場合
 
 ## AstroNvimのインストール
 
@@ -180,7 +181,7 @@ npm install -g tree-sitter-cli
 :echo has('clipboard')
 ```
 
-結果が0だったらクリップボードツールがインストールされていないので
+結果が0だったらクリップボードツールがインストールされていないのでxclipやxselなどをインストールします。
 
 ```bash
 sudo apt install xclip
@@ -326,7 +327,8 @@ git clone https://github.com/<your_github_user_name>/<your_repository>\
 ~/.config/nvim
 ```
 
-次のghコマンドを使う場合は`gh auth login`の手順を終わらせておく必要があります。
+次のghコマンドを使う場合は`gh auth
+login`の手順を終わらせておく必要があります。まGithubのユーザ名とEメールアドレスの設定が必要になります。
 
 ```bash
 gh repo clone <your_github_user_name>/astronvim_conf ~/.config/nvim/lua/user
@@ -467,6 +469,11 @@ To resize buffer to the bottom you need to press Ctrl + down key
 | 水平に分割する           | `\|`           |
 
 #### バッファー
+
+| アクション      | アクション（日本語） | マッピング |
+| --------------- | -------------------- | ---------- |
+| Nex Buffer      | 次のバッファー       | `]b`       |
+| Previous Buffer | 前のバッファー       | `[b`       |
 
 #### Better Escape
 
