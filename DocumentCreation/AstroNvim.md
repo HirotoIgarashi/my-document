@@ -23,6 +23,8 @@ chmod u+x nvim.appimage
 
 ### 現在ログインしているユーザーにだけ設定する場合
 
+#### bashを使用している場合
+
 ~/.bashrcに以下の行を追加します。
 
 ```bashrc
@@ -35,10 +37,20 @@ alias nvim='~/nvim.appimage'
 . .bashrc
 ```
 
+#### fishを使用している場合
+
+```fish
+alias nvim='~/nvim.appimage'
+```
+
 ### Linuxのエディターとして設定する場合
 
 Linuxのエディターとして設定するにはupdate-alternativesシステムを使用します。
 現在のnvimコマンドの設定を確認します。
+
+::: > [!TIP]
+
+> シェルに別名で登録しても機能するので update-alternatives することもないかな
 
 ```bash
 sudo update-alternatives --display nvim
@@ -76,6 +88,7 @@ nvim - 自動モード
 ```
 
 アンインストールするときは update-alternatives --remove <名前> <パス>
+パスはリンクもとを指定します。
 
 ```bash
 sudo update-alternatives --remove nvim /home/hiroto/nvim.appimage
