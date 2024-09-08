@@ -498,7 +498,7 @@ To resize buffer to the bottom you need to press Ctrl + down key
 | Move Buffer Left      |                       | <b          |
 | Navigate to <br> buffer tab with  <br> interactive picker   |                       | Leader + bb |
 | Close all <br> buffers except the <br> current
-|                       | Leader + bc |
+|| Leader + bc |
 | Close all buffers     |                       | Leader + bC |
 | Delete a buffer  <br> tab with  <br> interactivepicker       |                       | Leader + bd |
 | Close all  <br>
