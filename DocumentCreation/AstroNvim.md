@@ -490,14 +490,15 @@ To resize buffer to the bottom you need to press Ctrl + down key
 
 #### バッファー
 
-| アクション            | アクション（日本語）  | マッピング |
-| --------------------- | --------------------- | ---------- |
-| Nex Buffer            | 次のバッファー        | ]b         |
-| Previous Buffer | 前のバッファー       | [b       |     
-| Move Buffer Right |                    |  >b          |
-| Move Buffer Left |                    | <b           |
+| アクション            | アクション（日本語）  | マッピング  |
+| --------------------- | --------------------- | ----------- |
+| Nex Buffer            | 次のバッファー        | ]b          |
+| Previous Buffer       | 前のバッファー        | [b          |     
+| Move Buffer Right     |                       | >b          |
+| Move Buffer Left      |                       | <b          |
 | Navigate to <br> 
-buffer tab with interactive picker |           | Leader + bb           |
+buffer tab with  <br>
+interactive picker      |                       | Leader + bb  |
 | Cdose all <br> 
 buffers except the current |           |  Leader + bc          |
 | Close all buffers                                                        |           | Leader + bC          |
