@@ -498,15 +498,18 @@ To resize buffer to the bottom you need to press Ctrl + down key
 | Move Buffer Left      |                       | <b          |
 | Navigate to <br> 
 buffer tab with  <br>
-interactive picker      |                       | Leader + bb  |
-| Cdose all <br> 
-buffers except the current |           |  Leader + bc          |
-| Close all buffers                                                        |           | Leader + bC          |
-| Delete a buffer <br>
-tab with interactive picker                         |           | Leader + bd           |
-| Close all buffers <br>
-to the left of the current                        |           | Leader + bl           |
-| Go to the previous <br> buffer                                           |           |  Leader + bp          |
+interactive picker      |                       | Leader + bb |
+| Cdose all <br>
+buffers except the <br>
+current                 |                       | Leader + bc |
+| Close all buffers     |                       | Leader + bC |
+| Delete a buffer  <br>
+tab with  <br>
+interactivepicker       |                       | Leader + bd |
+| Close all  <br>
+buffersto the left  <br>
+of the current          |                       | Leader + bl |
+|Go to the previous <br> buffer                                           |           |  Leader + bp          |
 | Close all buffers <br> to the right of the current                       |           | Leader + br |
 | Sort buffers by <br>
 extension |          | Leader + bse |
