@@ -490,12 +490,41 @@ To resize buffer to the bottom you need to press Ctrl + down key
 
 #### バッファー
 
-| アクション      | アクション（日本語） | マッピング |
-| --------------- | -------------------- | ---------- |
-| Nex Buffer      | 次のバッファー       | `]b`       |
-| Previous Buffer | 前のバッファー       | `[b`       |
+| アクション | アクション（日本語） | マッピング |
+| ---------- | ---------- | --- |
+| Nex Buffer | 次のバッファー       | `]b`       |     |
+| Previous Buffer | 前のバッファー       | `[b`       |     |
+| Move Buffer Right | >b                   |            |
+| Move Buffer Left | <b                   |            |
+| Navigate to <br> \
+buffer tab with interactive picker | Leader + bb          |            |
+| Close all <br> \
+buffers except the current | Leader + bc          |            |
+| Close all buffers                                                        | Leader + bC          |            |
+| Delete a buffer <br>\
+tab with interactive picker                         | Leader + bd          |            |
+| Close all buffers <br>\
+to the left of the current                        | Leader + bl          |            |
+| Go to the previous <br>\ buffer                                           | Leader + bp          |            |
+| Close all buffers <br>\ to the right of the current                       | Leader + br          |            |
+| Sort buffers by <br>\
+extension                                           | Leader + bse         |            |
+| Sort buffers by <br>\
+buffer number                                       | Leader + bsi         |            |
+| Sort buffers by <br>\
+last modification                                   | Leader + bsm         |            |
+| Sort buffers by <br>\
+full path                                           | Leader + bsp         |            |
+| Sort buffers by <br>\
+relative path                                       | Leader + bsr         |            |
+| Open a buffer tab <br>\
+in a new horizontal split with interactive picker | Leader + b\          |            |
+| Open a buffer tab <br>\
+in a new vertical split with interactive picker   | Leader + b           |            |
 
 #### Better Escape
+
+|
 
 #### Neo-Tree
 
