@@ -169,7 +169,7 @@ MiscDefaultGeometry=142x38+10+60
 - Nerd Fonts (Optional with manual intervention: See Recipes/Customizing Icons)
 
 [Nerd Fonts]はアイコニックフォントのアグリゲーター、コレクション、
-パッチャーです。 例としてJetBrainsMono Nerd Fontをインストールしてみます。
+パッチャーです。例としてJetBrainsMono Nerd Fontをインストールしてみます。
 
 [Nerd Fonts]のホームページからJetBrainsMono.zipをダウンロードして解凍します。
 
