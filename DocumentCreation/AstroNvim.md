@@ -502,24 +502,16 @@ To resize buffer to the bottom you need to press Ctrl + down key
 | Close all buffers     |                       | Leader + bC |
 | Delete a buffer  <br> tab with  <br> interactivepicker       |                       | Leader + bd |
 | Close all  <br>
-buffersto the left  <br>
-of the current          |                       | Leader + bl |
+buffersto the left  <br> of the current          |                       | Leader + bl |
 |Go to the previous <br> buffer                                           |           |  Leader + bp          |
-| Close all buffers <br> to the right of the current                       |           | Leader + br |
-| Sort buffers by <br>
-extension |          | Leader + bse |
-| Sort buffers by <br>
-buffer number |          | Leader + bsi           |
-| Sort buffers by <br>
-last modification |          | Leader + bsm           |
-| Sort buffers by <br>
-full path |          | Leader + bsp           |
-| Sort buffers by <br>
-relative path |          | Leader + bsr           |
-| Open a buffer tab <br>
-in a new horizontal split with interactive picker |          | Leader + b\            |
-| Open a buffer tab <br>
-in a new vertical split with interactive picker   |            | Leader + b           |
+| Close all buffers <br> to the right of the current                       |           | Leader + br | 
+| Sort buffers by <br> extension |          | Leader + bse |
+| Sort buffers by <br> buffer number |          | Leader + bsi           |
+| Sort buffers by <br> last modification |          | Leader + bsm           |
+| Sort buffers by <br> full path |          | Leader + bsp           |
+| Sort buffers by <br> relative path |          | Leader + bsr           |
+| Open a buffer tab <br> in a new horizontal split with interactive picker |          | Leader + b\            |
+| Open a buffer tab <br> in a new vertical split with interactive picker   |            | Leader + b           |
 
 #### Better Escape
 
