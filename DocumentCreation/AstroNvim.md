@@ -483,7 +483,7 @@ To resize buffer to the bottom you need to press Ctrl + down key
 | 新しいファイルを作成する | `Leader + n`   |
 | バッファーをクローズする | `Leader + c`   |
 | 次のタブ (real vim tab)  | `]t`           |
-| 前のタブ (real vim tab)  | `[t`           |
+| 前のタブ (read vim tab)  | `[t`           |
 | コメント                 | `Leader + /`   |
 | 垂直に分割する           | `\`            |
 | 水平に分割する           | `\|`           |
@@ -492,13 +492,13 @@ To resize buffer to the bottom you need to press Ctrl + down key
 
 | アクション            | アクション（日本語）  | マッピング |
 | --------------------- | --------------------- | ---------- |
-| Nex Buffer | 次のバッファー       | `]b`       |     |
-| Previous Buffer | 前のバッファー       | `[b`       |     |
+| Nex Buffer            | 次のバッファー        | ]b         |
+| Previous Buffer | 前のバッファー       | [b       |     
 | Move Buffer Right |                    |  >b          |
 | Move Buffer Left |                    | <b           |
 | Navigate to <br> 
 buffer tab with interactive picker |           | Leader + bb           |
-| Close all <br> 
+| Cdose all <br> 
 buffers except the current |           |  Leader + bc          |
 | Close all buffers                                                        |           | Leader + bC          |
 | Delete a buffer <br>
