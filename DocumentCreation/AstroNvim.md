@@ -155,8 +155,9 @@ MiscDefaultGeometry=142x38+10+60
 - [Cmp](https://github.com/hrsh7th/nvim-cmp)を使ったオートコンプリート
 - [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)を使ったGitの統合
 - [Toggleterm](https://github.com/akinsho/toggleterm.nvim)を備えた ターミナル
-- [Telescope](https://github.com/nvim-telescope/telescope.nvim)を使った
+
   あいまい検索
+
 - [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)を
   使った構文の強調表示
 - [Null-ls](https://github.com/jose-elias-alvarez/null-ls.nvim)を
@@ -169,7 +170,7 @@ MiscDefaultGeometry=142x38+10+60
 - Nerd Fonts (Optional with manual intervention: See Recipes/Customizing Icons)
 
 [Nerd Fonts]はアイコニックフォントのアグリゲーター、コレクション、
-パッチャーです。例としてJetBrainsMono Nerd Fontをインストールしてみます。
+パッチャーです。 例としてJetBrainsMono Nerd Fontをインストールしてみます。
 
 [Nerd Fonts]のホームページからJetBrainsMono.zipをダウンロードして解凍します。
 
