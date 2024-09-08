@@ -497,7 +497,7 @@ To resize buffer to the bottom you need to press Ctrl + down key
 | Move Buffer Right     |                       | >b          |
 | Move Buffer Left      |                       | <b          |
 | Navigate to <br> 
-buffer tab with  <br>
+buffer tab with  <br> 
 interactive picker      |                       | Leader + bb |
 | Cdose all <br>
 buffers except the <br>
