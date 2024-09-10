@@ -466,50 +466,50 @@ To resize buffer to the bottom you need to press Ctrl + down key
 
 #### 標準のマッピング
 
-| アクション               | マッピング     |
-| ------------------------ | -------------- |
-| リーダーキー             | `Space`        |
-| ローカルのリーダーキー   | `,`            |
-| 上方向に縮小する         | `Ctrl + Up`    |
-| 下方向に拡大する         | `Ctrl + Down`  |
-| 左方向に縮小する         | `Ctrl + Left`  |
-| 右方向に拡大する         | `Ctrl + Right` |
-| Up Window                | `Ctrl + k`     |
-| Down Window              | `Ctrl + j`     |
-| Left Window              | `Ctrl + h`     |
-| Right Window             | `Ctrl + l`     |
-| 強制的に書き込む         | `Ctrl + s`     |
-| 強制的に終了する         | `Ctrl + q`     |
-| 新しいファイルを作成する | `Leader + n`   |
-| バッファーをクローズする | `Leader + c`   |
-| 次のタブ (real vim tab)  | `]t`           |
-| 前のタブ (read vim tab)  | `[t`           |
-| コメント                 | `Leader + /`   |
-| 垂直に分割する           | `\`            |
-| 水平に分割する           | `\|`           |
+| アクション                     | アクション（日本語）         | マッピング     |
+| ------------------------------ | ---------------------------- | -------------- |
+| Leader key                     | リーダーキー                 | `Space`         |
+| Local Leader key               | ローカルのリーダーキー       | `,|
+| Resize up                      | 上方向に縮小する             | `Ctrl + Up`    |
+| Resize Down                    | 下方向に拡大する             | `Ctrl + Down`  |
+| Resize Left                    | 左方向に縮小する             | `Ctrl + Left`  |
+| Resize Right                   | 右方向に拡大する             | `Ctrl + Right` |
+| Up Window                      | ウインドウを上方向に移動する | `Ctrl + k`     |
+| Down Window                    | ウインドウを下方向に移動する | `Ctrl + j`     |
+| Left Window                    | ウインドウを左方向に移動する | `Ctrl + h`     |
+| Right Window                   | ウインドウを左方向に移動する | `Ctrl + l`     |
+| Force write                    | 強制的に書き込む             | `Ctrl + s`     |
+| Force Quit                     | 強制的に終了する             | `Ctrl + q`     |
+| New File                       | 新しいファイルを作成する     | `Leader + n`   |
+| Close Buffer                   | バッファーをクローズする     | `Leader + c`   |
+| Next Tab<br>(real vim tab)     | 次のタブ<br>(real vim tab)   | `]t`           |
+| Previous Tab<br>(real vim tab) | 前のタブ<br>(read vim tab)   | `[t`           |
+| Comment                        | コメント                     | `Leader + /`   |
+| Horizontal Split               | 垂直に分割する               | `\`            |
+| Vertical Split                 | 水平に分割する               | `\|`           |
 
 #### バッファー
 
-| アクション            | アクション（日本語）  | マッピング  |
-| --------------------- | --------------------- | ----------- |
-| Nex Buffer            | 次のバッファー        | ]b          |
-| Previous Buffer       | 前のバッファー        | [b          |     
-| Move Buffer Right     |                       | >b          |
-| Move Buffer Left      |                       | <b          |
-| Navigate to <br> buffer tab with  <br> interactive picker   |                       | Leader + bb |
-| Close all <br> buffers except the <br> current |                       | Leader + bc |
-| Close all buffers     |                       | Leader + bC |
-| Delete a buffer  <br> tab with  <br> interactivepicker       |                       | Leader + bd |
-| Close all  <br> buffersto the left  <br> of the current          |                       | Leader + bl |
-| Go to the previous <br> buffer                                           |           |  Leader + bp          |
-| Close all buffers <br> to the right of the current                       |           | Leader + br | 
-| Sort buffers by <br> extension |          | Leader + bse |
-| Sort buffers by <br> buffer number |          | Leader + bsi           |
-| Sort buffers by <br> last modification |          | Leader + bsm           |
-| Sort buffers by <br> full path |          | Leader + bsp           |
-| Sort buffers by <br> relative path |          | Leader + bsr           |
-| Open a buffer tab <br> in a new horizontal split with interactive picker |          | Leader + b\            |
-| Open a buffer tab <br> in a new vertical split with interactive picker   |            | Leader + b           |
+| アクション                                                               | アクション（日本語） | マッピング   |
+| ------------------------------------------------------------------------ | -------------------- | ------------ |
+| Nex Buffer                                                               | 次のバッファー       | ]b           |
+| Previous Buffer                                                          | 前のバッファー       | [b           |
+| Move Buffer Right                                                        | バッファーを右に移動する | >b           |
+| Move Buffer Left                                                         | バッファーを左に移動する                     | <b           |
+| Navigate to <br> buffer tab with <br> interactive picker                 |                      | Leader + bb  |
+| Close all <br> buffers except the <br> current |  今のバッファー以外のバッファーを閉じる | Leader + bc  |
+| Close all buffers | 全てのバッファーを閉じる | Leader + bC  |
+| Delete a buffer <br> tab with <br> interactivepicker                     |                      | Leader + bd  |
+| Close all <br> buffersto the left <br> of the current                    |                      | Leader + bl  |
+| Go to the previous <br> buffer                                           |                      | Leader + bp  |
+| Close all buffers <br> to the right of the current                       |                      | Leader + br  |
+| Sort buffers by <br> extension                                           |                      | Leader + bse |
+| Sort buffers by <br> buffer number                                       |                      | Leader + bsi |
+| Sort buffers by <br> last modification                                   |                      | Leader + bsm |
+| Sort buffers by <br> full path                                           |                      | Leader + bsp |
+| Sort buffers by <br> relative path                                       |                      | Leader + bsr |
+| Open a buffer tab <br> in a new horizontal split with interactive picker |                      | Leader + b\  |
+| Open a buffer tab <br> in a new vertical split with interactive picker   |                      | Leader + b   |
 
 #### Better Escape
 
