@@ -468,8 +468,8 @@ To resize buffer to the bottom you need to press Ctrl + down key
 
 | アクション                     | アクション（日本語）         | マッピング     |
 | ------------------------------ | ---------------------------- | -------------- |
-| Leader key                     | リーダーキー                 | `Space`         |
-| Local Leader key               | ローカルのリーダーキー       | `,|
+| Leader key                     | リーダーキー                 | `Space`        |
+| Local Leader key               | ローカルのリーダーキー       | `,             |
 | Resize up                      | 上方向に縮小する             | `Ctrl + Up`    |
 | Resize Down                    | 下方向に拡大する             | `Ctrl + Down`  |
 | Resize Left                    | 左方向に縮小する             | `Ctrl + Left`  |
@@ -490,30 +490,46 @@ To resize buffer to the bottom you need to press Ctrl + down key
 
 #### バッファー
 
-| アクション                                                               | アクション（日本語） | マッピング   |
-| ------------------------------------------------------------------------ | -------------------- | ------------ |
-| Nex Buffer                                                               | 次のバッファー       | ]b           |
-| Previous Buffer                                                          | 前のバッファー       | [b           |
-| Move Buffer Right                                                        | バッファーを右に移動する | >b           |
-| Move Buffer Left                                                         | バッファーを左に移動する                     | <b           |
-| Navigate to <br> buffer tab with <br> interactive picker                 |                      | Leader + bb  |
-| Close all <br> buffers except the <br> current |  今のバッファー以外のバッファーを閉じる | Leader + bc  |
-| Close all buffers | 全てのバッファーを閉じる | Leader + bC  |
-| Delete a buffer <br> tab with <br> interactivepicker                     |                      | Leader + bd  |
-| Close all <br> buffersto the left <br> of the current                    |                      | Leader + bl  |
-| Go to the previous <br> buffer                                           |                      | Leader + bp  |
-| Close all buffers <br> to the right of the current                       |                      | Leader + br  |
-| Sort buffers by <br> extension                                           |                      | Leader + bse |
-| Sort buffers by <br> buffer number                                       |                      | Leader + bsi |
-| Sort buffers by <br> last modification                                   |                      | Leader + bsm |
-| Sort buffers by <br> full path                                           |                      | Leader + bsp |
-| Sort buffers by <br> relative path                                       |                      | Leader + bsr |
-| Open a buffer tab <br> in a new horizontal split with interactive picker |                      | Leader + b\  |
-| Open a buffer tab <br> in a new vertical split with interactive picker   |                      | Leader + b   |
+| アクション                                                                    | アクション（日本語）                     | マッピング     |
+| ----------------------------------------------------------------------------- | ---------------------------------------- | -------------- |
+| Nex Buffer                                                                    | 次のバッファー                           | `]b`           |
+| Previous Buffer                                                               | 前のバッファー                           | `[b`           |
+| Move Buffer Right                                                             | バッファーを右に移動する                 | `>b`           |
+| Move Buffer Left                                                              | バッファーを左に移動する                 | `<b`           |
+| Navigate to <br> buffer tab with <br> interactive picker                      | 選択されたバッファータブにナビゲートする | `Leader + bb`  |
+| Close all <br> buffers except the <br> current                                | 今のバッファー以外のバッファーを閉じる   | `Leader + bc`  |
+| Close all buffers                                                             | 全てのバッファーを閉じる                 | `Leader + bC`  |
+| Delete a buffer <br> tab with <br> interactive picker                         | 選択されたバッファータブを削除する       | `Leader + bd`  |
+| Close all <br> buffers to the left <br> of the current                        | 左にある全てのバッファーをクローズする   | `Leader + bl`  |
+| Go to the previous <br> buffer                                                | 前のバッファーに移動する                 | `Leader + bp`  |
+| Close all buffers <br> to the right of the current                            | 右にある全てのバッファーをクローズする   | `Leader + br`  |
+| Sort buffers by <br> extension                                                | バッファーをextensionでソートする        | `Leader + bse` |
+| Sort buffers by <br> buffer number                                            | バッファーをバッファー番号でソートする   | `Leader + bsi` |
+| Sort buffers by <br> last modification                                        | バッファーを最終更新日でソートする       | `Leader + bsm` |
+| Sort buffers by <br> full path                                                | バッファーをフルパスでソートする         | `Leader + bsp` |
+| Sort buffers by <br> relative path                                            | バッファーをrelative pathでソートする    | `Leader + bsr` |
+| Open a buffer tab <br> in a new horizontal <br> split with interactive picker | 水平方向に新しいタブをオープンする | `Leader + b\`  |
+| Open a buffer tab <br> in a new vertical <br> split with interactive picker   | 垂直方向に新しいタブをオープンする | `Leader + b`   |
 
 #### Better Escape
 
-|
+| アクション     | マッピング |
+| -------------- | ---------- |
+| エスケープキー | `jj`、`jk` |
+
+#### 補完（Completion）
+
+| アクション	              | アクション（日本語）|  Mappings |
+| --------------------------- | -------------------- | ----------------------------------- |
+| Open completion <br> menu	      | 補完メニューをオーブンする|  `Ctrl + Space` |
+| Select completion	          | 補完を選択する |  `Enter` |
+| Next snippet <br> location	      | 次のスニペットの場所 |  `Tab` |
+| Previous snippet <br> location	  | 前のスニペットの場所 |  `Shift + Tab` |
+| Next completion	          | 次の補完 |  `Down`, `Ctrl + n`, `Ctrl + j`, `Tab` |
+| Previous completion	      | 次の補完 |  `Up`, `Ctrl + p`, `Ctrl + k`, `Shift + Tab` |
+| Cancel completion	          | 補完のキャンセル |  `Ctrl + e` |
+| Scroll up completion <br> docs	  | 補完の説明文のスクロールアップ |  `Ctrl + u` |
+| Scroll down completion <br> docs | 補完の説明文のスクロールダウン |  `Ctrl + d` |
 
 #### Neo-Tree
 
