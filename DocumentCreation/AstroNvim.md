@@ -94,7 +94,7 @@ nvim - 自動モード
 sudo update-alternatives --remove nvim /home/hiroto/nvim.appimage
 ```
 
-### バージョンを確認する
+### neovimのバージョンを確認する
 
 ```bash
 nvim --version
@@ -108,7 +108,9 @@ LuaJIT 2.1.0-beta3
 Run :checkhealth for more info
 ```
 
-## AstroNvimのインストール
+## GettingStarted - AstroNvimを始めよう
+
+### AstroNvimのインストール
 
 [AstroNvim]は、優れたプラグインのセットで拡張可能で使いやすい、美的で機能が
 豊富な neovim 構成です。
@@ -211,7 +213,7 @@ sudo apt install xclip
   - [Node](https://nodejs.org/ja) - Nodeは多くのLSPとnode repl
     ターミナルを起動するときに必要です。( \<leader>tn)に必要です。
 
-### インストール
+### AstroNvimのインストール
 
 現在のnvimファルダーのバックアップを取ります。
 
@@ -227,10 +229,10 @@ mv ~/.local/state/nvim ~/.local/state/nvim.bak
 mv ~/.cache/nvim ~/.cache/nvim.bak
 ```
 
-githubからAstroNvimのリポジトリをコピーします。
+githubで自分の環境を管理している場合はgithubから管理しているリポジトリをコピーします。
 
 ```bash
-git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+gh repo clone <githubのユーザ名>/<リポジトリ名> ~/.config/nvim/
 nvim
 ```
 
@@ -338,11 +340,9 @@ Warningがでた場合はpynvimをインストールすることで対応しま�
 python3 -m pip install --user --upgrade pynvim
 ```
 
-## Astronvimの基本的なチュートリアル
+## AstroCommunity - AstroCommunityを使おう
 
-### ファイルエクプローラーを表示/非表示する
-
-ファイルエクプローラーを表示したり非表示したりするには `Space + e`を押します。
+## Mappings - キーマッピング
 
 ### ターミナルを表示/非表示する
 
@@ -355,10 +355,6 @@ To toggle symbols outline you need to press `Space + lS`
 ### バッファーをクローズする
 
 現在のバッファーをクローズするには`Space + c`を押します。
-
-### コメントにする
-
-1つもしくは複数の行をコメントにするには`Space + /`を押します。
 
 ### 行の診断結果を確認する
 
@@ -406,122 +402,242 @@ To find old files you need to press `Space + fo`
 You can use which key plugin to get a menu of some helpful key bindings by
 pressing Space
 
-### バッファーをナビゲイトする
+### 標準のマッピング
 
-To switch to the left buffer you need to press `[b`
+| アクション                     | アクション（日本語）                | マッピング     |
+| ------------------------------ | ----------------------------------- | -------------- |
+| Leader key                     | リーダーキー                        | `Space`        |
+| Local Leader key               | ローカルのリーダーキー              | `,             |
+| Resize up                      | 上方向に縮小する                    | `Ctrl + Up`    |
+| Resize Down                    | 下方向に拡大する                    | `Ctrl + Down`  |
+| Resize Left                    | 左方向に縮小する                    | `Ctrl + Left`  |
+| Resize Right                   | 右方向に拡大する                    | `Ctrl + Right` |
+| Up Window                      | ウインドウを上方向に移動する        | `Ctrl + k`     |
+| Down Window                    | ウインドウを下方向に移動する        | `Ctrl + j`     |
+| Left Window                    | ウインドウを左方向に移動する        | `Ctrl + h`     |
+| Right Window                   | ウインドウを左方向に移動する        | `Ctrl + l`     |
+| Force write                    | 強制的に書き込む                    | `Ctrl + s`     |
+| Force Quit                     | 強制的に終了する                    | `Ctrl + q`     |
+| New File                       | 新しいファイルを作成する            | `Leader + n`   |
+| Close Buffer                   | バッファーをクローズする            | `Leader + c`   |
+| Next Tab<br>(real vim tab)     | 次のタブ<br>(real vim tab)          | `]t`           |
+| Previous Tab<br>(real vim tab) | 前のタブ<br>(read vim tab)          | `[t`           |
+| Comment                        | 1つもしくは複数の行をコメントにする | `Leader + /`   |
+| Horizontal Split               | 垂直に分割する                      | `\`            |
+| Vertical Split                 | 水平に分割する                      | `\|`           |
 
-To switch to the right buffer you need to press `]b`
+### バッファー
 
-### ウィンドウをナビゲイトする
-
-To switch to the left window you need to press `Ctrl + h`
-
-To switch to the right window you need to press `Ctrl + l`
-
-To switch to the top window you need to press `Ctrl + k`
-
-To switch to the bottom window you need to press `Ctrl + j`
-
-### Resizing buffers
-
-To resize buffer to the left you need to press Ctrl + left key
-
-To resize buffer to the right you need to press Ctrl + right key
-
-To resize buffer to the top you need to press Ctrl + up key
-
-To resize buffer to the bottom you need to press Ctrl + down key
-
-### デフォルトのマッピング
-
-#### 標準のマッピング
-
-| アクション                     | アクション（日本語）         | マッピング     |
-| ------------------------------ | ---------------------------- | -------------- |
-| Leader key                     | リーダーキー                 | `Space`        |
-| Local Leader key               | ローカルのリーダーキー       | `,             |
-| Resize up                      | 上方向に縮小する             | `Ctrl + Up`    |
-| Resize Down                    | 下方向に拡大する             | `Ctrl + Down`  |
-| Resize Left                    | 左方向に縮小する             | `Ctrl + Left`  |
-| Resize Right                   | 右方向に拡大する             | `Ctrl + Right` |
-| Up Window                      | ウインドウを上方向に移動する | `Ctrl + k`     |
-| Down Window                    | ウインドウを下方向に移動する | `Ctrl + j`     |
-| Left Window                    | ウインドウを左方向に移動する | `Ctrl + h`     |
-| Right Window                   | ウインドウを左方向に移動する | `Ctrl + l`     |
-| Force write                    | 強制的に書き込む             | `Ctrl + s`     |
-| Force Quit                     | 強制的に終了する             | `Ctrl + q`     |
-| New File                       | 新しいファイルを作成する     | `Leader + n`   |
-| Close Buffer                   | バッファーをクローズする     | `Leader + c`   |
-| Next Tab<br>(real vim tab)     | 次のタブ<br>(real vim tab)   | `]t`           |
-| Previous Tab<br>(real vim tab) | 前のタブ<br>(read vim tab)   | `[t`           |
-| Comment                        | コメント                     | `Leader + /`   |
-| Horizontal Split               | 垂直に分割する               | `\`            |
-| Vertical Split                 | 水平に分割する               | `\|`           |
-
-#### バッファー
-
-| アクション                                                                    | アクション（日本語）                     | マッピング     |
 | ----------------------------------------------------------------------------- | ---------------------------------------- | -------------- |
-| Nex Buffer                                                                    | 次のバッファー                           | `]b`           |
-| Previous Buffer                                                               | 前のバッファー                           | `[b`           |
-| Move Buffer Right                                                             | バッファーを右に移動する                 | `>b`           |
-| Move Buffer Left                                                              | バッファーを左に移動する                 | `<b`           |
-| Navigate to <br> buffer tab with <br> interactive picker                      | 選択されたバッファータブにナビゲートする | `Leader + bb`  |
-| Close all <br> buffers except the <br> current                                | 今のバッファー以外のバッファーを閉じる   | `Leader + bc`  |
-| Close all buffers                                                             | 全てのバッファーを閉じる                 | `Leader + bC`  |
-| Delete a buffer <br> tab with <br> interactive picker                         | 選択されたバッファータブを削除する       | `Leader + bd`  |
-| Close all <br> buffers to the left <br> of the current                        | 左にある全てのバッファーをクローズする   | `Leader + bl`  |
-| Go to the previous <br> buffer                                                | 前のバッファーに移動する                 | `Leader + bp`  |
-| Close all buffers <br> to the right of the current                            | 右にある全てのバッファーをクローズする   | `Leader + br`  |
-| Sort buffers by <br> extension                                                | バッファーをextensionでソートする        | `Leader + bse` |
-| Sort buffers by <br> buffer number                                            | バッファーをバッファー番号でソートする   | `Leader + bsi` |
-| Sort buffers by <br> last modification                                        | バッファーを最終更新日でソートする       | `Leader + bsm` |
-| Sort buffers by <br> full path                                                | バッファーをフルパスでソートする         | `Leader + bsp` |
-| Sort buffers by <br> relative path                                            | バッファーをrelative pathでソートする    | `Leader + bsr` |
-| Open a buffer tab <br> in a new horizontal <br> split with interactive picker | 水平方向に新しいタブをオープンする | `Leader + b\`  |
-| Open a buffer tab <br> in a new vertical <br> split with interactive picker   | 垂直方向に新しいタブをオープンする | `Leader + b`   |
+| Nex Buffer | 次のバッファー | `]b` |
+| Previous Buffer | 前のバッファー | `[b` |
+| Move Buffer Right | バッファーを右に移動する | `>b` |
+| Move Buffer Left | バッファーを左に移動する | `<b` |
+| Navigate to <br> buffer tab with <br> interactive picker | 選択されたバッファータブにナビゲートする | `Leader + bb` |
+| Close all <br> buffers except the <br> current | 今のバッファー以外のバッファーを閉じる | `Leader + bc` |
+| Close all buffers | 全てのバッファーを閉じる | `Leader + bC` |
+| Delete a buffer <br> tab with <br> interactive picker | 選択されたバッファータブを削除する | `Leader + bd` |
+| Close all <br> buffers to the left <br> of the current | 左にある全てのバッファーをクローズする | `Leader + bl` |
+| Go to the previous <br> buffer | 前のバッファーに移動する | `Leader + bp` |
+| Close all buffers <br> to the right of the current | 右にある全てのバッファーをクローズする | `Leader + br` |
+| Sort buffers by <br> extension | バッファーをextensionでソートする | `Leader + bse` |
+| Sort buffers by <br> buffer number | バッファーをバッファー番号でソートする | `Leader + bsi` |
+| Sort buffers by <br> last modification | バッファーを最終更新日でソートする | `Leader + bsm` |
+| Sort buffers by <br> full path | バッファーをフルパスでソートする | `Leader + bsp` |
+| Sort buffers by <br> relative path | バッファーをrelative pathでソートする | `Leader + bsr` |
+| Open a buffer tab <br> in a new horizontal <br> split with interactive picker | 水平方向に新しいタブをオープンする | `Leader + b\` |
+| Open a buffer tab <br> in a new vertical <br> split with interactive picker | 垂直方向に新しいタブをオープンする | `Leader + b` |
 
-#### Better Escape
+### Better Escape
 
 | アクション     | マッピング |
 | -------------- | ---------- |
 | エスケープキー | `jj`、`jk` |
 
-#### 補完（Completion）
+### 補完（Completion）
 
-| アクション	              | アクション（日本語）|  Mappings |
-| --------------------------- | -------------------- | ----------------------------------- |
-| Open completion <br> menu	      | 補完メニューをオーブンする|  `Ctrl + Space` |
-| Select completion	          | 補完を選択する |  `Enter` |
-| Next snippet <br> location	      | 次のスニペットの場所 |  `Tab` |
-| Previous snippet <br> location	  | 前のスニペットの場所 |  `Shift + Tab` |
-| Next completion	          | 次の補完 |  `Down`, `Ctrl + n`, `Ctrl + j`, `Tab` |
-| Previous completion	      | 次の補完 |  `Up`, `Ctrl + p`, `Ctrl + k`, `Shift + Tab` |
-| Cancel completion	          | 補完のキャンセル |  `Ctrl + e` |
-| Scroll up completion <br> docs	  | 補完の説明文のスクロールアップ |  `Ctrl + u` |
-| Scroll down completion <br> docs | 補完の説明文のスクロールダウン |  `Ctrl + d` |
+| アクション                       | アクション（日本語）           | Mappings                                    |
+| -------------------------------- | ------------------------------ | ------------------------------------------- |
+| Open completion <br> menu        | 補完メニューをオープンする     | `Ctrl + Space`                              |
+| Select completion                | 補完を選択する                 | `Enter`                                     |
+| Next snippet <br> location       | 次のスニペットの場所           | `Tab`                                       |
+| Previous snippet <br> location   | 前のスニペットの場所           | `Shift + Tab`                               |
+| Next completion                  | 次の補完                       | `Down`, `Ctrl + n`, `Ctrl + j`, `Tab`       |
+| Previous completion              | 次の補完                       | `Up`, `Ctrl + p`, `Ctrl + k`, `Shift + Tab` |
+| Cancel completion                | 補完のキャンセル               | `Ctrl + e`                                  |
+| Scroll up completion <br> docs   | 補完の説明文のスクロールアップ | `Ctrl + u`                                  |
+| Scroll down completion <br> docs | 補完の説明文のスクロールダウン | `Ctrl + d`                                  |
 
-#### Neo-Tree
+### Neo-Tree
 
-#### Dashboard Mappings
+| Action         | アクション                              | Mappings     |
+| -------------- | --------------------------------------- | ------------ |
+| Neotree toggle | ファイルエクプローラーを表示/非表示する | `Leader + e` |
+| Neotree focus  | ファイルエクプローラーにカーソルを移す  | `Leader + o` |
 
-#### Session Manager Mappings
+### Dashboard Mappings
 
-#### Package Management Mappings
+| Action           | アクション               | Mappings     |
+| ---------------- | ------------------------ | ------------ |
+| Dashboard (Home) | ダッシュボードに移動する | `Leader + h` |
 
-#### LSP Mappings
+### Session Manager Mappings
 
-#### Debugger Mappings
+| Action                         | アクション                               | Mappings      |
+| ------------------------------ | ---------------------------------------- | ------------- |
+| Save Session                   | セッションを保存する                     | `Leader + Ss` |
+| Last Session                   | 前のセッション                           | `Leader + Sl` |
+| Delete Session                 | セッションを削除する                     | `Leader + Sd` |
+| Delete Directory Session       | ディレクトリセッションを削除する         | `Leader + SD` |
+| Search Sessions                | セッションを検索する                     | `Leader + Sf` |
+| Search Directory Sessions      | ディレクトリセッションを検索する         | `Leader + SF` |
+| Load Current Directory Session | 現在のディレクトリセッションをロードする | `Leader + S.` |
 
-#### Telescope Mappings
+### Package Management Mappings
 
-#### Toggle Terminal Mappings
+| Action                    | アクション | Mappings    |
+| ------------------------- | ---------- | ----------- |
+| Update Lazy and Mason     |            | Leader + pa |
+| Plugins Install           |            | Leader + pi |
+| Mason Installer           |            | Leader + pm |
+| Mason Updater             |            | Leader + pM |
+| Plugins Status            |            | Leader + ps |
+| Plugins Sync              |            | Leader + pS |
+| Plugins Check for Updates |            | Leader + pu |
+| Plugins Update            |            | Leader + pU |
 
-#### Git Mappings
+### LSP Mappings
 
-#### UI Mappings
+| Action                      | アクション    | Mappings                   |
+| --------------------------- | ------------- | -------------------------- |
+| LSP Info                    | LSPの情報     | Leader + li                |
+| None-ls Info                | None-lsの情報 | Leader + lI                |
+| Hover Document              |               | K                          |
+| Format Document             |               | Leader + lf                |
+| Symbols Outline             |               | Leader + lS                |
+| Line Diagnostics            |               | gl, Leader + ld, <C-W> + d |
+| All Diagnostics             |               | Leader + lD                |
+| Code Actions                |               | gra, Leader + la           |
+| Source Code Actions         |               | Leader + lA                |
+| Signature Help              |               | Leader + lh                |
+| Rename                      | リネーム      | grn, Leader + lr           |
+| Document Symbols            |               | Leader + ls                |
+| Workspace Symbols           |               | Leader + lG                |
+| Diagnostic Next             |               | ]d                         |
+| Diagnostics Previous        |               | [d                         |
+| Diagnostic Error Next       |               | ]e                         |
+| Diagnostic Error Previous   |               | [e                         |
+| Diagnostic Warning Next     |               | ]w                         |
+| Diagnostic Warning Previous |               | [w                         |
+| Document Symbol Next        |               | ]y                         |
+| Document Symbol Previous    |               | [y                         |
+| Declaration                 |               | gD                         |
+| Type Definition             |               | gy                         |
+| Definition                  |               | gd                         |
+| Implementation              |               | gI                         |
+| References                  |               | grr, Leader + lR           |
 
-## 構成
+### Debugger Mappings
+
+| Action                  | アクション | Mappings               |
+| ----------------------- | ---------- | ---------------------- |
+| Start/Continue Debugger |            | Leader + dc or <F5>    |
+| Pause Debugger          |            | Leader + dp or <F6>    |
+| Restart Debugger        |            | Leader + dr or <C-F5>  |
+| Run Debugger to Cursor  |            | Leader + ds            |
+| Close Debugger Session  |            | Leader + dq            |
+| Terminate Debugger      |            | Leader + dQ or <S-F5>  |
+| Toggle Breakpoint       |            | Leader + db or <F9>    |
+| Conditional Breakpoint  |            | Leader + dC or <S-F9>  |
+| Clear Breakpoints       |            | Leader + dB            |
+| Step Over               |            | Leader + do or <F10>   |
+| Step Into               |            | Leader + di or <F11>   |
+| Step Out                |            | Leader + dO or <S-F11> |
+| Evaluate Expression     |            | Leader + dE            |
+| Toggle REPL             |            | Leader + dR            |
+| Toggle Debugger UI      |            | Leader + du            |
+| Debugger Hover          |            | Leader + dh            |
+
+### Telescope Mappings
+
+Action Mappings
+Resume previous search Leader + f + Enter
+Marks Leader + f'
+Buffers Leader + fb
+Word at cursor Leader + fc
+Commands Leader + fC
+Find files Leader + ff
+Find files (include hidden files) Leader + fF
+Help Tags Leader + fh
+Keymaps Leader + fk
+Man Pages Leader + fm
+Notifications Leader + fn
+Old Files Leader + fo
+Registers Leader + fr
+Colorschemes Leader + ft
+Live Grep Leader + fw
+Live Grep (include hidden files) Leader + fW
+Git Branches Leader + gb
+Git Commits (repository) Leader + gc
+Git Commits (current file) Leader + gC
+Git Status Leader + gt
+LSP Symbols Leader + ls
+LSP Workspace Symbols Leader + lG
+
+### Terminal Mappings
+
+Action Mappings
+Open Floating Terminal Leader + tf
+Open Horizontal Terminal Leader + th or <F7>
+Open Vertical Terminal Leader + tv
+Open Toggle Lazygit Leader + tl
+Open Toggle node Leader + tn
+Open Toggle Python Leader + tp
+Open Toggle btm Leader + tt
+
+### UI/UX Mappings
+
+Action Mappings
+Toggle autopairs Leader + ua
+Toggle automatic root detection Leader + uA
+Toggle background Leader + ub
+Toggle autocompletion (buffer) Leader + uc
+Toggle autocompletion (global) Leader + uC
+Toggle diagnostics Leader + ud
+Dismiss notifications Leader + uD
+Toggle autoformatting (buffer) Leader + uf
+Toggle autoformatting (global) Leader + uF
+Toggle signcolumn Leader + ug
+Toggle foldcolumn Leader + u>
+Toggle LSP inlay hints (buffer) Leader + uh
+Toggle LSP inlay hints (global) Leader + uH
+Toggle indent setting Leader + ui
+Toggle indent guides Leader + u|
+Toggle statusline Leader + ul
+Toggle CodeLens Leader + uL
+Change line numbering Leader + un
+Toggle notifications Leader + uN
+Toggle paste mode Leader + up
+Toggle reference highlighting (buffer) Leader + ur
+Toggle reference highlighting (global) Leader + uR
+Toggle spellcheck Leader + us
+Toggle conceal Leader + uS
+Toggle tabline Leader + ut
+Toggle URL highlighting Leader + uu
+Toggle wrap Leader + uw
+Toggle syntax highlighting (buffer) Leader + uy
+Toggle LSP semantic tokens (buffer) Leader + uY
+Toggle color highlighting Leader + uz
+
+## Using This Documentation - この文書を使う
+
+## configuration - 構成
+
+## Recipes - レシピ
+
+## Acknowledgements - レシピ
+
+## Code of Conduct
 
 TODO:
 
