@@ -344,17 +344,9 @@ python3 -m pip install --user --upgrade pynvim
 
 ## Mappings - キーマッピング
 
-### ターミナルを表示/非表示する
-
-ターミナルを表示/非表示するには`F7`を押します。
-
 ### Opening LSP symbols
 
 To toggle symbols outline you need to press `Space + lS`
-
-### バッファーをクローズする
-
-現在のバッファーをクローズするには`Space + c`を押します。
 
 ### 行の診断結果を確認する
 
@@ -375,11 +367,6 @@ To go to the definition you need to press `g + d`
 ### Code actions
 
 To use code actions you need to press `Space + la`
-
-### デバッギング
-
-デバッガーを使うときは`Space + D`を押します。 to see the available bindings and
-options
 
 ### Telescope search
 
