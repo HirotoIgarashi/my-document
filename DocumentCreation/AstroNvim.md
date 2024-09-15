@@ -11,7 +11,7 @@ Vim ベースのテキストエディター」とのことです。
 ## Neovimのインストール
 
 NeovimのインストールについてLinux mint、とMX Linuxで確認した方法を説明します。
-リリースページには、ほとんどのLinux システムで実行できるAppImageが提供されます。
+リリースページには、ほとんどのLinuxシステムで実行できるAppImageが提供されます。
 インストールは必要なく、nvim.appimageをダウンロードして実行するだけです。
 (Linuxディストリビューションが 4 年以上古い場合は動作しない可能性があります。)
 
@@ -54,7 +54,7 @@ Linuxのエディターとして設定するにはupdate-alternativesシステ�
 
 ```bash
 sudo update-alternatives --display nvim
-update-alternatives: エラー: nvim の alternatives がありません
+update-alternatives: エラー: nvimのalternativesがありません
 ```
 
 nvimコマンドはLinuxには登録されていないことがわかります。
