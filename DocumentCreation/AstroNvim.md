@@ -437,6 +437,10 @@ pressing Space
 
 ### Better Escape
 
+この設定を有効にするには`~/.config/nvim/lua/plugins/user.lua`の
+{ "max397574/better-escape.nvim", enabled = false },
+をtrueに変更する必要があります。
+
 | アクション     | マッピング |
 | -------------- | ---------- |
 | エスケープキー | `jj`、`jk` |
@@ -547,74 +551,77 @@ pressing Space
 
 ### Telescope Mappings
 
-Action Mappings
-Resume previous search Leader + f + Enter
-Marks Leader + f'
-Buffers Leader + fb
-Word at cursor Leader + fc
-Commands Leader + fC
-Find files Leader + ff
-Find files (include hidden files) Leader + fF
-Help Tags Leader + fh
-Keymaps Leader + fk
-Man Pages Leader + fm
-Notifications Leader + fn
-Old Files Leader + fo
-Registers Leader + fr
-Colorschemes Leader + ft
-Live Grep Leader + fw
-Live Grep (include hidden files) Leader + fW
-Git Branches Leader + gb
-Git Commits (repository) Leader + gc
-Git Commits (current file) Leader + gC
-Git Status Leader + gt
-LSP Symbols Leader + ls
-LSP Workspace Symbols Leader + lG
+| Action                            | アクション | Mappings           |
+| --------------------------------- | ---------- | ------------------ |
+| Resume previous search            |            | Leader + f + Enter |
+| Marks                             |            | Leader + f'        |
+| Buffers                           |            | Leader + fb        |
+| Word at cursor                    |            | Leader + fc        |
+| Commands                          |            | Leader + fC        |
+| Find files                        |            | Leader + ff        |
+| Find files (include hidden files) |            | Leader + fF        |
+| Help Tags                         |            | Leader + fh        |
+| Keymaps                           |            | Leader + fk        |
+| Man Pages                         |            | Leader + fm        |
+| Notifications                     |            | Leader + fn        |
+| Old Files                         |            | Leader + fo        |
+| Registers                         |            | Leader + fr        |
+| Colorschemes                      |            | Leader + ft        |
+| Live Grep                         |            | Leader + fw        |
+| Live Grep (include hidden files)  |            | Leader + fW        |
+| Git Branches                      |            | Leader + gb        |
+| Git Commits (repository)          |            | Leader + gc        |
+| Git Commits (current file)        |            | Leader + gC        |
+| Git Status                        |            | Leader + gt        |
+| LSP Symbols                       |            | Leader + ls        |
+| LSP Workspace Symbols             |            | Leader + lG        |
 
 ### Terminal Mappings
 
-Action Mappings
-Open Floating Terminal Leader + tf
-Open Horizontal Terminal Leader + th or <F7>
-Open Vertical Terminal Leader + tv
-Open Toggle Lazygit Leader + tl
-Open Toggle node Leader + tn
-Open Toggle Python Leader + tp
-Open Toggle btm Leader + tt
+| Action                   | アクション | Mappings            |
+| ------------------------ | ---------- | ------------------- |
+| Open Floating Terminal   |            | Leader + tf         |
+| Open Horizontal Terminal |            | Leader + th or <F7> |
+| Open Vertical Terminal   |            | Leader + tv         |
+| Open Toggle Lazygit      |            | Leader + tl         |
+| Open Toggle node         |            | Leader + tn         |
+| Open Toggle Python       |            | Leader + tp         |
+| Open Toggle btm          |            | Leader + tt         |
 
 ### UI/UX Mappings
 
-Action Mappings
-Toggle autopairs Leader + ua
-Toggle automatic root detection Leader + uA
-Toggle background Leader + ub
-Toggle autocompletion (buffer) Leader + uc
-Toggle autocompletion (global) Leader + uC
-Toggle diagnostics Leader + ud
-Dismiss notifications Leader + uD
-Toggle autoformatting (buffer) Leader + uf
-Toggle autoformatting (global) Leader + uF
-Toggle signcolumn Leader + ug
-Toggle foldcolumn Leader + u>
-Toggle LSP inlay hints (buffer) Leader + uh
-Toggle LSP inlay hints (global) Leader + uH
-Toggle indent setting Leader + ui
-Toggle indent guides Leader + u|
-Toggle statusline Leader + ul
-Toggle CodeLens Leader + uL
-Change line numbering Leader + un
-Toggle notifications Leader + uN
-Toggle paste mode Leader + up
-Toggle reference highlighting (buffer) Leader + ur
-Toggle reference highlighting (global) Leader + uR
-Toggle spellcheck Leader + us
-Toggle conceal Leader + uS
-Toggle tabline Leader + ut
-Toggle URL highlighting Leader + uu
-Toggle wrap Leader + uw
-Toggle syntax highlighting (buffer) Leader + uy
-Toggle LSP semantic tokens (buffer) Leader + uY
-Toggle color highlighting Leader + uz
+| Action                                 |     | Mappings    |
+| -------------------------------------- | --- | ----------- |
+| Toggle autopairs                       |     | Leader + ua |
+| Toggle automatic root detection        |     | Leader + uA |
+| Toggle background                      |     | Leader + ub |
+| Toggle autocompletion (buffer)         |     | Leader + uc |
+| Toggle autocompletion (global)         |     | Leader + uC |
+| Toggle diagnostics                     |     | Leader + ud |
+| Dismiss notifications                  |     | Leader + uD |
+| Toggle autoformatting (buffer)         |     | Leader + uf |
+| Toggle autoformatting (global)         |     | Leader + uF |
+| Toggle signcolumn                      |     | Leader + ug |
+| Toggle foldcolumn                      |     | Leader + u> |
+| Toggle LSP inlay hints (buffer)        |     | Leader + uh |
+| Toggle LSP inlay hints (global)        |     | Leader + uH |
+| Toggle indent setting                  |     | Leader + ui |
+| Toggle indent guides                   |     | Leader + u  |
+| Toggle statusline                      |     | Leader + ul |
+| Toggle CodeLens                        |     | Leader + uL |
+| Change line numbering                  |     | Leader + un |
+| Toggle notifications                   |     | Leader + uN |
+| Toggle paste mode                      |     | Leader + up |
+| Toggle reference highlighting (buffer) |     | Leader + ur |
+| Toggle reference highlighting (global) |     | Leader + uR |
+| Toggle spellcheck                      |     | Leader + us |
+| Toggle conceal                         |     | Leader + uS |
+| Toggle tabline                         |     | Leader + ut |
+| Toggle URL highlighting                |     | Leader + uu |
+| Toggle wrap                            |     | Leader + uw |
+| Toggle syntax highlighting (buffer)    |     | Leader + uy |
+| Toggle LSP semantic tokens (buffer)    |     | Leader + uY |
+| Toggle color highlighting              |     | Leader + uz |
 
 ## Using This Documentation - この文書を使う
 
