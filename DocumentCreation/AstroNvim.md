@@ -626,7 +626,7 @@ pressing Space
 ## Using This Documentation - この文書を使う
 
 AstroNvimは、lazy.nvimが提供するNeovimプラグインの設定で構成されます。
-プラグインは通常、Neovim構成フォルダー内のlua/plugins/フォルダーで構成されます。
+プラグインは通常、Neovim構成フォルダー`~/.config/nvim/`内のlua/plugins/フォルダーで構成されます。
 このドキュメントには、ユーザーをガイドするためのコードスニペットが多数含まれています。
 これは、lazy.nvimプラグインの仕様を返す完全なファイルです。
 これらを使用する最も簡単な方法は、plugins/フォルダー内の新しいファイルにコンテンツをコピーすることです。

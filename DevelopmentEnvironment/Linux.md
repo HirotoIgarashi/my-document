@@ -42,3 +42,12 @@ PRIVACY_POLICY_URL="https://www.linuxmint.com/"
 VERSION_CODENAME=vera
 UBUNTU_CODENAME=jammy
 ```
+
+## Linux mint インストール後に行うこと
+
+### Fcitx 5のインストール
+
+```
+sudo apt install fcitx5-mozc
+im-config -n fcitx5
+```
