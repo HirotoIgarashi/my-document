@@ -636,6 +636,22 @@ AstroNvimは、lazy.nvimが提供するNeovimプラグインの設定で構成�
 
 ## configuration - 構成
 
+### Core Plugins
+
+- AstroCore
+
+AstroCoreはvimオプション、ユーザコマンド、自動コマンド、グローバルマッピングの機能を提供します。gitワークツリー統合、セッション管理などAstroNvim固有の機能も含まれます。
+
+- AstroUI
+- AstroLSP
+- AstroTheme
+
+### Customizing Plugins
+
+### Lua language Server integration
+
+### Managing User Configuration
+
 ## Recipes - レシピ
 
 ## Acknowledgements - レシピ
