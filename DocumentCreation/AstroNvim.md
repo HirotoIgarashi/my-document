@@ -1,17 +1,17 @@
 # AstroNvim入門
 
-このドキュメントは[AstroNvim]についての説明です。[AstroNvim]は、
-優れたプラグインのセットで拡張可能で使いやすい、美しく、機能が豊富な
-[Neovim]の構成です。[Neovim]の公式ホームページによるとNeovimは 「超拡張可能な
-Vim ベースのテキストエディター」とのことです。
-
-[AstroNvim]: https://astronvim.com/
 [Neovim]: https://neovim.io/
+[AstroNvim]: https://astronvim.com/
+
+パソコンのエディターとしてWindowsではnotepad、UNIXではmuleや、viがあります。
+viの後継としてvimが開発されました。そのvimの後継としてNeovimが開発されました。
+[Neovim]の公式ホームページによるとNeovimは「超拡張可能なVimベースのテキストエディター」と説明されています。
+[AstroNvim]は[Neovim]を優れたプラグインのセットで拡張可能で使いやすい、美しく、機能が豊富にする構成です。
 
 ## Neovimのインストール
 
-NeovimのインストールについてLinux mint、とMX Linuxで確認した方法を説明します。
-リリースページには、ほとんどのLinuxシステムで実行できるAppImageが提供されます。
+[Neovim]のインストールについてLinux mint、とMX Linuxで確認した方法を説明します。
+[Neovim]のリリースページには、ほとんどのLinuxシステムで実行できるAppImageが提供されます。
 インストールは必要なく、nvim.appimageをダウンロードして実行するだけです。
 (Linuxディストリビューションが 4 年以上古い場合は動作しない可能性があります。)
 
@@ -122,7 +122,7 @@ Run :checkhealth for more info
 - [Lazy.nvim](https://github.com/folke/lazy.nvim)を使った プラグイン管理
 - [mason.nvim](https://github.com/williamboman/mason.nvim)を使った
   パッケージ管理
-- [Neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvgh repo clone HirotoIgarashi/my-documentim)を使った
+- [Neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim)を使った
   ファイルエクスプローラー
 - [Cmp](https://github.com/hrsh7th/nvim-cmp)を使ったオートコンプリート
 - [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)を使ったGitの統合
@@ -643,10 +643,54 @@ AstroNvimは、lazy.nvimが提供するNeovimプラグインの設定で構成�
 AstroCoreはvimオプション、ユーザコマンド、自動コマンド、グローバルマッピングの機能を提供します。gitワークツリー統合、セッション管理などAstroNvim固有の機能も含まれます。
 
 - AstroUI
+
+AstroUIは、AstroNvimが統一されたユーザーインターフェイスを持つのに役立つAPIと構成レベルを提供します。
+
+    - アイコンの定義
+    - ハイライト グループの構成
+    - カスタム ステータスライン
+    - ウィンバー
+    - タブラインを構築するための広範なステータス API
+
+これには、インターフェイス全体で使用されるアイコンの定義、ハイライト グループの構成、およびカスタム ステータスライン、ウィンバー、およびタブラインを構築するための広範なステータス API の構成が含まれます。これらのオプションの詳細については、関連するレシピ セクションの
+
+    - 「ステータスラインのカスタマイズ」、
+    - 「アイコンのカスタマイズ」、および
+    - 「カスタム カラースキーム」
+
+のページを確認してください。構成オプションの完全な表は、 AstroUI ドキュメントにあります。
+
 - AstroLSP
+
+AstroLSPは、LSPの構成とセットアップのメインエンジンです。これは、、、mason ユーティリティなどの多くのコア プラグインとの統合を提供しますnvim-lspconfig。AstroNvim内での LSP の構成に関する詳細な説明については、 Advanced LSP Setup ページ をnone-ls参照してください。構成オプションの完全な表は、AstroLSP Documentationにあります。
+
 - AstroTheme
 
+AstroThemeは、AstroNvim用に構築されたデフォルトのカラースキームです。
+アクセシビリティとコントラストが最適化され、クリーンでモダンな美観が維持されています。
+また、AstroNvimに組み込まれているすべてのプラグインに対するファーストクラスのサポートと、ユーザーが使用する多くの一般的なプラグインに対するサポートも備えています。
+
+AstroTheme is the default colorscheme that has been built for AstroNvim. It has been optimized for accessibility and contrast, while maintaining a clean and modern aesthetic. It also has first class support for all of the plugins built into AstroNvim as well as support for many common plugins that our users use.
+
 ### Customizing Plugins
+
+#### Defining Plugins
+
+#### Configure AstroNvim Plugins
+
+#### How opts Overriding Works
+
+#### Extending Core Plugin Config Functions
+
+#### Disabling Plugins
+
+#### Lazy Loading
+
+#### Lazy Loading with AstroCore
+
+#### Lazy Load File Related Plugins
+
+#### Lazy Load Git Plugins
 
 ### Lua language Server integration
 
