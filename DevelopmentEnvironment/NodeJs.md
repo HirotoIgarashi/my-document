@@ -2,10 +2,28 @@
 
 ## Node.js のインストール
 
-Node.js のインストールには[nvm] (Node Version Manager)を使用します。
+Node.js のインストールに[nvm] (Node Version Manager)を使用します。
 
 [nvm]: https://github.com/nvm-sh/nvm
 
-### nvm による Node.js のインストール
+最新のバージョンを確認します。2024-09-24現在はv0.40.1が最新です。
 
-$`nvm install`
+### nvmのインストール
+
+- インストール
+
+下記のv.040.1を前に確認したv.040.1に置き換えます。
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+nvm --version
+0.40.1
+```
+
+### nvmによる最新版のNode.js のインストール
+
+```
+nvm install node
+```
+
+### Node.jsのテスト環境
