@@ -24,6 +24,8 @@ nvm --version
 
 ```
 nvm install node
+node --version
+v22.9.0
 ```
 
-### Node.jsのテスト環境
+### Node.jsのユニットテストとデバッグ
