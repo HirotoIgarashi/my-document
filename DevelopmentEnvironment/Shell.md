@@ -124,18 +124,22 @@ chshコマンドを使います。
 
   [WezTerm]: https://wezfurlong.org/wezterm/install/linux.html
 
+  - weztermのインストール
+
   ```
   curl -fsSL https://apt.fury.io/wez/gpg.key | sudo gpg --yes --dearmor -o /usr/share/keyrings/wezterm-fury.gpg
   echo 'deb [signed-by=/usr/share/keyrings/wezterm-fury.gpg] https://apt.fury.io/wez/ * *' | sudo tee /etc/apt/sources.list.d/wezterm.list
   ```
 
-```
-sudo apt update
-```
+  ```
+  sudo apt update
+  ```
 
-```
-sudo apt install wezterm
-```
+  ```
+  sudo apt install wezterm
+  ```
+
+  Ctrl + Alt + Tで起動するようにするには[設定] -> [キーボード]でキーボードメニューを開き[アプリケーションショートカットキー]でショートカットCtrl + Alt + Tにコマンド /usr/bin/weztermを登録します。
 
 設定ファイルは~/.wezterm.luaです。
 
