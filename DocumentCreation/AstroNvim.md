@@ -710,22 +710,22 @@ AstroTheme is the default colorscheme that has been built for AstroNvim. It has 
 
 | プラグイン                                    | 目的                                         |
 | --------------------------------------------- | -------------------------------------------- |
-| [AstroNvim/astrocore]                         | Core Functionality                           |
-| [AstroNvim/astrolsp]                          | LSP Integration                              |
-| [AstroNvim/astrotheme]                        | Default Colorscheme/Theme                    |
-| [AstroNvim/astroui]                           | UI Configuration                             |
+| [AstroNvim/astrocore]                         | コア機能                                     |
+| [AstroNvim/astrolsp]                          | LSP統合                                      |
+| [AstroNvim/astrotheme]                        | デフォルトのカラースキーム/テーマ            |
+| [AstroNvim/astroui]                           | UI統合                                       |
 | [JoosepAlviste/nvim-ts-context-commentstring] | Contextual commenting                        |
 | [L3MON4D3/LuaSnip]                            | Snippet Engine                               |
 | [MunifTanjim/nui.nvim]                        | UI Component Library (for Neo-Tree)          |
 | [NMAC427/guess-indent.nvim]                   | Automatic Indentation Detection              |
 | [NvChad/nvim-colorizer.lua]                   | Highlight Color Strings                      |
-| [akinsho/toggleterm.nvim]                     | Terminal Management                          |
+| [akinsho/toggleterm.nvim]                     | ターミナル管理                               |
 | [echasnovski/mini.bufremove]                  | Buffer Removal                               |
-| [folke/lazy.nvim]                             | Plugin Management                            |
+| [folke/lazy.nvim]                             | プラクイン管理                               |
 | [folke/neoconf.nvim]                          | Global and Project-local settings            |
 | [folke/neodev.nvim]                           | Neovim Lua LSP Integration                   |
 | [folke/which-key.nvim]                        | Keymap Popup/Help Window                     |
-| [goolord/alpha-nvim]                          | Dashboard/Homescreen                         |
+| [goolord/alpha-nvim]                          | ダッシュボード/ホームスクリーン              |
 | [hrsh7th/cmp-buffer]                          | Completion of Buffer Words                   |
 | [hrsh7th/cmp-nvim-lsp]                        | Completion of LSP                            |
 | [hrsh7th/cmp-path]                            | Completion of Paths                          |
@@ -736,7 +736,7 @@ AstroTheme is the default colorscheme that has been built for AstroNvim. It has 
 | [kevinhwang91/promise-async]                  | Asynchronous Library (helper)                |
 | [lewis6991/gitsigns.nvim]                     | Buffer Git Integration                       |
 | [lukas-reineke/indent-blankline.nvim]         | Indent-level Indicators                      |
-| [max397574/better-escape.nvim]                | Easy Escape (jj, jk)                         |
+| [max397574/better-escape.nvim]                | 簡単なエスケープ(jj, jk)                     |
 | [mfussenegger/nvim-dap]                       | Debugger Adapter Protocol                    |
 | [mrjones2014/smart-splits.nvim]               | Split Navigation and Multiplexer Integration |
 | [neovim/nvim-lspconfig]                       | Language Server Configurations               |
@@ -748,22 +748,24 @@ AstroTheme is the default colorscheme that has been built for AstroNvim. It has 
 | [nvim-tree/nvim-web-devicons]                 | Filetype Icons                               |
 | [nvim-treesitter/nvim-treesitter-textobjects] | Treesitter Vim Text Objects                  |
 | [nvim-treesitter/nvim-treesitter]             | Syntax Tree Based Highlighting               |
-| [nvimtools/none-ls.nvim]                      | Formatter and Linter LSP Integration         |
+| [nvimtools/none-ls.nvim]                      | フォーマッターとLinter LSP統合               |
 | [onsails/lspkind.nvim]                        | LSP Symbol Icons                             |
 | [rafamadriz/friendly-snippets]                | General Purpose Snippet Collection           |
 | [rcarriga/cmp-dap]                            | Completion in DAP REPL                       |
-| [rcarriga/nvim-dap-ui]                        | DAP User Interface                           |
+| [rcarriga/nvim-dap-ui]                        | DAPのユーザーインターフェイス                |
 | [rcarriga/nvim-notify]                        | UI Notification Pop-ups                      |
 | [rebelot/heirline.nvim]                       | Custom Statusline/Tabline/Winbar             |
 | [s1n7ax/nvim-window-picker]                   | Window Picker (for Neo-tree)                 |
 | [saadparwaiz1/cmp_luasnip]                    | Completion of Snippets                       |
 | [stevearc/aerial.nvim]                        | Symbol Overview/Code Outline                 |
 | [stevearc/dressing.nvim]                      | General vim.ui Improvements                  |
-| [stevearc/resession.nvim]                     | Session Management                           |
-| [williamboman/mason-lspconfig.nvim]           | Mason LSP Integration                        |
-| [williamboman/mason.nvim]                     | External Package Manager                     |
+| [stevearc/resession.nvim]                     | セッション管理                               |
+| [williamboman/mason-lspconfig.nvim]           | MasonのLSP統合                               |
+| [williamboman/mason.nvim]                     | 外部のパッケージ管理                         |
 | [windwp/nvim-autopairs]                       | Automatically Close Pairs                    |
 | [windwp/nvim-ts-autotag]                      | Automatically Close/Rename Tags              |
+
+[nvimtools/none-ls.nvim]: https://github.com/nvimtools/none-ls.nvim
 
 ### uninstall AstroNvim
 
