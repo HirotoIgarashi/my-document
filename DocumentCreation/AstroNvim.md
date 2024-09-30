@@ -409,31 +409,32 @@ pressing Space
 | Close Buffer                   | バッファーをクローズする            | `Leader + c`   |
 | Next Tab<br>(real vim tab)     | 次のタブ<br>(real vim tab)          | `]t`           |
 | Previous Tab<br>(real vim tab) | 前のタブ<br>(read vim tab)          | `[t`           |
-| Comment                        | 1つもしくは複数の行をコメントにする | `Leader + /`   |
+| Comment                        | 1つもしくは複数の行をコメントにする | `Leawer + /`   |
 | Horizontal Split               | 垂直に分割する                      | `\`            |
 | Vertical Split                 | 水平に分割する                      | `\|`           |
 
 ### バッファー
 
+| アクション                                                                    | マッピング                               |
 | ----------------------------------------------------------------------------- | ---------------------------------------- | -------------- |
-| Nex Buffer | 次のバッファー | `]b` |
-| Previous Buffer | 前のバッファー | `[b` |
-| Move Buffer Right | バッファーを右に移動する | `>b` |
-| Move Buffer Left | バッファーを左に移動する | `<b` |
-| Navigate to <br> buffer tab with <br> interactive picker | 選択されたバッファータブにナビゲートする | `Leader + bb` |
-| Close all <br> buffers except the <br> current | 今のバッファー以外のバッファーを閉じる | `Leader + bc` |
-| Close all buffers | 全てのバッファーを閉じる | `Leader + bC` |
-| Delete a buffer <br> tab with <br> interactive picker | 選択されたバッファータブを削除する | `Leader + bd` |
-| Close all <br> buffers to the left <br> of the current | 左にある全てのバッファーをクローズする | `Leader + bl` |
-| Go to the previous <br> buffer | 前のバッファーに移動する | `Leader + bp` |
-| Close all buffers <br> to the right of the current | 右にある全てのバッファーをクローズする | `Leader + br` |
-| Sort buffers by <br> extension | バッファーをextensionでソートする | `Leader + bse` |
-| Sort buffers by <br> buffer number | バッファーをバッファー番号でソートする | `Leader + bsi` |
-| Sort buffers by <br> last modification | バッファーを最終更新日でソートする | `Leader + bsm` |
-| Sort buffers by <br> full path | バッファーをフルパスでソートする | `Leader + bsp` |
-| Sort buffers by <br> relative path | バッファーをrelative pathでソートする | `Leader + bsr` |
-| Open a buffer tab <br> in a new horizontal <br> split with interactive picker | 水平方向に新しいタブをオープンする | `Leader + b\` |
-| Open a buffer tab <br> in a new vertical <br> split with interactive picker | 垂直方向に新しいタブをオープンする | `Leader + b` |
+| Nex Buffer<br>                                                                | 次のバッファー                           | `]b`           |
+| Previous Buffer                                                               | 前のバッファー                           | `[b`           |
+| Move Buffer Right                                                             | バッファーを右に移動する                 | `>b`           |
+| Move Buffer Left                                                              | バッファーを左に移動する                 | `<b`           |
+| Navigate to <br> buffer tab with <br> interactive picker                      | 選択されたバッファータブにナビゲートする | `Leawer + bb`  |
+| Close all <br> buffers except the <br> current                                | 今のバッファー以外のバッファーを閉じる   | `Leader + bc`  |
+| Close all buffers                                                             | 全てのバッファーを閉じる                 | `Leader + bC`  |
+| Delete a buffer <br> tab with <br> interactive picker                         | 選択されたバッファータブを削除する       | `Leader + bd`  |
+| Close all <br> buffers to the left <br> of the current                        | 左にある全てのバッファーをクローズする   | `Leader + bl`  |
+| Go to the previous <br> buffer                                                | 前のバッファーに移動する                 | `Leader + bp`  |
+| Close all buffers <br> to the right of the current                            | 右にある全てのバッファーをクローズする   | `Leader + br`  |
+| Sort buffers by <br> extension                                                | バッファーをextensionでソートする        | `Leader + bse` |
+| Sort buffers by <br> buffer number                                            | バッファーをバッファー番号でソートする   | `Leader + bsi` |
+| Sort buffers by <br> last modification                                        | バッファーを最終更新日でソートする       | `Leader + bsm` |
+| Sort buffers by <br> full path                                                | バッファーをフルパスでソートする         | `Leader + bsp` |
+| Sort buffers by <br> relative path                                            | バッファーをrelative pathでソートする    | `Leader + bsr` |
+| Open a buffer tab <br> in a new horizontal <br> split with interactive picker | 水平方向に新しいタブをオープンする       | `Leader + b\`  |
+| Open a buffer tab <br> in a new vertical <br> split with interactive picker   | 垂直方向に新しいタブをオープンする       | `Leader + b`   |
 
 ### Better Escape
 
