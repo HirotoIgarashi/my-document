@@ -29,7 +29,7 @@ echo $SHELL
 /usr/bin/fish
 ```
 
-```
+```bash
 $ readlink "/proc/$$/exe"
 /usr/bin/bash
 ```
