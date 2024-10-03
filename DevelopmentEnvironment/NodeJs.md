@@ -22,7 +22,7 @@ nvm --version
 
 ### nvmによる最新版のNode.js のインストール
 
-```
+```bash
 nvm install node
 node --version
 v22.9.0
