@@ -10,12 +10,12 @@ UNIXでは、ユーザとの対話を受け持つプログラムをシェルと�
 Linuxでシェルを変更するときは、chshコマンドを使います。chshによるログインシェル
 の変更が有効になるのはシステムの再起動が必要です。
 
-```
+```bash
 $ sudo chsh
 [sudo] <ユーザ名> のパスワード:
 root のログインシェルを変更中
 新しい値を入力してください。標準設定値を使うならリターンを押してください
-	ログインシェル [/bin/bash]:
+  ログインシェル [/bin/bash]:
 ```
 
 ## 使っているシェルを確認する
@@ -85,10 +85,10 @@ $ readlink "/proc/$$/exe"
   設定ファイルは~/.config/fish/config.fishです。
 
   - パッケージマネージャーの[fisher]をインストールする
-    [fisher]: https://github.com/jorgebucaran/fisher
+    [fisher]: <https://github.com/jorgebucaran/fisher>
 
     - インストール
-      curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+      curl -sL <https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish> | source && fisher install jorgebucaran/fisher
 
     - nvimのインストール
       fisher install FabioAntunes/fish-nvm edc/bass
@@ -126,20 +126,21 @@ chshコマンドを使います。
 
   - weztermのインストール
 
-  ```
+  ```bash
   curl -fsSL https://apt.fury.io/wez/gpg.key | sudo gpg --yes --dearmor -o /usr/share/keyrings/wezterm-fury.gpg
   echo 'deb [signed-by=/usr/share/keyrings/wezterm-fury.gpg] https://apt.fury.io/wez/ * *' | sudo tee /etc/apt/sources.list.d/wezterm.list
   ```
 
-  ```
+  ```bash
   sudo apt update
   ```
 
-  ```
+  ```bash
   sudo apt install wezterm
   ```
 
-  Ctrl + Alt + Tで起動するようにするには[設定] -> [キーボード]でキーボードメニューを開き[アプリケーションショートカットキー]でショートカットCtrl + Alt + Tにコマンド /usr/bin/weztermを登録します。
+  Ctrl + Alt + Tで起動するようにするには[設定] -> [キーボード]でキーボードメニューを開き[アプリケーションショートカットキー]で
+  ショートカットCtrl + Alt + Tにコマンド /usr/bin/weztermを登録します。
 
 設定ファイルは~/.wezterm.luaです。
 
@@ -155,7 +156,14 @@ local config = wezterm.config_builder()
 -- For example, changing the color scheme:
 config.color_scheme = "AdventureTime"
 
-config.font = wezterm.font("Cica", { weight = "Bold", stretch = "Normal", style = "Normal" })
+config.font = wezterm.font(
+  "Cica",
+  {
+    weight = "Bold",
+    stretch = "Normal",
+    style = "Normal"
+  }
+)
 config.font_size = 15
 
 -- and finally, return the configuration to wezterm
