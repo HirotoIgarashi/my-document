@@ -320,7 +320,7 @@ git clone https://github.com/<your_github_user_name>/<your_repository>\
 ```
 
 次のghコマンドを使う場合は`gh auth
-login`の手順を終わらせておく必要があります。まGithubのユーザ名とEメールアドレスの設定が必要になります。
+login`の手順を終わらせておく必要があります。またGithubのユーザ名とEメールアドレスの設定が必要になります。
 
 ```bash
 gh repo clone <your_github_user_name>/astronvim_conf ~/.config/nvim/lua/user
