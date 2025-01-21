@@ -4,10 +4,19 @@ local wezterm = require("wezterm")
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
+local mux = wezterm.mux
+
+-- position and size
+wezterm.on("gui-startup", function(cmd)
+	local _, _, window = mux.spawn_window(cmd or { width = 85, height = 32 })
+	window:gui_window():set_position(950, 100)
+	-- window:set_inner_size(800, 1020)
+end)
+
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
--- config.color_scheme = 'AdventureTime'
+-- config.color_scheme = "AdventureTime"
 -- config.color_scheme = 'Batman'
 -- config.color_scheme = "iceberg-light"
 -- config.color_scheme = "iceberg-dark"
@@ -18,14 +27,22 @@ config.font = wezterm.font("Cica", { weight = "Medium", stretch = "Normal", styl
 -- config.font = wezterm.font(
 -- 	"Cica", { weight = "Regular", stretch = "Normal", style = "Normal" }
 -- )
-
 -- config.font = wezterm.font(
 -- 	"Cica", { weight = "Bold", stretch = "Normal", style = "Normal" }
 -- )
 -- config.font = wezterm.font("Cica")
+-- タブを使用しない
+config.show_tabs_in_tab_bar = false
+
+-- 新規にウィンドウを開いたときのサイズを設定する
+-- 高さ
+-- config.initial_rows = 32
+-- 幅
+-- config.initial_cols = 70
+-- config.window_decorations = "NONE"
 
 -- フォントのサイズを設定する
-config.font_size = 18
+config.font_size = 28
 
 -- 行間の調整
 config.line_height = 1.4
@@ -52,12 +69,6 @@ config.default_cursor_style = "BlinkingBlock"
 -- 最初からフルスクリーンで起動
 -- local mux = wezterm.mux
 
--- wezterm.on("gui-startup", function(cmd)
--- 	local tab, pane, window = mux.spawn_window(cmd or {})
--- 	-- window:gui_window():maximize()
--- 	window:gui_window():toggle_fullscreen()
--- end)
---
 -- ショートカットキー設定
 -- SHIFT CTRL nでフルスクリーンモードを切り替える
 -- Alt + Enterでも切り替えが可能
