@@ -8,9 +8,9 @@ local mux = wezterm.mux
 
 -- position and size
 wezterm.on("gui-startup", function(cmd)
-	local _, _, window = mux.spawn_window(cmd or { width = 85, height = 50 })
-	window:gui_window():set_position(300, 100)
-	window:set_inner_size(800, 1020)
+	local _, _, window = mux.spawn_window(cmd or { width = 85, height = 30 })
+	window:gui_window():set_position(900, 100)
+	-- window:set_inner_size(800, 1020)
 end)
 
 -- This is where you actually apply your config choices
@@ -59,7 +59,7 @@ config.window_padding = {
 
 config.hide_tab_bar_if_only_one_tab = true
 
-config.window_decorations = "NONE"
+-- config.window_decorations = "NONE"
 
 -- デフォルトカーソルスタイル
 config.default_cursor_style = "SteadyBlock"
