@@ -43,11 +43,13 @@ VERSION_CODENAME=vera
 UBUNTU_CODENAME=jammy
 ```
 
+neofetch command
+
 ## Linux mint インストール後に行うこと
 
 ### Fcitx 5のインストール
 
-```
+```sh
 sudo apt install fcitx5-mozc
 im-config -n fcitx5
 ```
