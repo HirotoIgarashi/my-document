@@ -170,8 +170,7 @@ config.font_size = 15
 
 ## ターミナルの設定について
 
-Linux mintのxfce Editionを利用している場合はターミナルの名称は Xfce Terminal になります。ターミナルを簡単に起動するにはキーボードで
-`Ctrl + Alt + t`を押します。
+Linux mintのxfce Editionを利用している場合はターミナルの名称は Xfce Terminal になります。ターミナルを簡単に起動するにはキーボードで`Ctrl + Alt + t`を押します。
 
 ### ターミナルの大きさを設定する
 
