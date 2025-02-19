@@ -3,10 +3,10 @@
 [Neovim]: https://neovim.io/
 [AstroNvim]: https://astronvim.com/
 
-パソコンのエディターとしてWindowsではnotepad、UNIXではmuleや、viがあります。
+パソコンのエディターで無料で提供されシンプルなものは多数あります。Windowsではnotepad、UNIXではmule,emacsや、viがよく使われているのではないでしょうか。
 viの後継としてvimが開発されました。そのvimの後継としてNeovimが開発されました。
 [Neovim]の公式ホームページによるとNeovimは「超拡張可能なVimベースのテキストエディター」と説明されています。
-[AstroNvim]は[Neovim]を優れたプラグインのセットで拡張可能で使いやすい、美しく、機能が豊富にする構成です。
+[AstroNvim]は[Neovim]を優れたプラグインのセットで拡張可能で使いやすい、美しく、機能が豊富にする構成です。とあります。
 
 ## Neovimのインストール
 
