@@ -8,8 +8,8 @@ local mux = wezterm.mux
 
 -- position and size
 wezterm.on("gui-startup", function(cmd)
-	local _, _, window = mux.spawn_window(cmd or { width = 85, height = 30 })
-	window:gui_window():set_position(900, 100)
+	local _, _, window = mux.spawn_window(cmd or { width = 85, height = 31 })
+	window:gui_window():set_position(900, 50)
 	-- window:set_inner_size(800, 1020)
 end)
 
@@ -62,11 +62,11 @@ config.hide_tab_bar_if_only_one_tab = true
 -- config.window_decorations = "NONE"
 
 -- デフォルトカーソルスタイル
-config.default_cursor_style = "SteadyBlock"
+-- config.default_cursor_style = "SteadyBlock"
 -- config.default_cursor_style = "BlinkingBlock"
 -- config.default_cursor_style = "SteadyUnderline"
 -- config.default_cursor_style = "BlinkingUnderline"
--- config.default_cursor_style = "SteadyBar"
+config.default_cursor_style = "SteadyBar"
 -- config.default_cursor_style = "BlinkingBar"
 -- config.animation_fps = 1
 -- config.cursor_blink_ease_in = "Constant"
