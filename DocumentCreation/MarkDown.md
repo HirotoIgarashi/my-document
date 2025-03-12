@@ -78,6 +78,37 @@
 
 :--------
 
+## 図形を描画するmermaid記法
+
+### 記法フローチャート(Basic flowchart)
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+```mermaid
+graph TD;
+USD-->円
+CNH-->円
+USD-->EUR;
+円-->EUR;
+円-->GBP;
+USD-->GBP;
+GBP-->EUR;
+```
+
 ## MarkdownPreview
 
 ## markdown-toc
+
+```
+
+```
+
+```
+
+```
