@@ -93,7 +93,6 @@ graph TD;
 ```mermaid
 graph TD;
 USD-->円
-CNH-->円
 USD-->EUR;
 円-->EUR;
 円-->GBP;
