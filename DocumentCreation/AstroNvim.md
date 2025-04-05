@@ -15,9 +15,10 @@ viの後継としてvimが開発されました。そのvimの後継としてNeo
 インストールは必要なく、nvim.appimageをダウンロードして実行するだけです。
 (Linuxディストリビューションが 4 年以上古い場合は動作しない可能性があります。)
 
+appimage 
+
 ```bash
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-chmod u+x nvim.appimage
+chmod u+x nvim-linux-x86_64.appimage
 ./nvim.appimage
 ```
 
