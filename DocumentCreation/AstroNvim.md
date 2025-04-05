@@ -15,11 +15,15 @@ viの後継としてvimが開発されました。そのvimの後継としてNeo
 インストールは必要なく、nvim.appimageをダウンロードして実行するだけです。
 (Linuxディストリビューションが 4 年以上古い場合は動作しない可能性があります。)
 
-appimage 
+### appimageのダウンロード
+
+ブラウザからappiamgeをダウンロードする場合はneovimのホームページ(https://neovim.io)のInstall Nowのボタンをクリックしてインストールの説明ページ(https://github.com/neovim/neovim/blob/master/INSTALL.md)に遷移します。Install from downloadのLatest stable releaseから自分の環境にあったappimageをダウンロードします。
+
+ファイル名はnvim-linux-x86_64.appimageです。以下のコマンドで実行権限を与えます。
 
 ```bash
 chmod u+x nvim-linux-x86_64.appimage
-./nvim.appimage
+./nvim-linux-x86_64.appimage
 ```
 
 ### 現在ログインしているユーザーにだけ設定する場合
@@ -29,7 +33,7 @@ chmod u+x nvim-linux-x86_64.appimage
 ~/.bashrcに以下の行を追加します。
 
 ```bashrc
-alias nvim='~/nvim.appimage'
+alias nvim='~/nvim-linux-x86_64.appimage'
 ```
 
 編集した.bashrcを以下のコマンドで反映します。
@@ -41,7 +45,7 @@ alias nvim='~/nvim.appimage'
 #### fishを使用している場合
 
 ```fish
-alias nvim='~/nvim.appimage'
+alias nvim='~/nvim-linux-x86_64.appimage'
 ```
 
 ### Linuxのエディターとして設定する場合
