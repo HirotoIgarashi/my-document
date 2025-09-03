@@ -1,20 +1,20 @@
 # Linuxをインストールした後に行う事
 
-## SHELLを変更する
+## シェルを変更する
 
-SHELLをbashからfishに変更する。
+シェルをbashからfishに変更します。
 
 ## ターミナルを変更する
 
-cntl + alt + t で起動するターミナルをXfce 端末からwezterに変更する。
+Ctrl + Alt + t で起動するターミナルをXfce 端末からwezterに変更します。
 
 ## PATHの設定
 
-PATHに.local/binを追加する
+PATHに~/.local/binを追加します。
 
 ## タッチパッドの有効/無効
 
-タッチパッドの有効/無効を設定するコマンドを作成してキーボードショートカット ctrl + alt + @ に割り当てる。
+タッチパッドの有効/無効を設定するコマンドを作成してキーボードショートカット Ctrl + ALT + @ に割り当てる。
 
 ## キーボードの設定
 
@@ -23,6 +23,8 @@ PATHに.local/binを追加する
 ## 開発環境の設定
 
 ### node
+
+nvmでnodeをインストールしてnpmコマンドを使えるようにします。
 
 ### python3
 
@@ -33,3 +35,13 @@ PATHに.local/binを追加する
 ### repoコマンド
 
 ### lazygitコマンド
+
+## エディターの設定
+
+### Neovimを使う場合
+
+### Visual Studio Codeを使う場合
+
+### emacsを使う場合
+
+## Markdown関連の設定
