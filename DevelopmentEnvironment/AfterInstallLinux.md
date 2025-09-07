@@ -45,3 +45,8 @@ nvmでnodeをインストールしてnpmコマンドを使えるようにしま�
 ### emacsを使う場合
 
 ## Markdown関連の設定
+
+### markdownPreviw
+
+Cannot find module 'tslib' -> npm install -g tslib
+~/.local/share/nvim/lazy/markdown-preview.nvim/ディレクトリでnpm installを実行する。
