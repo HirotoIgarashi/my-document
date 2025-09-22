@@ -6,7 +6,7 @@
 
 ## ターミナルを変更する
 
-Ctrl + Alt + t で起動するターミナルをXfce 端末からwezterに変更します。
+Ctrl + Alt + t で起動するターミナルをXfce 端末からweztermに変更します。
 
 ## PATHの設定
 
