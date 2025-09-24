@@ -73,10 +73,8 @@ $ readlink "/proc/$$/exe"
   fishとは**F**riendly **i**nteractive **sh**ellの略です。
 
   設定ファイルは~/.config/fish/config.fishです。
-
   - パッケージマネージャーの[fisher]をインストールする
     [fisher]: <https://github.com/jorgebucaran/fisher>
-
     - インストール
       curl -sL <https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish> | source && fisher install jorgebucaran/fisher
 
@@ -111,7 +109,6 @@ chshコマンドを使います。
 - [WezTerm]
 
   [WezTerm]: https://wezfurlong.org/wezterm/install/linux.html
-
   - weztermのインストール
 
   ```bash
@@ -164,7 +161,7 @@ config.font_size = 15
 
   [kitty]: https://sw.kovidgoyal.net/kitty/
 
-  kittyはフォントによって表示が崩れるというが記事があったので導入は見送っている。
+  <!-- kittyはフォントによって表示が崩れるというが記事があったので導入は見送っている。 -->
 
 - xfce terminal
 
