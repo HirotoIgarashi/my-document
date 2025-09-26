@@ -1,6 +1,8 @@
 # Linuxをインストールした後に行うこと
 
-## Ctrl + alt + @でタッチパッドの有効/無効を切り替える
+## タッチパッドの有効/無効の切替をショートカットキーに割り当てる
+
+タッチパッドの有効/無効を設定するコマンドを作成してキーボードショートカット Ctrl + ALT + @ に割り当てます。
 
 準備として必要になるプログラムをインストールします。
 
@@ -22,7 +24,8 @@ sudo apt install xinput
 #!/bin/bash
 
 declare -i ID
-ID=$(xinput list | grep -Eio '(touchpad|glidepoint)\s*id=[0-9]{1,2}' | grep -Eo '[0-9]{1,2}')
+# ID=$(xinput list | grep -Eio '(touchpad|glidepoint)\s*id=[0-9]{1,2}' | grep -Eo '[0-9]{1,2}')
+id=11
 declare -i STATE
 STATE=$(xinput list-props "$ID" | grep 'Device Enabled' | awk '{print $4}')
 if [ "$STATE" -eq 1 ]
@@ -34,7 +37,7 @@ else
     xinput enable "$ID"
     echo "Touchpad enabled."
     notify-send -a 'Touchpad' 'Touchpad Enabled' -i input-touchpad
-f
+fi
 ```
 
 ## シェルを変更する
@@ -48,10 +51,6 @@ Ctrl + Alt + t で起動するターミナルをXfce 端末からweztermに変�
 ## PATHの設定
 
 PATHに~/.local/binを追加します。
-
-## タッチパッドの有効/無効
-
-タッチパッドの有効/無効を設定するコマンドを作成してキーボードショートカット Ctrl + ALT + @ に割り当てます。
 
 ## キーボードの設定
 
