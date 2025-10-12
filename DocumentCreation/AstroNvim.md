@@ -3,6 +3,8 @@
 [Neovim]: https://neovim.io/
 [AstroNvim]: https://astronvim.com/
 
+## AstroNvim
+
 パソコンのエディターで無料で提供されシンプルなものは多数あります。Windowsではnotepad、UNIXではmule,emacsや、viがよく使われているのではないでしょうか。
 viの後継としてvimが開発されました。そのvimの後継としてNeovimが開発されました。
 [Neovim]の公式ホームページによるとNeovimは「超拡張可能なVimベースのテキストエディター」と説明されています。
@@ -189,12 +191,10 @@ sudo apt install xclip
 - Terminal with true color support (for the default theme, otherwise it is
   dependent on the theme you are using)
 - オプションの要件
-
   - [ripgrep](https://github.com/BurntSushi/ripgrep) - live grep telescope
     search ( \<leader>fw)
 
   インストールされていない場合は`sudo apt install ripgrep`を実行します。
-
   - [lazygit](https://github.com/jesseduffield/lazygit) - git uiターミナルを
     起動するときに必要です。(\<leader>tlまたは\<leader>gg)
 
@@ -266,7 +266,7 @@ Microsoftが2016年6月に仕様を公開しました。
 :TSInstall python
 ```
 
-#### デバッガlanguage parser)のイントール
+#### デバッガ(language parser)のイントール
 
 ```vim
 :DapInstall python
@@ -420,7 +420,7 @@ pressing Space
 
 ### バッファー
 
-| アクション                                                                    | マッピング                               |
+| アクション                                                                    | アクション（日本語）                     | マッピング     |
 | ----------------------------------------------------------------------------- | ---------------------------------------- | -------------- |
 | Nex Buffer<br>                                                                | 次のバッファー                           | `]b`           |
 | Previous Buffer                                                               | 前のバッファー                           | `[b`           |
