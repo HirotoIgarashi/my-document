@@ -3,9 +3,18 @@
 [Neovim]: https://neovim.io/
 [AstroNvim]: https://astronvim.com/
 
-## AstroNvim
+## AstroNvimとは
 
-パソコンのエディターで無料で提供されシンプルなものは多数あります。Windowsではnotepad、UNIXではmule,emacsや、viがよく使われているのではないでしょうか。
+AstroNvimとはパソコン用の無料で提供されるエディターです。
+
+## パソコン用のエディター
+
+パソコンのエディターで無料で提供されるものは多数あります。
+
+Windowsではnotepad
+
+UNIXではmule,emacsや、viがよく使われていると思います。
+
 viの後継としてvimが開発されました。そのvimの後継としてNeovimが開発されました。
 [Neovim]の公式ホームページによるとNeovimは「超拡張可能なVimベースのテキストエディター」と説明されています。
 [AstroNvim]は[Neovim]を優れたプラグインのセットで拡張可能で使いやすい、美しく、機能が豊富にする構成です。とあります。
