@@ -358,6 +358,10 @@ ERROR Tool not found: 'mmdc'の場合は
 npm install -g @mermaid-js/mermaid-cli
 ```
 
+Error: Cannot find module 'tslib'
+
+npm install tslib
+
 ## AstroCommunity - AstroCommunityを使おう
 
 ## Mappings - キーマッピング
