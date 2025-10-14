@@ -352,6 +352,10 @@ Warningがでた場合はpynvimをインストールすることで対応しま�
 
 ```bash
 python3 -m pip install --user --upgrade pynvim
+
+ERROR Tool not found: 'mmdc'の場合は
+
+npm install -g @mermaid-js/mermaid-cli
 ```
 
 ## AstroCommunity - AstroCommunityを使おう
