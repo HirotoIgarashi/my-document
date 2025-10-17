@@ -1,3 +1,10 @@
+<div class="cover-page">
+    <h1>タイトル: Linuxをインストールした後に行うこと</h1>
+    <h2>サブタイトル: 文書作成のために</h2>
+  <div class="info">2025年10月18日</div>
+  <!-- <div class="info">この書き方で内容を適宜追加できます</div> -->
+</div>
+<br>
 
 <!-- mtoc-start -->
 
