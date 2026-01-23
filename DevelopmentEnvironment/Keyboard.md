@@ -25,10 +25,9 @@ X Window Systemでは、キーとマウスのボタンに対する意味の割�
 |-pke |xmodmapに直接渡すことのできる書式による、<br>現在のキー割り当て状態を出力する|
 
 
-keycode   8 =
-
+kycode   8 =
 keycode   9 = Escape NoSymbol Escape
-ycode  10 = 1 exclam 1 exclam
+keycode  10 = 1 exclam 1 exclam
 keycode  11 = 2 quotedbl 2 quotedbl
 keycode  12 = 3 numbersign 3 numbersign
 keycode  13 = 4 dollar 4 dollar
@@ -274,4 +273,3 @@ keycode 252 = XF86BrightnessAuto NoSymbol XF86BrightnessAuto
 keycode 253 = XF86DisplayOff NoSymbol XF86DisplayOff
 keycode 254 = XF86WWAN NoSymbol XF86WWAN
 keycode 255 = XF86RFKill NoSymbol XF86RFKill
-

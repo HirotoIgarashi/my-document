@@ -37,7 +37,7 @@
 
 ## 1.1. タッチパッドの有効/無効の切替をショートカットキーに割り当てる
 
-タッチパッドの有効/無効を設定するコマンドを作成してキーボードショートカット Ctrl + ALT + @ に割り当てます。
+ノートPCでキータッチする時にタッチパッドを触ってしまい予期せぬ動作になってしまうことがあると思います。そうならないようにタッチパッドの有効/無効を設定するコマンドを作成します。このコマンドにキーボードショートカット Ctrl + ALT + @ に割り当てます。
 
 準備としてxinputコマンドをインストールします。
 
@@ -76,12 +76,26 @@ fi
 ```
 
 ## 1.2. シェルを変更する
-
-シェルをbashからfishに変更します。
+[fish]:https://fishshell.com/
+シェルをbashから[fish]に変更します。
 
 ## 1.3. ターミナルを変更する
 
-Ctrl + Alt + t で起動するターミナルをXfce 端末からweztermに変更します。
+[wezterm]:https://wezterm.org/index.html
+[Flathub]:https://flathub.org/ja
+
+Ctrl + Alt + t で起動するターミナルをXfce端末から[wezterm]に変更します。
+[wezterm]をインストールするためには[Flathub]を使います。
+
+~~~shell
+flatpak install flathub org.wezfurlong.wezterm
+~~~
+
+インストールした[wezterm]のバージョンを確認します。
+~~~shell
+wezterm --version
+~~~
+
 
 ## 1.4. PATHの設定
 
