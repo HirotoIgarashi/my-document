@@ -137,6 +137,12 @@ wezterm 20240203-110809-5046fc22
 
 PATHに~/.local/binを追加します。
 
+シェルをfishに変更したので~/.config/fish/config.fishに~/local/binにPATHを通します。
+
+~~~fish
+set -x PATH ~/.local/bin $PATH
+~~~
+
 ## 1.5. キーボードの設定
 
 ### 1.5.1. CapsLockをCtrlにする
