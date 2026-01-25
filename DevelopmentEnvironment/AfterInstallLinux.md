@@ -125,6 +125,9 @@ mv ./WezTerm-20240203-110809-5046fc22-Ubuntu20.04.AppImage ~/.local/bin/wezterm
 
 Ctrl + Alt + t で起動するターミナルをXfce端末から[wezterm]に変更します。
 
+MX Linuxの場合は設定-> キーボード ->
+アプリケーションショートカットキーを使用します。
+
 インストールした[wezterm]のバージョンを確認します。
 
 ~~~shell
@@ -132,6 +135,7 @@ wezterm --version
 wezterm 20240203-110809-5046fc22
 ~~~
 
+weztermの設定は~/.config/wezterm/にあるwezterm.luaに記述します。
 
 ## 1.4. PATHの設定
 
