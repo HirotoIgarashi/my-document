@@ -11,9 +11,10 @@
 * [1. Linuxをインストールした後に行うこと](#1-linuxをインストールした後に行うこと)
   * [1.1. タッチパッドの有効/無効の切替をショートカットキーに割り当てる](#11-タッチパッドの有効無効の切替をショートカットキーに割り当てる)
   * [1.2. シェルを変更する](#12-シェルを変更する)
-    * [1.2.1. fishのインストール](#121-fishのインストール)
+    * [1.2.1. [fish]のインストール](#121-fishのインストール)
     * [1.2.2. ログインシェルをfishに変更する](#122-ログインシェルをfishに変更する)
   * [1.3. ターミナルを変更する](#13-ターミナルを変更する)
+    * [weztermのインストール](#weztermのインストール)
   * [1.4. PATHの設定](#14-pathの設定)
   * [1.5. キーボードの設定](#15-キーボードの設定)
     * [1.5.1. CapsLockをCtrlにする](#151-capslockをctrlにする)
@@ -83,24 +84,33 @@ fi
 [fish]:https://fishshell.com/
 シェルをbashから[fish]に変更します。
 
-### 1.2.1. fishのインストール
+### 1.2.1. [fish]のインストール
 
-fishのホームページからfish_4.3.3-2_amd64.devをダウンロードします。debアプリでシステムにインストールします。
+[fish]のホームページからfish_4.3.3-2_amd64.debをダウンロードします。debアプリでシステムにインストールします。
 
 ### 1.2.2. ログインシェルをfishに変更する
 
+ログインシェルを変更するには、chshコマンドを使用します。
 chshコマンドに/usr/bin/fishと答えます。システムを再起動します。
 
 タッチパッドの有効/無効を切り替えるコマンドする場合は以下に従います。
-ログインシェルを変更するには、chshコマンドを使用します。
 
 ## 1.3. ターミナルを変更する
 
 [wezterm]:https://wezterm.org/index.html
-[Flathub]:https://flathub.org/ja
+[Flatpak]:https://flathub.org/ja
+
+### weztermのインストール
+
+weztermはAppImage形式で提供されています。
+
+~~~shell
+curl -LO https://github.com/wezterm/wezterm/releases/download/20240203-110809-5046fc22/WezTerm-20240203-110809-5046fc22-Ubuntu20.04.AppImage
+chmod +x WezTerm-20240203-110809-5046fc22-Ubuntu20.04.AppImage
+~~~
 
 Ctrl + Alt + t で起動するターミナルをXfce端末から[wezterm]に変更します。
-[wezterm]をインストールするためには[Flathub]を使います。
+[wezterm]をインストールするためには[Flatpak]を使います。
 
 ~~~shell
 flatpak install flathub org.wezfurlong.wezterm
