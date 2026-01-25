@@ -87,6 +87,7 @@ fi
 ### 1.2.1. fishのインストール
 
 [fish]のホームページからfish_4.3.3-2_amd64.debをダウンロードします。debアプリでシステムにインストールします。
+/usr/bin/にインストールされます。
 
 ### 1.2.2. ログインシェルをfishに変更する
 
@@ -98,7 +99,6 @@ chshコマンドに/usr/bin/fishと答えます。システムを再起動しま
 ## 1.3. ターミナルを変更する
 
 [wezterm]:https://wezterm.org/index.html
-[Flatpak]:https://flathub.org/ja
 
 ### weztermのインストール
 
@@ -109,16 +109,27 @@ curl -LO https://github.com/wezterm/wezterm/releases/download/20240203-110809-50
 chmod +x WezTerm-20240203-110809-5046fc22-Ubuntu20.04.AppImage
 ~~~
 
-Ctrl + Alt + t で起動するターミナルをXfce端末から[wezterm]に変更します。
-[wezterm]をインストールするためには[Flatpak]を使います。
+ダウンロードされたAppImageを実行して正常にダウンロードされたことを確認します。
 
 ~~~shell
-flatpak install flathub org.wezfurlong.wezterm
+./WezTerm-20240203-110809-5046fc22-Ubuntu20.04.AppImage
 ~~~
 
+~/local/binの下にweztermの実行ファイルを移動する。
+
+~~~shell
+mkdir ~/.local/bin
+mv ./WezTerm-20240203-110809-5046fc22-Ubuntu20.04.AppImage ~/.local/bin/wezterm
+~/.local/bin/wezterm
+~~~
+
+Ctrl + Alt + t で起動するターミナルをXfce端末から[wezterm]に変更します。
+
 インストールした[wezterm]のバージョンを確認します。
+
 ~~~shell
 wezterm --version
+wezterm 20240203-110809-5046fc22
 ~~~
 
 
