@@ -360,7 +360,10 @@ npm install -g @mermaid-js/mermaid-cli
 
 Error: Cannot find module 'tslib'
 
+~~~shell
+cd ~/.local/share/nvim/lazy/markdown-preview.nvim
 npm install tslib
+~~~
 
 ## AstroCommunity - AstroCommunityを使おう
 
