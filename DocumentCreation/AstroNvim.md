@@ -1,32 +1,115 @@
-# AstroNvim入門
+
+<!-- mtoc-start -->
+
+* [1. AstroNvim入門](#1-astronvim入門)
+  * [1.1. AstroNvimとは](#11-astronvimとは)
+  * [1.2. パソコン用のエディター](#12-パソコン用のエディター)
+  * [1.3. Neovimのインストール](#13-neovimのインストール)
+    * [1.3.1. appimageのダウンロード](#131-appimageのダウンロード)
+    * [1.3.2. 現在ログインしているユーザーにだけ設定する場合](#132-現在ログインしているユーザーにだけ設定する場合)
+      * [1.3.2.1. bashを使用している場合](#1321-bashを使用している場合)
+      * [1.3.2.2. fishを使用している場合](#1322-fishを使用している場合)
+    * [1.3.3. Linuxのエディターとして設定する場合](#133-linuxのエディターとして設定する場合)
+    * [1.3.4. neovimのバージョンを確認する](#134-neovimのバージョンを確認する)
+  * [1.4. GettingStarted - AstroNvimを始めよう](#14-gettingstarted---astronvimを始めよう)
+    * [1.4.1. AstroNvimのインストール](#141-astronvimのインストール)
+    * [1.4.2. AstroNvimの特徴](#142-astronvimの特徴)
+    * [1.4.3. AstroNvimの要件](#143-astronvimの要件)
+    * [1.4.4. AstroNvimのインストール](#144-astronvimのインストール)
+    * [1.4.5. Astronvimのセットアップ](#145-astronvimのセットアップ)
+      * [1.4.5.1. LSPのイントール](#1451-lspのイントール)
+      * [1.4.5.2. 言語パーサー(language parser)のイントール](#1452-言語パーサーlanguage-parserのイントール)
+      * [1.4.5.3. デバッガ(language parser)のイントール](#1453-デバッガlanguage-parserのイントール)
+      * [1.4.5.4. プラグインの管理](#1454-プラグインの管理)
+      * [1.4.5.5. AstroNvimの更新](#1455-astronvimの更新)
+      * [1.4.5.6. AstroNvimパッケージの更新](#1456-astronvimパッケージの更新)
+      * [1.4.5.7. Reload AstroNvim (EXPERIMENTAL)](#1457-reload-astronvim-experimental)
+    * [1.4.6. コンフィグレーション](#146-コンフィグレーション)
+  * [1.6. AstroCommunity - AstroCommunityを使おう](#16-astrocommunity---astrocommunityを使おう)
+  * [1.7. Mappings - キーマッピング](#17-mappings---キーマッピング)
+    * [1.7.1. Opening LSP symbols](#171-opening-lsp-symbols)
+    * [1.7.2. 行の診断結果を確認する](#172-行の診断結果を確認する)
+    * [1.7.3. Hover document](#173-hover-document)
+    * [1.7.4. Open rename prompt](#174-open-rename-prompt)
+    * [1.7.5. Go to definition](#175-go-to-definition)
+    * [1.7.6. Code actions](#176-code-actions)
+    * [1.7.7. Telescope search](#177-telescope-search)
+    * [1.7.8. Telescope grep](#178-telescope-grep)
+    * [1.7.9. Telescope git status](#179-telescope-git-status)
+    * [1.7.10. Telescope old files](#1710-telescope-old-files)
+    * [1.7.11. Which key](#1711-which-key)
+    * [1.7.12. 標準のマッピング](#1712-標準のマッピング)
+    * [1.7.13. バッファー](#1713-バッファー)
+    * [1.7.14. Better Escape](#1714-better-escape)
+    * [1.7.15. 補完（Completion）](#1715-補完completion)
+    * [1.7.16. Neo-Tree](#1716-neo-tree)
+    * [1.7.17. Dashboard Mappings](#1717-dashboard-mappings)
+    * [1.7.18. Session Manager Mappings](#1718-session-manager-mappings)
+    * [1.7.19. Package Management Mappings](#1719-package-management-mappings)
+    * [1.7.20. LSP Mappings](#1720-lsp-mappings)
+    * [1.7.21. Debugger Mappings](#1721-debugger-mappings)
+    * [1.7.22. Telescope Mappings](#1722-telescope-mappings)
+    * [1.7.23. Terminal Mappings](#1723-terminal-mappings)
+    * [1.7.24. UI/UX Mappings](#1724-uiux-mappings)
+  * [1.8. Using This Documentation - この文書を使う](#18-using-this-documentation---この文書を使う)
+  * [1.9. configuration - 構成](#19-configuration---構成)
+    * [1.9.1. Core Plugins](#191-core-plugins)
+    * [1.9.2. Customizing Plugins](#192-customizing-plugins)
+      * [1.9.2.1. Defining Plugins](#1921-defining-plugins)
+      * [1.9.2.2. Configure AstroNvim Plugins](#1922-configure-astronvim-plugins)
+      * [1.9.2.3. How opts Overriding Works](#1923-how-opts-overriding-works)
+      * [1.9.2.4. Extending Core Plugin Config Functions](#1924-extending-core-plugin-config-functions)
+      * [1.9.2.5. Disabling Plugins](#1925-disabling-plugins)
+      * [1.9.2.6. Lazy Loading](#1926-lazy-loading)
+      * [1.9.2.7. Lazy Loading with AstroCore](#1927-lazy-loading-with-astrocore)
+      * [1.9.2.8. Lazy Load File Related Plugins](#1928-lazy-load-file-related-plugins)
+      * [1.9.2.9. Lazy Load Git Plugins](#1929-lazy-load-git-plugins)
+    * [1.9.3. Lua language Server integration](#193-lua-language-server-integration)
+    * [1.9.4. Managing User Configuration](#194-managing-user-configuration)
+  * [1.10. Recipes - レシピ](#110-recipes---レシピ)
+  * [1.11. リファレンス](#111-リファレンス)
+    * [1.11.1. Alternative Installation](#1111-alternative-installation)
+    * [1.11.2. Exposed Autocommands](#1112-exposed-autocommands)
+    * [1.11.3. Contributing to AstroNvim](#1113-contributing-to-astronvim)
+    * [1.11.4. Default Plugins](#1114-default-plugins)
+    * [1.11.5. uninstall AstroNvim](#1115-uninstall-astronvim)
+  * [1.12. Acknowledgements - レシピ](#112-acknowledgements---レシピ)
+  * [1.13. Code of Conduct](#113-code-of-conduct)
+    * [1.13.1. ユーザ構成の管理](#1131-ユーザ構成の管理)
+    * [1.13.2. 公開された自動コマンド](#1132-公開された自動コマンド)
+    * [1.13.3. 設定メカニズム](#1133-設定メカニズム)
+    * [1.13.4. 利用可能なユーザーオプション](#1134-利用可能なユーザーオプション)
+* [1.5. :checkhealthで動作環境をチェックする](#15-checkhealthで動作環境をチェックする)
+
+<!-- mtoc-end -->
+
+# 1. AstroNvim入門
 
 [Neovim]: https://neovim.io/
 [AstroNvim]: https://astronvim.com/
 
-## AstroNvimとは
+## 1.1. AstroNvimとは
 
 AstroNvimとはパソコン用の無料で提供されるエディターです。
 
-## パソコン用のエディター
+## 1.2. パソコン用のエディター
 
 パソコンのエディターで無料で提供されるものは多数あります。
 
-Windowsではnotepad
-
-UNIXではmule,emacsや、viがよく使われていると思います。
+Windowsではnotepad、UNIXではmule,emacsや、viがよく使われていると思います。
 
 viの後継としてvimが開発されました。そのvimの後継としてNeovimが開発されました。
 [Neovim]の公式ホームページによるとNeovimは「超拡張可能なVimベースのテキストエディター」と説明されています。
 [AstroNvim]は[Neovim]を優れたプラグインのセットで拡張可能で使いやすい、美しく、機能が豊富にする構成です。とあります。
 
-## Neovimのインストール
+## 1.3. Neovimのインストール
 
 [Neovim]のインストールについてLinux mint、とMX Linuxで確認した方法を説明します。
 [Neovim]のリリースページには、ほとんどのLinuxシステムで実行できるAppImageが提供されます。
 インストールは必要なく、nvim.appimageをダウンロードして実行するだけです。
 (Linuxディストリビューションが 4 年以上古い場合は動作しない可能性があります。)
 
-### appimageのダウンロード
+### 1.3.1. appimageのダウンロード
 
 ブラウザからappiamgeをダウンロードする場合はneovimのホームページ(https://neovim.io)のInstall Nowのボタンをクリックしてインストールの説明ページ(https://github.com/neovim/neovim/blob/master/INSTALL.md)に遷移します。Install from downloadのLatest stable releaseから自分の環境にあったappimageをダウンロードします。
 
@@ -37,9 +120,9 @@ chmod u+x nvim-linux-x86_64.appimage
 ./nvim-linux-x86_64.appimage
 ```
 
-### 現在ログインしているユーザーにだけ設定する場合
+### 1.3.2. 現在ログインしているユーザーにだけ設定する場合
 
-#### bashを使用している場合
+#### 1.3.2.1. bashを使用している場合
 
 ~/.bashrcに以下の行を追加します。
 
@@ -53,13 +136,13 @@ alias nvim='~/nvim-linux-x86_64.appimage'
 . .bashrc
 ```
 
-#### fishを使用している場合
+#### 1.3.2.2. fishを使用している場合
 
 ```fish
 alias nvim='~/nvim-linux-x86_64.appimage'
 ```
 
-### Linuxのエディターとして設定する場合
+### 1.3.3. Linuxのエディターとして設定する場合
 
 Linuxのエディターとして設定するにはupdate-alternativesシステムを使用します。
 現在のnvimコマンドの設定を確認します。
@@ -110,7 +193,7 @@ nvim - 自動モード
 sudo update-alternatives --remove nvim /home/hiroto/nvim.appimage
 ```
 
-### neovimのバージョンを確認する
+### 1.3.4. neovimのバージョンを確認する
 
 ```bash
 nvim --version
@@ -124,14 +207,14 @@ LuaJIT 2.1.0-beta3
 Run :checkhealth for more info
 ```
 
-## GettingStarted - AstroNvimを始めよう
+## 1.4. GettingStarted - AstroNvimを始めよう
 
-### AstroNvimのインストール
+### 1.4.1. AstroNvimのインストール
 
 [AstroNvim]は、優れたプラグインのセットで拡張可能で使いやすい、美的で機能が
 豊富な neovim 構成です。
 
-### AstroNvimの特徴
+### 1.4.2. AstroNvimの特徴
 
 - [Heirline](https://github.com/rebelot/heirline.nvim)を使った
   ステータスライン、ウインドウズバー及びタブライン
@@ -153,7 +236,7 @@ Run :checkhealth for more info
 - [Native LSP](https://github.com/neovim/nvim-lspconfig)を使った
   言語サーバープロトコル
 
-### AstroNvimの要件
+### 1.4.3. AstroNvimの要件
 
 - Nerd Fonts (Optional with manual intervention: See Recipes/Customizing Icons)
 
@@ -227,7 +310,7 @@ sudo apt install xclip
   - [Node](https://nodejs.org/ja) - Nodeは多くのLSPとnode repl
     ターミナルを起動するときに必要です。( \<leader>tn)に必要です。
 
-### AstroNvimのインストール
+### 1.4.4. AstroNvimのインストール
 
 現在のnvimファルダーのバックアップを取ります。
 
@@ -250,9 +333,9 @@ gh repo clone <githubのユーザ名>/<リポジトリ名> ~/.config/nvim/
 nvim
 ```
 
-### Astronvimのセットアップ
+### 1.4.5. Astronvimのセットアップ
 
-#### LSPのイントール
+#### 1.4.5.1. LSPのイントール
 
 LSPとはlanguage Server Protocolのことです。
 Microsoftが2016年6月に仕様を公開しました。
@@ -269,19 +352,19 @@ Microsoftが2016年6月に仕様を公開しました。
 :LspInstall html css pyright quick_lint_js
 ```
 
-#### 言語パーサー(language parser)のイントール
+#### 1.4.5.2. 言語パーサー(language parser)のイントール
 
 ```vim
 :TSInstall python
 ```
 
-#### デバッガ(language parser)のイントール
+#### 1.4.5.3. デバッガ(language parser)のイントール
 
 ```vim
 :DapInstall python
 ```
 
-#### プラグインの管理
+#### 1.4.5.4. プラグインの管理
 
 プラグインの更新をチェックするときは `:Lazy check`を実行します。
 
@@ -292,23 +375,23 @@ Microsoftが2016年6月に仕様を公開しました。
 
 プラグインの更新と削除をおこなうときは `:Lazy sync`を実行します。
 
-#### AstroNvimの更新
+#### 1.4.5.5. AstroNvimの更新
 
 AstroNvimのリポジトリから最新のアップデートを入手するには
 `:AstroUpdate`を実行するか\<leader>pA
 
-#### AstroNvimパッケージの更新
+#### 1.4.5.6. AstroNvimパッケージの更新
 
 Neovim プラグインと Masonのパッケージの両方を更新するときは
 `:AstroUpdatePackages`を実行するか\<leader>pa
 
-#### Reload AstroNvim (EXPERIMENTAL)
+#### 1.4.5.7. Reload AstroNvim (EXPERIMENTAL)
 
 Run :AstroReload to reload the AstroNvim configuration and any new user
 configuration changes without restarting. This is currently an experimental
 feature and may lead to instability until the next restart.
 
-### コンフィグレーション
+### 1.4.6. コンフィグレーション
 
 ユーザー設定ファイルを簡単に作成するためのテンプレートリポジトリを紹介します。
 [Astronvim/user_example]
@@ -340,81 +423,58 @@ login`の手順を終わらせておく必要があります。またGithubの�
 gh repo clone <your_github_user_name>/astronvim_conf ~/.config/nvim/lua/user
 ```
 
-## :checkhealthで動作環境をチェックする
 
-nvimを起動させ動作環境をチェックします。
 
-```vim
-:checkhealth
-```
+## 1.6. AstroCommunity - AstroCommunityを使おう
 
-Warningがでた場合はpynvimをインストールすることで対応します。
+## 1.7. Mappings - キーマッピング
 
-```bash
-python3 -m pip install --user --upgrade pynvim
-
-ERROR Tool not found: 'mmdc'の場合は
-
-npm install -g @mermaid-js/mermaid-cli
-```
-
-Error: Cannot find module 'tslib'
-
-~~~shell
-cd ~/.local/share/nvim/lazy/markdown-preview.nvim
-npm install tslib
-~~~
-
-## AstroCommunity - AstroCommunityを使おう
-
-## Mappings - キーマッピング
-
-### Opening LSP symbols
+### 1.7.1. Opening LSP symbols
 
 To toggle symbols outline you need to press `Space + lS`
 
-### 行の診断結果を確認する
+### 1.7.2. 行の診断結果を確認する
 
 行の診断結果を確認するには`g + l`を押します。
 
-### Hover document
+### 1.7.3. Hover document
 
 To hover over a document you need to press `Shift + k`
 
-### Open rename prompt
+### 1.7.4. Open rename prompt
 
 To open rename prompt you need to press `Space + lr`
 
-### Go to definition
+### 1.7.5. Go to definition
 
 To go to the definition you need to press `g + d`
 
-### Code actions
+### 1.7.6. Code actions
 
 To use code actions you need to press `Space + la`
 
-### Telescope search
+### 1.7.7. Telescope search
 
 To find files you need to press `Space + ff`
 
-### Telescope grep
+### 1.7.8. Telescope grep
 
 To grep files you need to press `Space + fw`
 
-### Telescope git status
+### 1.7.9. Telescope git status
 
 To get git status you need to press `Space + gt`
 
-### Telescope old files
+### 1.7.10. Telescope old files
 
 To find old files you need to press `Space + fo`
 
-### Which key
+### 1.7.11. Which key
 
 You can use which key plugin to get a menu of some helpful key bindings by
 pressing Space
 
-### 標準のマッピング
+### 1.7.12. 標準のマッピング
 
 | アクション                     | アクション（日本語）                | マッピング     |
 | ------------------------------ | ----------------------------------- | -------------- |
@@ -438,7 +498,7 @@ pressing Space
 | Horizontal Split               | 垂直に分割する                      | `\`            |
 | Vertical Split                 | 水平に分割する                      | `\|`           |
 
-### バッファー
+### 1.7.13. バッファー
 
 | アクション                                                                    | アクション（日本語）                     | マッピング     |
 | ----------------------------------------------------------------------------- | ---------------------------------------- | -------------- |
@@ -461,7 +521,7 @@ pressing Space
 | Open a buffer tab <br> in a new horizontal <br> split with interactive picker | 水平方向に新しいタブをオープンする       | `Leader + b\`  |
 | Open a buffer tab <br> in a new vertical <br> split with interactive picker   | 垂直方向に新しいタブをオープンする       | `Leader + b`   |
 
-### Better Escape
+### 1.7.14. Better Escape
 
 この設定を有効にするには`~/.config/nvim/lua/plugins/user.lua`の
 { "max397574/better-escape.nvim", enabled = false },
@@ -471,7 +531,7 @@ pressing Space
 | -------------- | ---------- |
 | エスケープキー | `jj`、`jk` |
 
-### 補完（Completion）
+### 1.7.15. 補完（Completion）
 
 | アクション                       | アクション（日本語）           | Mappings                                    |
 | -------------------------------- | ------------------------------ | ------------------------------------------- |
@@ -485,20 +545,20 @@ pressing Space
 | Scroll up completion <br> docs   | 補完の説明文のスクロールアップ | `Ctrl + u`                                  |
 | Scroll down completion <br> docs | 補完の説明文のスクロールダウン | `Ctrl + d`                                  |
 
-### Neo-Tree
+### 1.7.16. Neo-Tree
 
 | Action         | アクション                              | Mappings     |
 | -------------- | --------------------------------------- | ------------ |
 | Neotree toggle | ファイルエクプローラーを表示/非表示する | `Leader + e` |
 | Neotree focus  | ファイルエクプローラーにカーソルを移す  | `Leader + o` |
 
-### Dashboard Mappings
+### 1.7.17. Dashboard Mappings
 
 | Action           | アクション               | Mappings     |
 | ---------------- | ------------------------ | ------------ |
 | Dashboard (Home) | ダッシュボードに移動する | `Leader + h` |
 
-### Session Manager Mappings
+### 1.7.18. Session Manager Mappings
 
 | Action                         | アクション                               | Mappings      |
 | ------------------------------ | ---------------------------------------- | ------------- |
@@ -510,7 +570,7 @@ pressing Space
 | Search Directory Sessions      | ディレクトリセッションを検索する         | `Leader + SF` |
 | Load Current Directory Session | 現在のディレクトリセッションをロードする | `Leader + S.` |
 
-### Package Management Mappings
+### 1.7.19. Package Management Mappings
 
 | Action                    | アクション | Mappings    |
 | ------------------------- | ---------- | ----------- |
@@ -523,7 +583,7 @@ pressing Space
 | Plugins Check for Updates |            | Leader + pu |
 | Plugins Update            |            | Leader + pU |
 
-### LSP Mappings
+### 1.7.20. LSP Mappings
 
 | Action                      | アクション    | Mappings                   |
 | --------------------------- | ------------- | -------------------------- |
@@ -554,7 +614,7 @@ pressing Space
 | Implementation              |               | gI                         |
 | References                  |               | grr, Leader + lR           |
 
-### Debugger Mappings
+### 1.7.21. Debugger Mappings
 
 | Action                  | アクション | Mappings               |
 | ----------------------- | ---------- | ---------------------- |
@@ -575,7 +635,7 @@ pressing Space
 | Toggle Debugger UI      |            | Leader + du            |
 | Debugger Hover          |            | Leader + dh            |
 
-### Telescope Mappings
+### 1.7.22. Telescope Mappings
 
 | Action                            | アクション | Mappings           |
 | --------------------------------- | ---------- | ------------------ |
@@ -602,7 +662,7 @@ pressing Space
 | LSP Symbols                       |            | Leader + ls        |
 | LSP Workspace Symbols             |            | Leader + lG        |
 
-### Terminal Mappings
+### 1.7.23. Terminal Mappings
 
 | Action                   | アクション | Mappings            |
 | ------------------------ | ---------- | ------------------- |
@@ -614,7 +674,7 @@ pressing Space
 | Open Toggle Python       |            | Leader + tp         |
 | Open Toggle btm          |            | Leader + tt         |
 
-### UI/UX Mappings
+### 1.7.24. UI/UX Mappings
 
 | Action                                 |     | Mappings    |
 | -------------------------------------- | --- | ----------- |
@@ -649,7 +709,7 @@ pressing Space
 | Toggle LSP semantic tokens (buffer)    |     | Leader + uY |
 | Toggle color highlighting              |     | Leader + uz |
 
-## Using This Documentation - この文書を使う
+## 1.8. Using This Documentation - この文書を使う
 
 AstroNvimは、lazy.nvimが提供するNeovimプラグインの設定で構成されます。
 プラグインは通常、Neovim構成フォルダー`~/.config/nvim/`内のlua/plugins/フォルダーで構成されます。
@@ -660,9 +720,9 @@ AstroNvimは、lazy.nvimが提供するNeovimプラグインの設定で構成�
 これらのコードブロックは、既に作成したファイルに追加することもできます。
 必要なコンテンツを適切な場所に手動で移動する必要があります。
 
-## configuration - 構成
+## 1.9. configuration - 構成
 
-### Core Plugins
+### 1.9.1. Core Plugins
 
 - AstroCore
 
@@ -698,41 +758,41 @@ AstroThemeは、AstroNvim用に構築されたデフォルトのカラースキ�
 
 AstroTheme is the default colorscheme that has been built for AstroNvim. It has been optimized for accessibility and contrast, while maintaining a clean and modern aesthetic. It also has first class support for all of the plugins built into AstroNvim as well as support for many common plugins that our users use.
 
-### Customizing Plugins
+### 1.9.2. Customizing Plugins
 
-#### Defining Plugins
+#### 1.9.2.1. Defining Plugins
 
-#### Configure AstroNvim Plugins
+#### 1.9.2.2. Configure AstroNvim Plugins
 
-#### How opts Overriding Works
+#### 1.9.2.3. How opts Overriding Works
 
-#### Extending Core Plugin Config Functions
+#### 1.9.2.4. Extending Core Plugin Config Functions
 
-#### Disabling Plugins
+#### 1.9.2.5. Disabling Plugins
 
-#### Lazy Loading
+#### 1.9.2.6. Lazy Loading
 
-#### Lazy Loading with AstroCore
+#### 1.9.2.7. Lazy Loading with AstroCore
 
-#### Lazy Load File Related Plugins
+#### 1.9.2.8. Lazy Load File Related Plugins
 
-#### Lazy Load Git Plugins
+#### 1.9.2.9. Lazy Load Git Plugins
 
-### Lua language Server integration
+### 1.9.3. Lua language Server integration
 
-### Managing User Configuration
+### 1.9.4. Managing User Configuration
 
-## Recipes - レシピ
+## 1.10. Recipes - レシピ
 
-## リファレンス
+## 1.11. リファレンス
 
-### Alternative Installation
+### 1.11.1. Alternative Installation
 
-### Exposed Autocommands
+### 1.11.2. Exposed Autocommands
 
-### Contributing to AstroNvim
+### 1.11.3. Contributing to AstroNvim
 
-### Default Plugins
+### 1.11.4. Default Plugins
 
 | プラグイン                                    | 目的                                         |
 | --------------------------------------------- | -------------------------------------------- |
@@ -793,18 +853,43 @@ AstroTheme is the default colorscheme that has been built for AstroNvim. It has 
 
 [nvimtools/none-ls.nvim]: https://github.com/nvimtools/none-ls.nvim
 
-### uninstall AstroNvim
+### 1.11.5. uninstall AstroNvim
 
-## Acknowledgements - レシピ
+## 1.12. Acknowledgements - レシピ
 
-## Code of Conduct
+## 1.13. Code of Conduct
 
 TODO:
 
-### ユーザ構成の管理
+### 1.13.1. ユーザ構成の管理
 
-### 公開された自動コマンド
+### 1.13.2. 公開された自動コマンド
 
-### 設定メカニズム
+### 1.13.3. 設定メカニズム
 
-### 利用可能なユーザーオプション
+### 1.13.4. 利用可能なユーザーオプション
+
+# 1.5. :checkhealthで動作環境をチェックする
+
+nvimを起動させ動作環境をチェックします。
+
+```vim
+:checkhealth
+```
+
+Warningがでた場合はpynvimをインストールすることで対応します。
+
+```bash
+python3 -m pip install --user --upgrade pynvim
+
+ERROR Tool not found: 'mmdc'の場合は
+
+npm install -g @mermaid-js/mermaid-cli
+```
+
+Error: Cannot find module 'tslib'
+
+~~~shell
+cd ~/.local/share/nvim/lazy/markdown-preview.nvim
+npm install tslib
+~~~
