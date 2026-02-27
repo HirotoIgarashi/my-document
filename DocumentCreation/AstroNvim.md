@@ -954,7 +954,7 @@ sudo apt install golang
 curl https://sh.rustup.rs -sSf | sh
 ~~~
 
-1を選択。その後、cargoのPATHを通す必要があります。
+1を選択。ToDo: その後、cargoのPATHを通す必要があります。
 
 - Composer:
 - PHP:
