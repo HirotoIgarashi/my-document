@@ -148,7 +148,7 @@ weztermの設定は~/.config/wezterm/にあるwezterm.luaに記述します。
 | CTRL       | -     | フォントを小さく         |
 | CTRL       | =     | フォントを大きく         |
 | CTRL+SHIFT | w     | カレントタブを閉じる     |
-| CTRL+SHIFT | t     | タブを開く              |
+| CTRL+SHIFT | t     | タブを開く               |
 
 ## 1.4. PATHの設定
 
