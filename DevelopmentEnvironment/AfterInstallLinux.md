@@ -15,6 +15,7 @@
     * [1.2.2. ログインシェルをfishに変更する](#122-ログインシェルをfishに変更する)
   * [1.3. ターミナルを変更する](#13-ターミナルを変更する)
     * [weztermのインストール](#weztermのインストール)
+    * [weztermの使い方](#weztermの使い方)
   * [1.4. PATHの設定](#14-pathの設定)
   * [1.5. キーボードの設定](#15-キーボードの設定)
     * [1.5.1. CapsLockをCtrlにする](#151-capslockをctrlにする)
@@ -136,6 +137,18 @@ wezterm 20240203-110809-5046fc22
 ~~~
 
 weztermの設定は~/.config/wezterm/にあるwezterm.luaに記述します。
+
+### weztermの使い方
+
+| Modifiers  | Key   | Action                   |
+| ---------- | ----- | ------------------------ |
+| CTRL+SHIFT | c     | コピー                   |
+| CTRL+SHIFT | v     | ペースト                 |
+| ALT        | Enter | フルスクリーンの切り替え |
+| CTRL       | -     | フォントを小さく         |
+| CTRL       | =     | フォントを大きく         |
+| CTRL+SHIFT | w     | カレントタブを閉じる     |
+| CTRL+SHIFT | t     | タブを開く              |
 
 ## 1.4. PATHの設定
 
