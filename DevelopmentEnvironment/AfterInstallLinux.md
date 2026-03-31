@@ -1,10 +1,55 @@
-<div class="cover-page">
-    <h1>タイトル: Linuxをインストールした後に行うこと</h1>
-    <h2>サブタイトル: 文書作成のために</h2>
-  <div class="info">2025年10月18日</div>
-  <!-- <div class="info">この書き方で内容を適宜追加できます</div> -->
-</div>
-<br>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドキュメントタイトル</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+        }
+        .cover-container {
+            /* 背景画像を設定する場合 */
+            /* background-image: url('cover-image.jpg'); */
+            background-color: #333; /* 背景色 */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* 上下中央 */
+            align-items: center; /* 左右中央 */
+            color: white; /* 文字色 */
+            text-align: center;
+            padding: 20px;
+        }
+        .cover-title {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .cover-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            font-weight: normal;
+        }
+        .cover-author {
+            font-size: 1rem;
+            position: absolute;
+            bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cover-container">
+        <h1 class="cover-title">Linuxをインストールした後に行うこと</h1>
+        <p class="cover-subtitle">文書作成のために</p>
+        <p class="cover-author">2025年10月18日 著者名 / 作成者</p>
+    </div>
+</body>
+</html>
 
 <!-- mtoc-start -->
 
