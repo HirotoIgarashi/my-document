@@ -248,6 +248,15 @@ mkdir -p ~/.config/nvim
 touch ~/.config/nvim/init.lua
 # or touch ~/.config/nvim/init.vim if using Vimscript
 sudo apt install ripgrep
+
+nvm use latest
+npm install -g neovim
+
+curl -L https://cpanmin.us | sudo perl - App::cpanminus
+sudo cpanm -n Neovim::Ext
+
+#sudo apt install cpanminus
+#cpanm -n Neovim::Ext
 ~~~
 
 ## 1.4. GettingStarted - AstroNvimを始めよう
