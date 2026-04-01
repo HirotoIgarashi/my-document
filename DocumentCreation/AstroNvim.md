@@ -145,14 +145,22 @@ viの後継としてvimが開発されました。そのvimの後継としてNeo
 
 ### 1.3.1. appimageのダウンロード
 
-ブラウザからappiamgeをダウンロードする場合はneovimのホームページ(https://neovim.io)のInstall Nowのボタンをクリックしてインストールの説明ページ(https://github.com/neovim/neovim/blob/master/INSTALL.md)に遷移します。Install from downloadのLatest stable releaseから自分の環境にあったappimageをダウンロードします。
+ブラウザからappiamgeをダウンロードする場合はneovimのホームページ(https://neovim.io)のInstall Nowのボタンをクリックしてインストールの説明ページ(https://neovim.io/doc/install/)に遷移します。Linux -> AppImage (“universal” Linux package)に従ってダウンロードします。
 
-ファイル名はnvim-linux-x86_64.appimageです。以下のコマンドで実行権限を与えます。
 
 ```bash
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.appimage
 chmod u+x nvim-linux-x86_64.appimage
 ./nvim-linux-x86_64.appimage
 ```
+
+nvimで起動できるようにかつパスが通っているディレクトリに移動します。
+~/.local/binにパスが通っている場合は
+
+~~~bash
+mv nvim-linux-x86_64.appimage ~/.local/bin/nvim
+nvim
+~~~
 
 ### 1.3.2. 現在ログインしているユーザーにだけ設定する場合
 
