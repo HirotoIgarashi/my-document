@@ -5,10 +5,7 @@
   * [1.1. AstroNvimとは](#11-astronvimとは)
   * [1.2. パソコン用のエディター](#12-パソコン用のエディター)
   * [1.3. Neovimのインストール](#13-neovimのインストール)
-    * [1.3.1. appimageのダウンロード](#131-appimageのダウンロード)
-    * [1.3.2. 現在ログインしているユーザーにだけ設定する場合](#132-現在ログインしているユーザーにだけ設定する場合)
-      * [1.3.2.1. bashを使用している場合](#1321-bashを使用している場合)
-      * [1.3.2.2. fishを使用している場合](#1322-fishを使用している場合)
+    * [1.3.1. appimageのダウンロードとインストール](#131-appimageのダウンロードとインストール)
     * [1.3.3. Linuxのエディターとして設定する場合](#133-linuxのエディターとして設定する場合)
     * [1.3.4. neovimのバージョンを確認する](#134-neovimのバージョンを確認する)
   * [1.4. GettingStarted - AstroNvimを始めよう](#14-gettingstarted---astronvimを始めよう)
@@ -143,10 +140,22 @@ viの後継としてvimが開発されました。そのvimの後継としてNeo
 インストールは必要なく、nvim.appimageをダウンロードして実行するだけです。
 (Linuxディストリビューションが 4 年以上古い場合は動作しない可能性があります。)
 
-### 1.3.1. appimageのダウンロード
+### 1.3.1. appimageのダウンロードとインストール
 
 ブラウザからappiamgeをダウンロードする場合はneovimのホームページ(https://neovim.io)のInstall Nowのボタンをクリックしてインストールの説明ページ(https://neovim.io/doc/install/)に遷移します。Linux -> AppImage (“universal” Linux package)に従ってダウンロードします。
 
+現状のPATHを確認します。
+
+~~~bash
+echo $PATH
+~~~
+
+~/.local/binにPATHが通るようにします。fishを使っている場合は、~/.config/fish/config.fishを編集します。
+
+```fish
+set -x PATH ~/.local/bin $PATH
+```
+appimageをダウンロードします。
 
 ```bash
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.appimage
@@ -154,36 +163,13 @@ chmod u+x nvim-linux-x86_64.appimage
 ./nvim-linux-x86_64.appimage
 ```
 
-nvimで起動できるようにかつパスが通っているディレクトリに移動します。
-~/.local/binにパスが通っている場合は
+ファイル名をnvim-linux-x86_64.appimageからnvimに変更し、かつPATHが通っているディレクトリ~/.local/bin/に移動します。
 
 ~~~bash
 mkdir -p ~/.local/bin
 mv nvim-linux-x86_64.appimage ~/.local/bin/nvim
 nvim
 ~~~
-
-### 1.3.2. 現在ログインしているユーザーにだけ設定する場合
-
-#### 1.3.2.1. bashを使用している場合
-
-~/.bashrcに以下の行を追加します。
-
-```bashrc
-alias nvim='~/nvim-linux-x86_64.appimage'
-```
-
-編集した.bashrcを以下のコマンドで反映します。
-
-```bash
-. .bashrc
-```
-
-#### 1.3.2.2. fishを使用している場合
-
-```fish
-alias nvim='~/nvim-linux-x86_64.appimage'
-```
 
 ### 1.3.3. Linuxのエディターとして設定する場合
 
