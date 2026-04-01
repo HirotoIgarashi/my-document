@@ -254,9 +254,10 @@ npm install -g neovim
 
 curl -L https://cpanmin.us | sudo perl - App::cpanminus
 sudo cpanm -n Neovim::Ext
-
-#sudo apt install cpanminus
-#cpanm -n Neovim::Ext
+-- Neovim::Extのメッセージはシステムのバグであるらしく無視してもよい
+-- WARNINGが鬱陶しい時は~/.config/nvim/init.luaに
+-- vim.g.loaded_perl_provider = 0
+-- の１行を追加する
 ~~~
 
 ## 1.4. GettingStarted - AstroNvimを始めよう
