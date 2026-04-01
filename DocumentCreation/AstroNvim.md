@@ -8,6 +8,8 @@
     * [1.3.1. appimageのダウンロードとインストール](#131-appimageのダウンロードとインストール)
     * [1.3.3. Linuxのエディターとして設定する場合](#133-linuxのエディターとして設定する場合)
     * [1.3.4. neovimのバージョンを確認する](#134-neovimのバージョンを確認する)
+    * [1.3.4. :checkhealthを実行する](#134-checkhealthを実行する)
+* [or touch ~/.config/nvim/init.vim if using Vimscript](#or-touch-confignviminitvim-if-using-vimscript)
   * [1.4. GettingStarted - AstroNvimを始めよう](#14-gettingstarted---astronvimを始めよう)
     * [1.4.1. AstroNvimのインストール](#141-astronvimのインストール)
     * [1.4.2. AstroNvimの特徴](#142-astronvimの特徴)
@@ -173,6 +175,7 @@ nvim
 
 ### 1.3.3. Linuxのエディターとして設定する場合
 
+以下の記述にあるパスは不適格です。
 Linuxのエディターとして設定するにはupdate-alternativesシステムを使用します。
 現在のnvimコマンドの設定を確認します。
 
@@ -235,6 +238,17 @@ LuaJIT 2.1.0-beta3
 
 Run :checkhealth for more info
 ```
+
+### 1.3.4. :checkhealthを実行する
+
+nvimを実行する環境について表示されます。
+
+~~~fish
+mkdir -p ~/.config/nvim
+touch ~/.config/nvim/init.lua
+# or touch ~/.config/nvim/init.vim if using Vimscript
+sudo apt install ripgrep
+~~~
 
 ## 1.4. GettingStarted - AstroNvimを始めよう
 
