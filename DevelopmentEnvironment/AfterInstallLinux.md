@@ -54,35 +54,43 @@
 <!-- mtoc-start -->
 
 * [1. Linuxをインストールした後に行うこと](#1-linuxをインストールした後に行うこと)
-  * [1.1. タッチパッドの有効/無効の切替をショートカットキーに割り当てる](#11-タッチパッドの有効無効の切替をショートカットキーに割り当てる)
-  * [1.2. シェルを変更する](#12-シェルを変更する)
-    * [1.2.1. fishのインストール](#121-fishのインストール)
-    * [1.2.2. ログインシェルをfishに変更する](#122-ログインシェルをfishに変更する)
-  * [1.3. ターミナルを変更する](#13-ターミナルを変更する)
-    * [weztermのインストール](#weztermのインストール)
-    * [weztermの使い方](#weztermの使い方)
-  * [1.4. PATHの設定](#14-pathの設定)
-  * [1.5. キーボードの設定](#15-キーボードの設定)
-    * [1.5.1. CapsLockをCtrlにする](#151-capslockをctrlにする)
-  * [1.6. 開発環境の設定](#16-開発環境の設定)
-    * [1.6.1. node](#161-node)
-    * [1.6.2. python3](#162-python3)
-  * [1.7. git関連の設定](#17-git関連の設定)
-    * [1.7.1. gitコマンド](#171-gitコマンド)
-    * [1.7.2. repoコマンド](#172-repoコマンド)
-    * [1.7.3. lazygitコマンド](#173-lazygitコマンド)
-  * [1.8. エディターの設定](#18-エディターの設定)
-    * [1.8.1. Neovimを使う場合](#181-neovimを使う場合)
-    * [1.8.2. Visual Studio Codeを使う場合](#182-visual-studio-codeを使う場合)
-    * [1.8.3. emacsを使う場合](#183-emacsを使う場合)
-  * [1.9. Markdown関連の設定](#19-markdown関連の設定)
-    * [1.9.1. markdownPreviw](#191-markdownpreviw)
-      * [1.9.1.1. エラーに対処する](#1911-エラーに対処する)
+  * [1.1. ソフトウェアのインストール](#11-ソフトウェアのインストール)
+  * [1.2. タッチパッドの有効/無効の切替をショートカットキーに割り当てる](#12-タッチパッドの有効無効の切替をショートカットキーに割り当てる)
+  * [1.3. シェルを変更する](#13-シェルを変更する)
+    * [1.3.1. fishのインストール](#131-fishのインストール)
+    * [1.3.2. ログインシェルをfishに変更する](#132-ログインシェルをfishに変更する)
+  * [1.4. ターミナルを変更する](#14-ターミナルを変更する)
+    * [1.4.1. weztermのインストール](#141-weztermのインストール)
+    * [1.4.2. weztermの使い方](#142-weztermの使い方)
+  * [1.5. PATHの設定](#15-pathの設定)
+  * [1.6. キーボードの設定](#16-キーボードの設定)
+    * [1.6.1. CapsLockをCtrlにする](#161-capslockをctrlにする)
+  * [1.7. 開発環境の設定](#17-開発環境の設定)
+    * [1.7.1. node](#171-node)
+    * [1.7.2. python3](#172-python3)
+  * [1.8. git関連の設定](#18-git関連の設定)
+    * [1.8.1. gitコマンド](#181-gitコマンド)
+    * [1.8.2. repoコマンド](#182-repoコマンド)
+    * [1.8.3. lazygitコマンド](#183-lazygitコマンド)
+  * [1.9. エディターの設定](#19-エディターの設定)
+    * [1.9.1. Neovimを使う場合](#191-neovimを使う場合)
+    * [1.9.2. Visual Studio Codeを使う場合](#192-visual-studio-codeを使う場合)
+    * [1.9.3. emacsを使う場合](#193-emacsを使う場合)
+  * [1.10. Markdown関連の設定](#110-markdown関連の設定)
+    * [1.10.1. markdownPreviw](#1101-markdownpreviw)
+      * [1.10.1.1. エラーに対処する](#11011-エラーに対処する)
 
 <!-- mtoc-end -->
 # 1. Linuxをインストールした後に行うこと
 
-## 1.1. タッチパッドの有効/無効の切替をショートカットキーに割り当てる
+## 1.1. ソフトウェアのインストール
+
+~~~bash
+sudo apt update
+sudo apt install curl
+~~~
+
+## 1.2. タッチパッドの有効/無効の切替をショートカットキーに割り当てる
 
 ノートPCでキータッチする時にタッチパッドを触ってしまい予期せぬ動作になってしまうことがあると思います。そうならないようにタッチパッドの動作を管理する必要があります。２つの方法があります。１つはtouchpad-indicatorを使います。もう１つは有効/無効を設定するコマンドを作成します。このコマンドにキーボードショートカット Ctrl + ALT + @ に割り当てます。
 
@@ -125,28 +133,37 @@ else
 fi
 ```
 
-## 1.2. シェルを変更する
+## 1.3. シェルを変更する
 
 [fish]:https://fishshell.com/
 シェルをbashから[fish]に変更します。
 
-### 1.2.1. fishのインストール
+### 1.3.1. fishのインストール
 
 [fish]のホームページからfish_4.3.3-2_amd64.debをダウンロードします。debアプリでシステムにインストールします。
 /usr/bin/にインストールされます。
 
-### 1.2.2. ログインシェルをfishに変更する
+[fisher]:https://github.com/jorgebucaran/fisher
+fishのためのプラグインマネージャである[fisher]をインストールします。
+
+~~~bash
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+~~~
+
+2026年4月現在、fishはバージョン4.6.0が最新。
+
+### 1.3.2. ログインシェルをfishに変更する
 
 ログインシェルを変更するには、chshコマンドを使用します。
 chshコマンドに/usr/bin/fishと答えます。システムを再起動します。
 
 タッチパッドの有効/無効を切り替えるコマンドする場合は以下に従います。
 
-## 1.3. ターミナルを変更する
+## 1.4. ターミナルを変更する
 
 [wezterm]:https://wezterm.org/index.html
 
-### weztermのインストール
+### 1.4.1. weztermのインストール
 
 weztermはAppImage形式で提供されています。
 
@@ -183,7 +200,7 @@ wezterm 20240203-110809-5046fc22
 
 weztermの設定は~/.config/wezterm/にあるwezterm.luaに記述します。
 
-### weztermの使い方
+### 1.4.2. weztermの使い方
 
 | Modifiers  | Key   | Action                   |
 | ---------- | ----- | ------------------------ |
@@ -195,7 +212,7 @@ weztermの設定は~/.config/wezterm/にあるwezterm.luaに記述します。
 | CTRL+SHIFT | w     | カレントタブを閉じる     |
 | CTRL+SHIFT | t     | タブを開く               |
 
-## 1.4. PATHの設定
+## 1.5. PATHの設定
 
 PATHに~/.local/binを追加します。
 
@@ -205,39 +222,45 @@ PATHに~/.local/binを追加します。
 set -x PATH ~/.local/bin $PATH
 ~~~
 
-## 1.5. キーボードの設定
+## 1.6. キーボードの設定
 
-### 1.5.1. CapsLockをCtrlにする
+### 1.6.1. CapsLockをCtrlにする
 
-## 1.6. 開発環境の設定
+## 1.7. 開発環境の設定
 
-### 1.6.1. node
+### 1.7.1. node
 
 nvmでnodeをインストールしてnpmコマンドを使えるようにします。
 
-### 1.6.2. python3
+shellとしてfishを使用している場合は
 
-## 1.7. git関連の設定
+~~~bash
+fisher install jorgebucaran/nvm.fish
+~~~
 
-### 1.7.1. gitコマンド
+### 1.7.2. python3
 
-### 1.7.2. repoコマンド
+## 1.8. git関連の設定
 
-### 1.7.3. lazygitコマンド
+### 1.8.1. gitコマンド
 
-## 1.8. エディターの設定
+### 1.8.2. repoコマンド
 
-### 1.8.1. Neovimを使う場合
+### 1.8.3. lazygitコマンド
 
-### 1.8.2. Visual Studio Codeを使う場合
+## 1.9. エディターの設定
 
-### 1.8.3. emacsを使う場合
+### 1.9.1. Neovimを使う場合
 
-## 1.9. Markdown関連の設定
+### 1.9.2. Visual Studio Codeを使う場合
 
-### 1.9.1. markdownPreviw
+### 1.9.3. emacsを使う場合
 
-#### 1.9.1.1. エラーに対処する
+## 1.10. Markdown関連の設定
+
+### 1.10.1. markdownPreviw
+
+#### 1.10.1.1. エラーに対処する
 
 Cannot find module 'tslib' -> npm install -g tslib
 ~/.local/share/nvim/lazy/markdown-preview.nvim/ディレクトリでnpm installを実行する。
