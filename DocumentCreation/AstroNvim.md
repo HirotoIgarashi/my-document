@@ -10,6 +10,16 @@
     * [1.3.4. neovimのバージョンを確認する](#134-neovimのバージョンを確認する)
     * [1.3.4. :checkhealthを実行する](#134-checkhealthを実行する)
 * [or touch ~/.config/nvim/init.vim if using Vimscript](#or-touch-confignviminitvim-if-using-vimscript)
+* [Neovim::Extのメッセージはシステムのバグであるらしく無視してもよい](#neovimextのメッセージはシステムのバグであるらしく無視してもよい)
+* [WARNINGが鬱陶しい時は~/.config/nvim/init.luaに](#warningが鬱陶しい時はconfignviminitluaに)
+* [vim.g.loaded_perl_provider = 0](#vimgloaded_perl_provider--0)
+* [の１行を追加する](#の行を追加する)
+* [sudo apt install python3-pynvim](#sudo-apt-install-python3-pynvim)
+* [sudo apt install pipx](#sudo-apt-install-pipx)
+* [sudo apt install python3-pip](#sudo-apt-install-python3-pip)
+* [pip3 install pynvim](#pip3-install-pynvim)
+* [pipx ensurepath](#pipx-ensurepath)
+* [pipx install pynvim](#pipx-install-pynvim)
   * [1.4. GettingStarted - AstroNvimを始めよう](#14-gettingstarted---astronvimを始めよう)
     * [1.4.1. AstroNvimのインストール](#141-astronvimのインストール)
     * [1.4.2. AstroNvimの特徴](#142-astronvimの特徴)
@@ -254,11 +264,20 @@ npm install -g neovim
 
 curl -L https://cpanmin.us | sudo perl - App::cpanminus
 sudo cpanm -n Neovim::Ext
--- Neovim::Extのメッセージはシステムのバグであるらしく無視してもよい
--- WARNINGが鬱陶しい時は~/.config/nvim/init.luaに
--- vim.g.loaded_perl_provider = 0
--- の１行を追加する
+# Neovim::Extのメッセージはシステムのバグであるらしく無視してもよい
+# WARNINGが鬱陶しい時は~/.config/nvim/init.luaに
+# vim.g.loaded_perl_provider = 0
+# の１行を追加する
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv tool install --upgrade pynvim
+# sudo apt install python3-pynvim
+# sudo apt install pipx
+# sudo apt install python3-pip
+# pip3 install pynvim
+# pipx ensurepath
+# pipx install pynvim
 ~~~
+
 
 ## 1.4. GettingStarted - AstroNvimを始めよう
 
