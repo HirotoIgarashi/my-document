@@ -14,12 +14,9 @@
 * [WARNINGが鬱陶しい時は~/.config/nvim/init.luaに](#warningが鬱陶しい時はconfignviminitluaに)
 * [vim.g.loaded_perl_provider = 0](#vimgloaded_perl_provider--0)
 * [の１行を追加する](#の行を追加する)
-* [sudo apt install python3-pynvim](#sudo-apt-install-python3-pynvim)
-* [sudo apt install pipx](#sudo-apt-install-pipx)
-* [sudo apt install python3-pip](#sudo-apt-install-python3-pip)
-* [pip3 install pynvim](#pip3-install-pynvim)
-* [pipx ensurepath](#pipx-ensurepath)
-* [pipx install pynvim](#pipx-install-pynvim)
+* [init.luaに](#initluaに)
+* [vim.g.python3_host_prog = vim.fn.expand('~/.config/nvim/venv/bin/python')](#vimgpython3_host_prog--vimfnexpandconfignvimvenvbinpython)
+* [を追加する](#を追加する)
   * [1.4. GettingStarted - AstroNvimを始めよう](#14-gettingstarted---astronvimを始めよう)
     * [1.4.1. AstroNvimのインストール](#141-astronvimのインストール)
     * [1.4.2. AstroNvimの特徴](#142-astronvimの特徴)
@@ -268,14 +265,12 @@ sudo cpanm -n Neovim::Ext
 # WARNINGが鬱陶しい時は~/.config/nvim/init.luaに
 # vim.g.loaded_perl_provider = 0
 # の１行を追加する
-curl -LsSf https://astral.sh/uv/install.sh | sh
-uv tool install --upgrade pynvim
-# sudo apt install python3-pynvim
-# sudo apt install pipx
-# sudo apt install python3-pip
-# pip3 install pynvim
-# pipx ensurepath
-# pipx install pynvim
+python3 -m venv ~/.config/nvim/venv
+source ~/.config/nvim/venv/activate.fish
+pip install --upgrade pynvim
+# init.luaに
+# vim.g.python3_host_prog = vim.fn.expand('~/.config/nvim/venv/bin/python')
+# を追加する
 ~~~
 
 

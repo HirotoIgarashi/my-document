@@ -46,7 +46,11 @@
     <div class="cover-container">
         <h1 class="cover-title">Linuxをインストールした後に行うこと</h1>
         <p class="cover-subtitle">文書作成のために</p>
-        <p class="cover-author">2025年10月18日 著者名 / 作成者</p>
+        <p class="cover-author">著者名 / 作成者</p>
+        <!-- 作成日を表示するエリア -->
+        <p>作成日: 
+            <time datetime="2026-04-7">2026年4月7日</time>
+        </p>
     </div>
 </body>
 </html>
@@ -73,12 +77,6 @@
     * [1.8.2. repoコマンド](#182-repoコマンド)
     * [1.8.3. lazygitコマンド](#183-lazygitコマンド)
   * [1.9. エディターの設定](#19-エディターの設定)
-    * [1.9.1. Neovimを使う場合](#191-neovimを使う場合)
-    * [1.9.2. Visual Studio Codeを使う場合](#192-visual-studio-codeを使う場合)
-    * [1.9.3. emacsを使う場合](#193-emacsを使う場合)
-  * [1.10. Markdown関連の設定](#110-markdown関連の設定)
-    * [1.10.1. markdownPreviw](#1101-markdownpreviw)
-      * [1.10.1.1. エラーに対処する](#11011-エラーに対処する)
 
 <!-- mtoc-end -->
 # 1. Linuxをインストールした後に行うこと
@@ -250,17 +248,4 @@ fisher install jorgebucaran/nvm.fish
 
 ## 1.9. エディターの設定
 
-### 1.9.1. Neovimを使う場合
-
-### 1.9.2. Visual Studio Codeを使う場合
-
-### 1.9.3. emacsを使う場合
-
-## 1.10. Markdown関連の設定
-
-### 1.10.1. markdownPreviw
-
-#### 1.10.1.1. エラーに対処する
-
-Cannot find module 'tslib' -> npm install -g tslib
-~/.local/share/nvim/lazy/markdown-preview.nvim/ディレクトリでnpm installを実行する。
+エディターの設定はnvimの設定、AstroNvimの設定を参照のこと
