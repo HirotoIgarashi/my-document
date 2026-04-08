@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Neovim</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .cover {
+            text-align: center;
+            padding: 50px;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { margin-bottom: 10px; }
+        .date { color: #666; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <h1>Neovim(nvim)</h1>
+        <p>nvim入門</p>
+        <!-- 作成日を記載 -->
+        <p class="date">
+            作成日: 
+            <time datetime="2024-04-08">2024年4月8日</time>
+        </p>
+    </div>
+</body>
+</html>
+
+# nvim入門
+
+[Neovim]: https://neovim.io/
+
+## nvimとは
+
+viの後継としてvimが開発されました。そのvimの後継としてNeovimが開発されました。
+[Neovim]の公式ホームページによるとNeovimは「超拡張可能なVimベースのテキストエディター」と説明されています。
+
+## Neovim(nvim)のインストール
+
+[Neovim]のインストールについてLinux mint、とMX Linuxで確認した方法を説明します。
+[Neovim]のリリースページには、ほとんどのLinuxシステムで実行できるAppImageが提供されます。
+インストールは必要なく、nvim.appimageをダウンロードして実行するだけです。
+(Linuxディストリビューションが 4 年以上古い場合は動作しない可能性があります。)
+
+### appimageのダウンロードとインストール
+
+ブラウザからappiamgeをダウンロードする場合はneovimのホームページ(https://neovim.io)のInstall Nowのボタンをクリックしてインストールの説明ページ(https://neovim.io/doc/install/)に遷移します。Linux -> AppImage (“universal” Linux package)に従ってダウンロードします。
+
+現状のPATHを確認します。
+
+~~~bash
+echo $PATH
+~~~
+
+~/.local/binにPATHが通るようにします。fishを使っている場合は、~/.config/fish/config.fishを編集します。
+
+```fish
+set -x PATH ~/.local/bin $PATH
+```
+appimageをダウンロードします。
+
+```bash
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.appimage
+chmod u+x nvim-linux-x86_64.appimage
+./nvim-linux-x86_64.appimage
+```
+
+ファイル名をnvim-linux-x86_64.appimageからnvimに変更し、かつPATHが通っているディレクトリ~/.local/bin/に移動します。
+
+~~~bash
+mkdir -p ~/.local/bin
+mv nvim-linux-x86_64.appimage ~/.local/bin/nvim
+nvim
+~~~
+
+### neovimのバージョンを確認する
+
+```bash
+nvim --version
+NVIM v0.9.1
+Build type: Release
+LuaJIT 2.1.0-beta3
+
+      システム vimrc: "$VIM/sysinit.vim"
+       省略時の $VIM: "/__w/neovim/neovim/build/nvim.AppDir/usr/share/nvim"
+
+Run :checkhealth for more info
+```
+### :checkhealthを実行する
+
+nvimを実行する環境について表示されます。
+
+~~~fish
+mkdir -p ~/.config/nvim
+touch ~/.config/nvim/init.lua
+# or touch ~/.config/nvim/init.vim if using Vimscript
+sudo apt install ripgrep
+
+nvm use latest
+npm install -g neovim
+
+curl -L https://cpanmin.us | sudo perl - App::cpanminus
+sudo cpanm -n Neovim::Ext
+# Neovim::Extのメッセージはシステムのバグであるらしく無視してもよい
+# WARNINGが鬱陶しい時は~/.config/nvim/init.luaに
+# vim.g.loaded_perl_provider = 0
+# の１行を追加する
+python3 -m venv ~/.config/nvim/venv
+source ~/.config/nvim/venv/activate.fish
+pip install --upgrade pynvim
+# init.luaに
+# vim.g.python3_host_prog = vim.fn.expand('~/.config/nvim/venv/bin/python')
+# を追加する
+~~~
+
+## Markdown関連の設定
+
+### markdownPreview
+
+#### エラーに対処する
+
+Cannot find module 'tslib' -> npm install -g tslib
+~/.local/share/nvim/lazy/markdown-preview.nvim/ディレクトリでnpm installを実行する。
+
