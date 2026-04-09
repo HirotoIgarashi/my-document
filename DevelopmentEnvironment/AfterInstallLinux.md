@@ -58,7 +58,7 @@
 <!-- mtoc-start -->
 
 * [1. Linuxをインストールした後に行うこと](#1-linuxをインストールした後に行うこと)
-  * [1.1. ソフトウェアのインストール](#11-ソフトウェアのインストール)
+  * [1.1. ソフトウェアの更新](#11-ソフトウェアの更新)
   * [1.2. タッチパッドの有効/無効の切替をショートカットキーに割り当てる](#12-タッチパッドの有効無効の切替をショートカットキーに割り当てる)
   * [1.3. シェルを変更する](#13-シェルを変更する)
     * [1.3.1. fishのインストール](#131-fishのインストール)
@@ -74,14 +74,14 @@
     * [1.7.2. python3](#172-python3)
   * [1.8. git関連の設定](#18-git関連の設定)
     * [1.8.1. gitコマンド](#181-gitコマンド)
-    * [1.8.2. repoコマンド](#182-repoコマンド)
-    * [1.8.3. lazygitコマンド](#183-lazygitコマンド)
+    * [gh(GitHub CLI)コマンド](#ghgithub-cliコマンド)
+    * [1.8.2. lazygitコマンド](#182-lazygitコマンド)
   * [1.9. エディターの設定](#19-エディターの設定)
 
 <!-- mtoc-end -->
 # 1. Linuxをインストールした後に行うこと
 
-## 1.1. ソフトウェアのインストール
+## 1.1. ソフトウェアの更新
 
 ~~~bash
 sudo apt update
@@ -90,10 +90,14 @@ sudo apt install curl
 
 ## 1.2. タッチパッドの有効/無効の切替をショートカットキーに割り当てる
 
-ノートPCでキータッチする時にタッチパッドを触ってしまい予期せぬ動作になってしまうことがあると思います。そうならないようにタッチパッドの動作を管理する必要があります。２つの方法があります。１つはtouchpad-indicatorを使います。もう１つは有効/無効を設定するコマンドを作成します。このコマンドにキーボードショートカット Ctrl + ALT + @ に割り当てます。
-
+ノートPCでタイピングする時にタッチパッドを触ってしまい予期せぬ動作になってしまうことがあると思います。そうならないようにタッチパッドの動作を管理する必要があります。２つの方法があります。１つはtouchpad-indicatorを使います。
 MX Linux15ではtouchpad-indicatorをインストールすることにより、 タッチパッドを管理することが可能になっています。
-インストールされたfishは/usr/bin/fishにあります。
+
+~~~bash
+sudo apt install input-touchpad
+~~~
+
+もう１つは有効/無効を設定するコマンドを作成します。このコマンドにキーボードショートカット Ctrl + ALT + @ に割り当てます。
 
 準備としてxinputコマンドをインストールします。
 
@@ -149,6 +153,8 @@ curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fi
 ~~~
 
 2026年4月現在、fishはバージョン4.6.0が最新です。
+
+インストールされたfishは/usr/bin/fishにあります。
 
 ### 1.3.2. ログインシェルをfishに変更する
 
@@ -242,9 +248,57 @@ fisher install jorgebucaran/nvm.fish
 
 ### 1.8.1. gitコマンド
 
-### 1.8.2. repoコマンド
+~~~bash
+sudo apt install git-all
+~~~
 
-### 1.8.3. lazygitコマンド
+gitにユーザ名とEmailアドレスを設定します。
+
+~~~bash
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+~~~
+
+git設定の確認
+
+~~~bash
+git config --list
+~~~
+
+gitで利用するディレクトリを~/Projects/とします。
+
+~~~bash
+mkdir -p ~/Projects
+cd ~/Projects/
+git init
+~~~
+
+### gh(GitHub CLI)コマンド
+
+GitHub CLI は、すべての作業を 1 か所で行うことができるように、pull request、issues、GitHub Actions などの GitHub 機能をターミナルに集めたコマンドライン ツールです。
+
+インストール
+
+~~~bash
+(type -p wget >/dev/null || (sudo apt update && sudo apt install wget -y)) \
+	&& sudo mkdir -p -m 755 /etc/apt/keyrings \
+	&& out=$(mktemp) && wget -nv -O$out https://cli.github.com/packages/githubcli-archive-keyring.gpg \
+	&& cat $out | sudo tee /etc/apt/keyrings/githubcli-archive-keyring.gpg > /dev/null \
+	&& sudo chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg \
+	&& sudo mkdir -p -m 755 /etc/apt/sources.list.d \
+	&& echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
+	&& sudo apt update \
+	&& sudo apt install gh -y
+~~~
+
+アップグレード
+
+~~~bash
+sudo apt update
+sudo apt install gh
+~~~
+
+### 1.8.2. lazygitコマンド
 
 ## 1.9. エディターの設定
 
