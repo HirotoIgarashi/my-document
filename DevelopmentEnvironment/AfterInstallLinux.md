@@ -74,8 +74,8 @@
     * [1.7.2. python3](#172-python3)
   * [1.8. git関連の設定](#18-git関連の設定)
     * [1.8.1. gitコマンド](#181-gitコマンド)
-    * [gh(GitHub CLI)コマンド](#ghgithub-cliコマンド)
-    * [1.8.2. lazygitコマンド](#182-lazygitコマンド)
+    * [1.8.2. gh(GitHub CLI)コマンド](#182-ghgithub-cliコマンド)
+    * [1.8.3. lazygitコマンド](#183-lazygitコマンド)
   * [1.9. エディターの設定](#19-エディターの設定)
 
 <!-- mtoc-end -->
@@ -273,7 +273,7 @@ cd ~/Projects/
 git init
 ~~~
 
-### gh(GitHub CLI)コマンド
+### 1.8.2. gh(GitHub CLI)コマンド
 
 GitHub CLI は、すべての作業を 1 か所で行うことができるように、pull request、issues、GitHub Actions などの GitHub 機能をターミナルに集めたコマンドライン ツールです。
 
@@ -294,6 +294,41 @@ $(mktemp)に置き換える等して適宜対応が必要です。
 	&& sudo apt install gh -y
 ~~~
 
+~~~bash
+gh auth login
+~~~
+
+Where do you use GitHub? -> GitHub.com
+
+
+What is your preferred protocol fot Git operations on this host? -> SSH
+
+Generate a new SSH key to add to your GitHub account? -> Y
+
+Enter a passphrase for your new SSH key (Optional) -> [Enter]
+
+Title for your SSH key: (GitHub CLI) -> [Enter]
+
+How would you like to authenticate GitHub CLI? -> Login with a web browser
+
+First copy your one-time code: に続く[四桁の文字列]-[四桁の文字列]をメモる
+
+-> [Enter]
+
+ここからブラウザーでの操作
+
+Signed in as [ユーザ名] -> Continue
+
+Authorize your device -> 先程メモった[四桁の文字列]-[四桁の文字列]を入力する -> Continue
+
+Authorize GitHub CLI -> Authorize github
+
+Confirm access -> use passkey
+
+Googleのメッセージで「保存したgithub.comのパスキーを使用する -> 続行
+
+Congratulations,you're all set!のメッセージを確認して完了
+
 アップグレード
 
 ~~~bash
@@ -301,7 +336,15 @@ sudo apt update
 sudo apt install gh
 ~~~
 
-### 1.8.2. lazygitコマンド
+### 1.8.3. lazygitコマンド
+
+[lazygit]: https://github.com/jesseduffield/lazygit
+
+[lazygit]のインストール
+
+~~~bash
+sudo apt install lazygit
+~~~
 
 ## 1.9. エディターの設定
 
