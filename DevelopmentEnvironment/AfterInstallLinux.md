@@ -279,6 +279,9 @@ GitHub CLI は、すべての作業を 1 か所で行うことができるよう
 
 インストール
 
+シェルにfishを使っているとエラーになると思います。out=$(mktemp)をset out
+$(mktemp)に置き換える等して適宜対応が必要です。
+
 ~~~bash
 (type -p wget >/dev/null || (sudo apt update && sudo apt install wget -y)) \
 	&& sudo mkdir -p -m 755 /etc/apt/keyrings \
