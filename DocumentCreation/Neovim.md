@@ -16,7 +16,7 @@ viの後継としてvimが開発されました。そのvimの後継としてNeo
 
 ### appimageのダウンロードとインストール
 
-ブラウザからappiamgeをダウンロードする場合はneovimのホームページ(https://neovim.io)のInstall Nowのボタンをクリックしてインストールの説明ページ(https://neovim.io/doc/install/)に遷移します。Linux -> AppImage (“universal” Linux package)に従ってダウンロードします。
+ブラウザからappiamgeをダウンロードする場合はneovimのホームページ(<https://neovim.io)のInstall> Nowのボタンをクリックしてインストールの説明ページ(<https://neovim.io/doc/install/)に遷移します。Linux> -> AppImage (“universal” Linux package)に従ってダウンロードします。
 
 現状のPATHを確認します。
 
@@ -29,6 +29,7 @@ echo $PATH
 ```fish
 set -x PATH ~/.local/bin $PATH
 ```
+
 appimageをダウンロードします。
 
 ```bash
@@ -48,16 +49,8 @@ nvim
 ### neovimのバージョンを確認する
 
 ```bash
-nvim --version
-NVIM v0.9.1
-Build type: Release
-LuaJIT 2.1.0-beta3
-
-      システム vimrc: "$VIM/sysinit.vim"
-       省略時の $VIM: "/__w/neovim/neovim/build/nvim.AppDir/usr/share/nvim"
-
-Run :checkhealth for more info
 ```
+
 ### :checkhealthを実行する
 
 nvimを実行する環境について表示されます。
@@ -83,6 +76,8 @@ pip install --upgrade pynvim
 # init.luaに
 # vim.g.python3_host_prog = vim.fn.expand('~/.config/nvim/venv/bin/python')
 # を追加する
+# not found prettier
+# :lazyExtraでprettierをインストールします。
 ~~~
 
 ## Markdown関連の設定
@@ -93,4 +88,3 @@ pip install --upgrade pynvim
 
 Cannot find module 'tslib' -> npm install -g tslib
 ~/.local/share/nvim/lazy/markdown-preview.nvim/ディレクトリでnpm installを実行する。
-
