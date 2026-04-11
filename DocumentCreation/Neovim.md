@@ -20,9 +20,9 @@ viの後継としてvimが開発されました。そのvimの後継としてNeo
 
 現状のPATHを確認します。
 
-~~~bash
+```bash
 echo $PATH
-~~~
+```
 
 ~/.local/binにPATHが通るようにします。fishを使っている場合は、~/.config/fish/config.fishを編集します。
 
@@ -40,22 +40,23 @@ chmod u+x nvim-linux-x86_64.appimage
 
 ファイル名をnvim-linux-x86_64.appimageからnvimに変更し、かつPATHが通っているディレクトリ~/.local/bin/に移動します。
 
-~~~bash
+```bash
 mkdir -p ~/.local/bin
 mv nvim-linux-x86_64.appimage ~/.local/bin/nvim
 nvim
-~~~
+```
 
 ### neovimのバージョンを確認する
 
 ```bash
+
 ```
 
 ### :checkhealthを実行する
 
 nvimを実行する環境について表示されます。
 
-~~~fish
+```fish
 mkdir -p ~/.config/nvim
 touch ~/.config/nvim/init.lua
 # or touch ~/.config/nvim/init.vim if using Vimscript
@@ -78,7 +79,26 @@ pip install --upgrade pynvim
 # を追加する
 # not found prettier
 # :lazyExtraでprettierをインストールします。
-~~~
+```
+
+## luarocks
+
+```bash
+sudo apt install build-essential libreadline-dev unzip libssl-dev
+sudo apt install rlwrap
+sudo apt install luarocks
+
+```
+
+## Build and install
+
+### install-lua.sh
+
+### install-luajit.sh
+
+### install-luarocks.sh
+
+### install-core-packages.sh
 
 ## Markdown関連の設定
 
