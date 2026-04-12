@@ -87,18 +87,22 @@ pip install --upgrade pynvim
 sudo apt install build-essential libreadline-dev unzip libssl-dev
 sudo apt install rlwrap
 sudo apt install luarocks
-
 ```
 
-## Build and install
+## LazyVim
 
-### install-lua.sh
+```bash
+sudo apt install fd-find fzf
+```
 
-### install-luajit.sh
+## LazyVim nvim-treesitter
 
-### install-luarocks.sh
+tree-sitter-cliをインストールします。
 
-### install-core-packages.sh
+```bash
+sudo apt install libclang-dev
+sudo cargo install tree-sitter-cli
+```
 
 ## Markdown関連の設定
 
