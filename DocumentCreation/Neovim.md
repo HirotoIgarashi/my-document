@@ -49,7 +49,11 @@ nvim
 ### neovimのバージョンを確認する
 
 ```bash
-
+nvim -v
+NVIM v0.12.1
+Build type: Release
+LuaJIT 2.1.1774638290
+Run "nvim -V1 -v" for more info
 ```
 
 ### :checkhealthを実行する
@@ -61,6 +65,9 @@ mkdir -p ~/.config/nvim
 touch ~/.config/nvim/init.lua
 # or touch ~/.config/nvim/init.vim if using Vimscript
 sudo apt install ripgrep
+cargo install ast-grep --locked
+sudo apt install sqlite3 libsqlite3-dev
+npm install -g @mermaid-js/mermaid-cli
 
 nvm use latest
 npm install -g neovim
