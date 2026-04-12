@@ -1,4 +1,3 @@
-
 <!-- mtoc-start -->
 
 * [1. フォントについて](#1-フォントについて)
@@ -29,8 +28,8 @@
 - エンコーディング(encoding)
 - ファミリ(family)
 
-    フォントファミリ名を確認するにはfc-listコマンドを使用します。特定のフォント、例えばTakaoフォントに関するものだけ抽出する場合はfc-list
-    | grep "Takao"とします。
+  フォントファミリ名を確認するにはfc-listコマンドを使用します。特定のフォント、例えばTakaoフォントに関するものだけ抽出する場合はfc-list
+  | grep "Takao"とします。
 
 - シリーズ(series)
 - シェープ(shape)
@@ -63,17 +62,16 @@
 
 ### 2.1.2. プログラミング・開発者向けフォント
 
-[Cica(シカ)]:https://github.com/miiton/Cica
+[Cica(シカ)]: https://github.com/miiton/Cica
 
 - [Cica(シカ)]
 - UDEV Gothic / 白源(HackGen)
 - M+ FONTS
 
-
 ### 2.1.3. 等幅フォント
 
-[MoralerSpace]:https://github.com/yuru7/moralerspace
-[Maple]:https://github.com/subframe7536/maple-font
+[MoralerSpace]: https://github.com/yuru7/moralerspace
+[Maple]: https://github.com/subframe7536/maple-font
 
 - MSゴシック
 - MeiryoKe_Console
@@ -123,18 +121,17 @@ aptコマンドを使用する。
 
 - フォントフォルダを~/.local/share/fonts/にコピーします。
 
-~~~shell
+```shell
 cp xxx.ttf ~/.local/share/fonts/
-~~~
-
+```
 
 - フォントキャッシュを更新します。
 
-~~~shell
+```shell
 fc-cache -fv
 
-~~~
+```
+
 ### 2.2.3. 手動でフォントをシステムディレクトリに追加する
 
 フォントフォルダを/usr/share/fonts/にコピーします。
-
