@@ -1,4 +1,6 @@
-* HOLIDAYS IN THE SUN
+# Sex Pistols
+
+## HOLIDAYS IN THE SUN
 
 I don't want a holiday in the sun
 I wanna go to the new Belsen
@@ -66,13 +68,19 @@ A cheap holiday in other peoples mistery
 ベルリンの壁を越えたい
 他人の謎の中で過ごす安っぽい休暇
 
-* BODIES
-* NO FEELINGS
-* LIAR
-* GOD SAVE THE QUEEN
-* PROBLEMS
-* SEVENTEEN
-* ANARCHY IN THE U.K.
+## BODIES
+
+## NO FEELINGS
+
+## LIAR
+
+## GOD SAVE THE QUEEN
+
+## PROBLEMS
+
+## SEVENTEEN
+
+## ANARCHY IN THE U.K
 
 Right now - ha ha ha ha
 
@@ -134,7 +142,10 @@ IRAに抵抗する、イギリスだと思っていた
 そして私はアナーキストになりたい
 ただ破壊できる
 
-* SUB MISSION
-* PRETTY VACANT
-* NEW YORK
-* EMI
+## SUB MISSION
+
+## PRETTY VACANT
+
+## NEW YORK
+
+## EMI
