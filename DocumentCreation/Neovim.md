@@ -30,7 +30,7 @@
         <p>nvim入門</p>
         <!-- 作成日を記載 -->
         <p class="date">
-            作成日: 
+            作成日:
             <time datetime="2024-04-08">2024年4月8日</time>
         </p>
     </div>
@@ -59,15 +59,16 @@ viの後継としてvimが開発されました。そのvimの後継としてNeo
 
 現状のPATHを確認します。
 
-~~~bash
+```bash
 echo $PATH
-~~~
+```
 
 ~/.local/binにPATHが通るようにします。fishを使っている場合は、~/.config/fish/config.fishを編集します。
 
 ```fish
 set -x PATH ~/.local/bin $PATH
 ```
+
 appimageをダウンロードします。
 
 ```bash
@@ -78,11 +79,11 @@ chmod u+x nvim-linux-x86_64.appimage
 
 ファイル名をnvim-linux-x86_64.appimageからnvimに変更し、かつPATHが通っているディレクトリ~/.local/bin/に移動します。
 
-~~~bash
+```bash
 mkdir -p ~/.local/bin
 mv nvim-linux-x86_64.appimage ~/.local/bin/nvim
 nvim
-~~~
+```
 
 ### neovimのバージョンを確認する
 
@@ -97,11 +98,12 @@ LuaJIT 2.1.0-beta3
 
 Run :checkhealth for more info
 ```
+
 ### :checkhealthを実行する
 
 nvimを実行する環境について表示されます。
 
-~~~fish
+```fish
 mkdir -p ~/.config/nvim
 touch ~/.config/nvim/init.lua
 # or touch ~/.config/nvim/init.vim if using Vimscript
@@ -122,7 +124,7 @@ pip install --upgrade pynvim
 # init.luaに
 # vim.g.python3_host_prog = vim.fn.expand('~/.config/nvim/venv/bin/python')
 # を追加する
-~~~
+```
 
 ## Markdown関連の設定
 
@@ -132,4 +134,3 @@ pip install --upgrade pynvim
 
 Cannot find module 'tslib' -> npm install -g tslib
 ~/.local/share/nvim/lazy/markdown-preview.nvim/ディレクトリでnpm installを実行する。
-
