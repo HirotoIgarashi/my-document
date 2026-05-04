@@ -828,8 +828,6 @@ AstroTheme is the default colorscheme that has been built for AstroNvim. It has 
 
 ## Code of Conduct
 
-TODO:
-
 ### ユーザ構成の管理
 
 ### 公開された自動コマンド
