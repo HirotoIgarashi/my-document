@@ -20,6 +20,17 @@ neovimには通常(NORMAL)モード、挿入(INSERT)モード、ビジュアル(
 
 <!-- TODO: sとoのモードについて調べる -->
 
+---
+
+## title: モードの遷移
+
+```mermaid
+flowchart TD
+    B[NORMAL] --> C[INSERT]
+```
+
+    <!-- A@{ shape: circle, label:"Start" } --> B[NORMAL] --> C[INSERT] -->
+
 ## 1.2. カーソルの移動
 
 通常モードにおけるカーソルの移動方法についてまとめます。
