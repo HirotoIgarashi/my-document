@@ -25,8 +25,11 @@ neovimには通常(NORMAL)モード、挿入(INSERT)モード、ビジュアル(
 ## title: モードの遷移
 
 ```mermaid
-flowchart TD
-    B[NORMAL] --> C[INSERT]
+stateDiagram-v2
+    [*] --> NORMAL
+    NORMAL --> INSERT: i
+    INSERT --> NORMAL: esc
+    NORMAL --> [*]
 ```
 
     <!-- A@{ shape: circle, label:"Start" } --> B[NORMAL] --> C[INSERT] -->
