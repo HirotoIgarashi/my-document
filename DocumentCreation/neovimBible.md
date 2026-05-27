@@ -28,11 +28,15 @@ neovimには通常(NORMAL)モード、挿入(INSERT)モード、ビジュアル(
 stateDiagram-v2
     [*] --> NORMAL
     NORMAL --> INSERT: i
-    INSERT --> NORMAL: esc
+    INSERT --> NORMAL: Escキー
+    NORMAL --> VISUAL: v
+    VISUAL --> NORMAL: Escキー
+    NORMAL --> COMMAND: collonキー
+    COMMAND --> NORMAL: Escキー
+    NORMAL --> TERMINAL: Ctrl-/
+    TERMINAL --> NORMAL: Ctrl-d
     NORMAL --> [*]
 ```
-
-    <!-- A@{ shape: circle, label:"Start" } --> B[NORMAL] --> C[INSERT] -->
 
 ## 1.2. カーソルの移動
 
